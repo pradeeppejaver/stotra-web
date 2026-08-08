@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="kn" data-theme="midnight">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ಶ್ರೀ ಕೃಷ್ಣಾಷ್ಟಕಂ | Krishnashtakam - Stotra Sangraha</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <span class="logo-icon">🕉️</span>
+        <span class="brand-text">ಸ್ತೋತ್ರ ಸಂಗ್ರಹ</span>
+      </a>
+      <div class="nav-controls">
+        <a href="../index.html" class="btn">← Back to Catalog</a>
+        <select id="theme-select" class="theme-select" title="Choose Theme Palette">
+          <option value="midnight">🌙 Midnight Temple (Navy & Gold)</option>
+          <option value="saffron">🔥 Saffron Divine (Sacred Vermillion)</option>
+          <option value="sandalwood">🪵 Royal Sandalwood (Turmeric)</option>
+          <option value="kailasha">🌌 Kailasha Sunset (Mystic Violet)</option>
+          <option value="parchment">📜 Sacred Parchment (Light Mode)</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    
+    <!-- Reader Header -->
+    <header class="reader-header">
+      <span class="card-deity-badge">Vishnu</span>
+      <h1 class="hero-title-kn">ಶ್ರೀ ಕೃಷ್ಣಾಷ್ಟಕಂ</h1>
+      <div class="hero-title-en">Shri Krishnashtakam Stotram</div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Composed by Sri Adi Shankaracharya</p>
+    </header>
+
+    <!-- Reading Toolbar Controls -->
+    <div class="reader-toolbar">
+      <div class="tool-group">
+        <span class="tool-label">Font Size:</span>
+        <button id="font-decrease" class="btn">A-</button>
+        <span id="font-size-display" style="font-size: 0.85rem; font-weight: bold; min-width: 40px; text-align: center;">100%</span>
+        <button id="font-increase" class="btn">A+</button>
+        <button id="font-reset" class="btn">Reset</button>
+      </div>
+
+      <div class="tool-group">
+        <button id="wakelock-btn" class="btn">🔒 Keep Screen Awake</button>
+      </div>
+
+      <div class="tool-group">
+        <span class="tool-label">View:</span>
+        <button id="toggle-kn" class="btn btn-active">ಕನ್ನಡ</button>
+        <button id="toggle-iast" class="btn btn-active">English</button>
+        <button id="toggle-trans" class="btn btn-active">Meaning</button>
+      </div>
+    </div>
+
+    <!-- Verse 1 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Verse 1</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ವಸುದೇವ ಸುತಂ ದೇವಂ ಕಂಸ ಚಾಣೂರ ಮರ್ದನಮ್ ।<br>
+        ದೇವಕೀ ಪರಮಾನಂದಂ ಕೃಷ್ಣಂ ವಂದೇ ಜಗದ್ಗುರುಮ್ ॥ ೧ ॥
+      </p>
+      <p class="verse-iast">
+        vasudēva sutaṁ dēvaṁ kaṁsa cāṇūra mardanam ।<br>
+        dēvakī paramānandaṁ kṛṣṇaṁ vandē jagadgurum ॥ 1 ॥
+      </p>
+      <p class="verse-translation">
+        I bow to Lord Krishna, the Guru of the entire universe, the divine son of Vasudeva, the slayer of Kamsa and Chanura, and the supreme joy of Mother Devaki.
+      </p>
+    </article>
+
+    <!-- Verse 2 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Verse 2</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಅತಸೀ ಪುಷ್ಪ ಸಂಕಾಶಂ ಹಾರ ನೂಪುರ ಶೋಭಿತಮ್ ।<br>
+        ರತ್ನ ಕಂಕಣ ಕೇಯೂರಂ ಕೃಷ್ಣಂ ವಂದೇ ಜಗದ್ಗುರುಮ್ ॥ ೨ ॥
+      </p>
+      <p class="verse-iast">
+        atasī puṣpa saṁkāśaṁ hāra nūpura śōbhitam ।<br>
+        ratna kaṅkaṇa kēyūraṁ kṛṣṇaṁ vandē jagadgurum ॥ 2 ॥
+      </p>
+      <p class="verse-translation">
+        I bow to Lord Krishna, the Guru of the universe, who shines like the blue Atasi flower, adorned with sparkling necklaces, anklets, jeweled bangles, and armlets.
+      </p>
+    </article>
+
+    <!-- Verse 3 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Verse 3</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಕುಟಿಲಾಲಕ ಸಂಯುಕ್ತಂ ಪೂರ್ಣಚಂದ್ರ ನಿಭಾನನಮ್ ।<br>
+        ವಿಲಸತ್ ಕುಂಡಲಧರಂ ಕೃಷ್ಣಂ ವಂದೇ ಜಗದ್ಗುರಮ್ ॥ ೩ ॥
+      </p>
+      <p class="verse-iast">
+        kuṭilālaka saṁyuktaṁ pūrṇacandra nibhānanam ।<br>
+        vilasat kuṇḍaladharaṁ kṛṣṇaṁ vandē jagadgurum ॥ 3 ॥
+      </p>
+      <p class="verse-translation">
+        I bow to Lord Krishna, the Guru of the universe, graced with dark curly locks, whose face shines like the full moon, and who wears brilliant earrings.
+      </p>
+    </article>
+
+    <!-- Verse 4 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Verse 4</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಮಂದಾರ ಗಂಧ ಸಂಯುಕ್ತಂ ಚಾರುಹಾಸಂ ಚತುರ್ಭುಜಮ್ ।<br>
+        ಬರ್ಹಿ ಪಿಂಛಾವ ಚೂಡಾಂಗಂ ಕೃಷ್ಣಂ ವಂದೇ ಜಗದ್ಗುರುಮ್ ॥ ೪ ॥
+      </p>
+      <p class="verse-iast">
+        mandāra gandha saṁyuktaṁ cāruhāsaṁ caturbhujam ।<br>
+        barhi piṁchāva cūḍāṅgaṁ kṛṣṇaṁ vandē jagadgurum ॥ 4 ॥
+      </p>
+      <p class="verse-translation">
+        I bow to Lord Krishna, the Guru of the universe, fragrant with Mandara flowers, possessing a sweet gentle smile, four-armed, and wearing a peacock feather on his crown.
+      </p>
+    </article>
+
+    <!-- Verse 5 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Verse 5</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಉತ್ಫುಲ್ಲ ಪದ್ಮಪತ್ರಾಕ್ಷಂ ನೀಲ ಜೀಮೂತ ಸನ್ನಿಭಮ್ ।<br>
+        ಯಾದವಾನಾಂ ಶಿರೋರತ್ನಂ ಕೃಷ್ಣಂ ವಂದೇ ಜಗದ್ಗುರುಮ್ ॥ ೫ ॥
+      </p>
+      <p class="verse-iast">
+        utphulla padmapatrākṣaṁ nīla jīmūta sannibham ।<br>
+        yādavānāṁ śirōratnaṁ kṛṣṇaṁ vandē jagadgurum ॥ 5 ॥
+      </p>
+      <p class="verse-translation">
+        I bow to Lord Krishna, the Guru of the universe, whose eyes resemble blooming lotus petals, whose body is dark blue like a rain cloud, and who is the crest jewel of the Yadavas.
+      </p>
+    </article>
+
+    <!-- Verse 6 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Verse 6</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ರುಕ್ಮಿಣೀ ಕೇಳಿ ಸಂಯುಕ್ತಂ ಪೀತಾಂಬರ ಸುಶೋಭಿತಮ್ ।<br>
+        ಅವಾಪ್ತ ತುಲಸೀ ಗಂಧಂ ಕೃಷ್ಣಂ ವಂದೇ ಜಗದ್ಗುರುಮ್ ॥ ೬ ॥
+      </p>
+      <p class="verse-iast">
+        rukmiṇī kēḷi saṁyuktaṁ pītāmbara suśōbhitam ।<br>
+        avāpta tulasī gandhaṁ kṛṣṇaṁ vandē jagadgurum ॥ 6 ॥
+      </p>
+      <p class="verse-translation">
+        I bow to Lord Krishna, the Guru of the universe, engaged in joyful divine play with Rukmini, resplendent in yellow silk robes, and fragrant with sacred Tulsi leaves.
+      </p>
+    </article>
+
+    <!-- Verse 7 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Verse 7</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಗೋಪಿಕಾನಾಂ ಕುಚದ್ವಂದ ಕುಂಕುಮಾಂಕಿತ ವಕ್ಷಸಮ್ ।<br>
+        ಶ್ರೀನಿಕೇತಂ ಮಹೇಷ್ವಾಸಂ ಕೃಷ್ಣಂ ವಂದೇ ಜಗದ್ಗುರುಮ್ ॥ ೭ ॥
+      </p>
+      <p class="verse-iast">
+        gōpikānāṁ kucadvanda kuṁkumāṅkita vakṣasam ।<br>
+        śrīnikētaṁ mahēṣvāsaṁ kṛṣṇaṁ vandē jagadgurum ॥ 7 ॥
+      </p>
+      <p class="verse-translation">
+        I bow to Lord Krishna, the Guru of the universe, whose chest is marked with Kumkuma, who is the abode of Sri (Lakshmi), and the wielders of mighty bows.
+      </p>
+    </article>
+
+    <!-- Verse 8 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Verse 8</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಶ್ರೀವತ್ಸಾಂಕಂ ಮಹೋರಸ್ಕಂ ವನಮಾಲಾ ವಿರಾಜಿತಮ್ ।<br>
+        ಶಂಖಚಕ್ರ ಧರಂ ದೇವಂ ಕೃಷ್ಣಂ ವಂದೇ ಜಗದ್ಗುರುಮ್ ॥ ೮ ॥
+      </p>
+      <p class="verse-iast">
+        śrīvatsāṅkaṁ mahōraskaṁ vanamālā virājitam ।<br>
+        śaṁkhacakra dharaṁ dēvaṁ kṛṣṇaṁ vandē jagadgurum ॥ 8 ॥
+      </p>
+      <p class="verse-translation">
+        I bow to Lord Krishna, the Guru of the universe, bearing the sacred Srivatsa mark on his broad chest, wearing the Vanamala garland of wildflowers, holding the Conch and Discus.
+      </p>
+    </article>
+
+    <!-- Phala Shruti -->
+    <article class="verse-card" style="border-left-color: var(--accent-saffron);">
+      <div class="verse-header">
+        <span class="verse-badge" style="color: var(--accent-saffron); border-color: var(--accent-saffron); background: rgba(249, 115, 22, 0.1);">ಫಲಶೃತಿಃ | Phala Shruti</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಕೃಷ್ಣಾಷ್ಟಕ ಮಿದಂ ಪುಣ್ಯಂ ಪ್ರಾತರುತ್ಥಾಯ ಯಃ ಪಠೇತ್ ।<br>
+        ಕೋಟಿಜನ್ಮ ಕೃತಂ ಪಾಪಂ ಸ್ಮರಣೇನ ವಿನಶ್ಯತಿ ॥
+      </p>
+      <p class="verse-iast">
+        kṛṣṇāṣṭaka midaṁ puṇyaṁ prātarutthāya yaḥ paṭhēt ।<br>
+        kōṭijanma kṛtaṁ pāpaṁ smaraṇēna vinaśyati ॥
+      </p>
+      <p class="verse-translation">
+        Whoever devoutly recites this holy Krishnashtakam upon waking up in the morning is liberated from sins committed across ten million births simply by remembering Lord Krishna.
+      </p>
+    </article>
+
+    <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+      <a href="../index.html" class="btn btn-primary">← Return to Stotra Collection</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p><strong>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha</strong> • Ad-free Devotional Library</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
