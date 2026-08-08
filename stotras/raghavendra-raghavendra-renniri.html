@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="kn" data-theme="midnight">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ರಾಘವೇಂದ್ರ ರಾಘವೇಂದ್ರರೆನ್ನಿರಿ | Raghavendra Raghavendra Renniri - Stotra Sangraha</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <span class="logo-icon">🕉️</span>
+        <span class="brand-text">ಸ್ತೋತ್ರ ಸಂಗ್ರಹ</span>
+      </a>
+      <div class="nav-controls">
+        <a href="../index.html" class="btn">← Back to Catalog</a>
+        <select id="theme-select" class="theme-select" title="Choose Theme Palette">
+          <option value="midnight">🌙 Midnight Temple (Navy & Gold)</option>
+          <option value="saffron">🔥 Saffron Divine (Sacred Vermillion)</option>
+          <option value="sandalwood">🪵 Royal Sandalwood (Turmeric)</option>
+          <option value="kailasha">🌌 Kailasha Sunset (Mystic Violet)</option>
+          <option value="parchment">📜 Sacred Parchment (Light Mode)</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    
+    <!-- Reader Header -->
+    <header class="reader-header">
+      <span class="card-deity-badge" style="background: rgba(251, 191, 36, 0.15); color: var(--accent-gold);">Guru Raghavendra • Devaranama</span>
+      <h1 class="hero-title-kn">ರಾಘವೇಂದ್ರ ರಾಘವೇಂದ್ರರೆನ್ನಿರಿ</h1>
+      <div class="hero-title-en">Raghavendra Raghavendra Renniri Naamasmaraneyinda</div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Lyrics by Chi. Udayashankar (ಚಿ. ಉದಯಶಂಕರ್) • Music by M. Ranga Rao • Rendition by Dr. Rajkumar</p>
+    </header>
+
+    <!-- Reading Toolbar Controls -->
+    <div class="reader-toolbar">
+      <div class="tool-group">
+        <span class="tool-label">Font Size:</span>
+        <button id="font-decrease" class="btn">A-</button>
+        <span id="font-size-display" style="font-size: 0.85rem; font-weight: bold; min-width: 40px; text-align: center;">100%</span>
+        <button id="font-increase" class="btn">A+</button>
+        <button id="font-reset" class="btn">Reset</button>
+      </div>
+
+      <div class="tool-group">
+        <button id="wakelock-btn" class="btn">🔒 Keep Screen Awake</button>
+      </div>
+
+      <div class="tool-group">
+        <span class="tool-label">View:</span>
+        <button id="toggle-kn" class="btn btn-active">ಕನ್ನಡ</button>
+        <button id="toggle-iast" class="btn btn-active">English</button>
+        <button id="toggle-trans" class="btn">Meaning</button>
+      </div>
+    </div>
+
+    <!-- Pallavi -->
+    <article class="verse-card" style="border-left-color: var(--accent-gold);">
+      <div class="verse-header">
+        <span class="verse-badge" style="color: var(--accent-gold); border-color: var(--accent-gold); background: rgba(251, 191, 36, 0.1);">ಪಲ್ಲವಿ | Pallavi</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ರಾಘವೇಂದ್ರ ರಾಘವೇಂದ್ರ ರಾಘವೇಂದ್ರರೆನ್ನಿರಿ ।<br>
+        ನಾಮಸ್ಮರಣೆಯಿಂದ ನಿಜಾನಂದವನ್ನು ಹೊಂದಿರಿ ॥ ಪ ॥
+      </p>
+      <p class="verse-iast">
+        rāghavēndra rāghavēndra rāghavēndrarenniri ।<br>
+        nāmasmaraṇeyinda nijānandavannu hondiri ॥ pa ॥
+      </p>
+      <p class="verse-translation">
+        Chant 'Raghavendra! Raghavendra! Raghavendra!' From the continuous remembrance of his holy name, attain true divine bliss!
+      </p>
+    </article>
+
+    <!-- Charanam 1 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೧ | Charanam 1</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ತಂದೆ ತಾಯಿ ಬಂಧು ಬಳಗ ಎಲ್ಲ ನೀನೆ ಎನ್ನಿರಿ ।<br>
+        ನಾನು ಎಂಬ ಮೋಹ ಮರೆತು ಎಂದೂ ಅವನ ನಂಬಿರಿ ।<br>
+        ಹೇಗೆ ಇರಲಿ ಎಲ್ಲೆ ಇರಲಿ ಅವನ ಸ್ಮರಣೆ ಮಾಡಿರಿ ।<br>
+        ಧ್ಯಾನದಿಂದ ಮನವ ಸುಡುವ ಚಿಂತೆ ದೂರ ಮಾಡಿರಿ ॥ ೧ ॥
+      </p>
+      <p class="verse-iast">
+        tande tāyi bandhu baḷaga ella nīne enniri ।<br>
+        nānu emba mōha maretu endū avana nambiri ।<br>
+        hēge irali elle irali avana smaraṇe māḍiri ।<br>
+        dhyānadinda manava suḍuva cinte dūra māḍiri ॥ 1 ॥
+      </p>
+      <p class="verse-translation">
+        Say to him, 'You alone are my father, mother, kinsman, and family!' Forget ego and self-attachment, and put your faith in him always. Wherever or in whatever state you are, remember him; through meditation, banish the anxieties burning your mind!
+      </p>
+    </article>
+
+    <!-- Charanam 2 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೨ | Charanam 2</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಮಾನ ಪ್ರಾಣ ಧನವು ಎಲ್ಲ ಸ್ವಾಮಿ ನಿನ್ನದೆನ್ನಿರಿ ।<br>
+        ಗುರುವೆ ನಿನ್ನ ಕರುಣೆಯೊಂದೆ ಸಾಕು ನನಗೆ ಎನ್ನಿರಿ ।<br>
+        ಕಲ್ಲು ಮುಳ್ಳೊ ಸಿಡಿಲೊ ಮಳೆಯೊ ಅವನ ಕರುಣೆಯೆನ್ನಿರಿ ।<br>
+        ಏನೇ ಬರಲಿ ಅವನದೆಂದು ನಂಬಿ ಮುಂದೆ ನಡೆಯಿರಿ ॥ ೨ ॥
+      </p>
+      <p class="verse-iast">
+        māna prāṇa dhanavu ella svāmi ninnadenniri ।<br>
+        guruve ninna karuṇēyonde sāku nanage enniri ।<br>
+        kallu muḷḷo siḍilo maḷeyo avana karuṇēyenniri ।<br>
+        ēnē barali avanadendu nambi munde naḍeyiri ॥ 2 ॥
+      </p>
+      <p class="verse-translation">
+        Say, 'My honor, life, and wealth belong entirely to you, O Lord! O Guru, your compassion alone is enough for me!' Whether rocks, thorns, lightning, or rain come your way, consider it all as his divine grace; whatever comes, accept it as his will and walk forward with faith!
+      </p>
+    </article>
+
+    <!-- Charanam 3 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೩ | Charanam 3</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ನಿಮ್ಮ ಮನೆಯ ನಿಮ್ಮ ಮನದ ವಿಷಯವೆಲ್ಲ ಬಲ್ಲನು ।<br>
+        ಚಪಲದಿಂದ ಅಲೆವ ಮನದಲೆಂದು ಗುರುವು ನಿಲ್ಲನು ।<br>
+        ಕೊಡುವುದೆಲ್ಲ ಕೊಡುವನವನು ಇನ್ನು ಆಸೆಯೇತಕೆ ।<br>
+        ಕಲ್ಪವೃಕ್ಷದಂತೆ ಗುರುವು ಇರಲು ಚಿಂತೆಯೇತಕೆ ॥ ೩ ॥
+      </p>
+      <p class="verse-iast">
+        nimma maneya nimma manada viṣayavella ballanu ।<br>
+        capaladinda aleva manadalendu guruvu nillanu ।<br>
+        koḍuvudella koḍuvanavanu innu āseyētake ।<br>
+        kalpavṛkṣadante guruvu iralu cinteyētake ॥ 3 ॥
+      </p>
+      <p class="verse-translation">
+        He knows every detail of your home and your mind! But the Guru never resides in a mind wandering restlessly with desires. He gives all that is truly good for you, so why harbor greedy desires? When Guru Raghavendra is like a wish-fulfilling tree (Kalpavriksha), why worry at all?
+      </p>
+    </article>
+
+    <!-- Phala Shruti Mangala Shloka -->
+    <article class="verse-card" style="border-left-color: var(--accent-gold);">
+      <div class="verse-header">
+        <span class="verse-badge" style="color: var(--accent-gold); border-color: var(--accent-gold); background: rgba(251, 191, 36, 0.1);">ಮಂಗಲ ಶ್ಲೋಕ | Mangala Shloka</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಪೂಜ್ಯಾಯ ರಾಘವೇಂದ್ರಾಯ ಸತ್ಯಧರ್ಮರತಾಯ ಚ ।<br>
+        ಭಜತಾಂ ಕಲ್ಪವೃಕ್ಷಾಯ ನಮತಾಂ ಕಾಮಧೇನವೇ ॥
+      </p>
+      <p class="verse-iast">
+        pūjyāya rāghavēndrāya satyadharmaratāya ca ।<br>
+        bhajatāṁ kalpavṛkṣāya namatāṁ kāmadhēnavē ॥
+      </p>
+      <p class="verse-translation">
+        I bow to the venerable Sri Raghavendra, who is ever devoted to truth and righteousness; who is like a wish-fulfilling tree (Kalpavriksha) to those who chant his praise, and a celestial cow (Kamadhenu) to those who bow before him!
+      </p>
+    </article>
+
+    <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+      <a href="../index.html" class="btn btn-primary">← Return to Stotra Collection</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p><strong>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha</strong> • Ad-free Devotional Library</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
