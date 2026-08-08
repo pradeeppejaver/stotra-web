@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="kn" data-theme="midnight">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ಹಾಲಲ್ಲಾದರೂ ಹಾಕು | Haalalladaru Haaku Raghavendra - Stotra Sangraha</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <span class="logo-icon">🕉️</span>
+        <span class="brand-text">ಸ್ತೋತ್ರ ಸಂಗ್ರಹ</span>
+      </a>
+      <div class="nav-controls">
+        <a href="../index.html" class="btn">← Back to Catalog</a>
+        <select id="theme-select" class="theme-select" title="Choose Theme Palette">
+          <option value="midnight">🌙 Midnight Temple (Navy & Gold)</option>
+          <option value="saffron">🔥 Saffron Divine (Sacred Vermillion)</option>
+          <option value="sandalwood">🪵 Royal Sandalwood (Turmeric)</option>
+          <option value="kailasha">🌌 Kailasha Sunset (Mystic Violet)</option>
+          <option value="parchment">📜 Sacred Parchment (Light Mode)</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    
+    <!-- Reader Header -->
+    <header class="reader-header">
+      <span class="card-deity-badge" style="background: rgba(251, 191, 36, 0.15); color: var(--accent-gold);">Guru Raghavendra • Devaranama</span>
+      <h1 class="hero-title-kn">ಹಾಲಲ್ಲಾದರೂ ಹಾಕು ನೀರಲ್ಲಾದರೂ ಹಾಕು</h1>
+      <div class="hero-title-en">Haalalladaru Haaku Neeralladaru Haaku Raghavendra</div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Lyrics by Chi. Udayashankar (ಚಿ. ಉದಯಶಂಕರ್) • Music by Upendra Kumar • Rendition by Dr. Rajkumar</p>
+    </header>
+
+    <!-- Reading Toolbar Controls -->
+    <div class="reader-toolbar">
+      <div class="tool-group">
+        <span class="tool-label">Font Size:</span>
+        <button id="font-decrease" class="btn">A-</button>
+        <span id="font-size-display" style="font-size: 0.85rem; font-weight: bold; min-width: 40px; text-align: center;">100%</span>
+        <button id="font-increase" class="btn">A+</button>
+        <button id="font-reset" class="btn">Reset</button>
+      </div>
+
+      <div class="tool-group">
+        <button id="wakelock-btn" class="btn">🔒 Keep Screen Awake</button>
+      </div>
+
+      <div class="tool-group">
+        <span class="tool-label">View:</span>
+        <button id="toggle-kn" class="btn btn-active">ಕನ್ನಡ</button>
+        <button id="toggle-iast" class="btn btn-active">English</button>
+        <button id="toggle-trans" class="btn">Meaning</button>
+      </div>
+    </div>
+
+    <!-- Pallavi -->
+    <article class="verse-card" style="border-left-color: var(--accent-gold);">
+      <div class="verse-header">
+        <span class="verse-badge" style="color: var(--accent-gold); border-color: var(--accent-gold); background: rgba(251, 191, 36, 0.1);">ಪಲ್ಲವಿ | Pallavi</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಹಾಲಲ್ಲಾದರೂ ಹಾಕು ನೀರಲ್ಲಾದರೂ ಹಾಕು ರಾಘವೇಂದ್ರ ।<br>
+        ಹಾಲಲ್ಲಿ ಕೆನೆಯಾಗಿ, ನೀರಲ್ಲಿ ಮೀನಾಗಿ ಹಾಯಾಗಿರುವೆ ರಾಘವೇಂದ್ರ ॥ ಪ ॥
+      </p>
+      <p class="verse-iast">
+        hālallādarū hāku nīrallādarū hāku rāghavēndra ।<br>
+        hālalli keneyāgi, nīralli mīnāgi hāyāgiruve rāghavēndra ॥ pa ॥
+      </p>
+      <p class="verse-translation">
+        Place me in milk or place me in water, O Raghavendra! In milk I will comfortably be the cream, and in water I will comfortably swim as a fish, O Lord Raghavendra!
+      </p>
+    </article>
+
+    <!-- Charanam 1 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೧ | Charanam 1</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಮುಳ್ಳಲ್ಲಾದರೂ ನೂಕು, ಕಲ್ಲಲ್ಲಾದರೂ ನೂಕು ರಾಘವೇಂದ್ರ ।<br>
+        ಮುಳ್ಳಲ್ಲಿ ಮುಳ್ಳಾಗಿ, ಕಲ್ಲಲ್ಲಿ ಕಲ್ಲಾಗಿ ಒಂದಾಗಿರುವೆ ರಾಘವೇಂದ್ರ ॥ ೧ ॥
+      </p>
+      <p class="verse-iast">
+        muḷḷallādarū nūku, kallallādarū nūku rāghavēndra ।<br>
+        muḷḷalli muḷḷāgi, kallalli kallāgi ondāgiruve rāghavēndra ॥ 1 ॥
+      </p>
+      <p class="verse-translation">
+        Push me into thorns or push me onto rocks, O Raghavendra! Among thorns I will merge as a thorn, and among rocks I will merge as a rock, completely at peace with your divine will!
+      </p>
+    </article>
+
+    <!-- Charanam 2 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೨ | Charanam 2</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಬಿಸಿಲಲ್ಲಿ ಒಣಗಿಸು, ನೆರಳಲ್ಲಿ ಮಲಗಿಸು ರಾಘವೇಂದ್ರ ।<br>
+        ಬಿಸಿಲಲ್ಲಿ ಕೆಂಪಾಗಿ, ನೆರಳಲ್ಲಿ ತಂಪಾಗಿ ನಗುನಗುತ ಇರುವೆ ರಾಘವೇಂದ್ರ ॥ ೨ ॥
+      </p>
+      <p class="verse-iast">
+        bisilalli oṇagisu, neraḷalli malagisu rāghavēndra ।<br>
+        bisilalli kempāgi, neraḷalli tampāgi nagunaguta iruve rāghavēndra ॥ 2 ॥
+      </p>
+      <p class="verse-translation">
+        Dry me under the scorching sun or lay me down in gentle shade, O Raghavendra! Glowing under the sun and cooled in the shade, I will ever remain smiling, O Lord Raghavendra!
+      </p>
+    </article>
+
+    <!-- Charanam 3 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೩ | Charanam 3</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಸುಖವನ್ನೇ ನೀಡೆಂದು ಎಂದೂ ಕೇಳೆನು ನಾನು ರಾಘವೇಂದ್ರ ।<br>
+        ಮುನ್ನ ಮಾಡಿದ ಪಾಪ ಯಾರ ತಾತನ ಗಂಟು, ನೀನೇ ಹೇಳು ರಾಘವೇಂದ್ರ ॥ ೩ ॥
+      </p>
+      <p class="verse-iast">
+        sukhavannē nīḍendu endū kēḷenu nānu rāghavēndra ।<br>
+        munna māḍida pāpa yāra tātana gaṇṭu, nīnē hēḷu rāghavēndra ॥ 3 ॥
+      </p>
+      <p class="verse-translation">
+        I never ask you to grant me only pleasure and luxury, O Raghavendra! Past sins are my own karmic burden to bear, not inherited wealth—you yourself tell me, O Lord Raghavendra!
+      </p>
+    </article>
+
+    <!-- Charanam 4 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೪ | Charanam 4</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಎಲ್ಲಿದ್ದರೇನು ನಾ ಹೇಗಿದ್ದರೇನು ನಾ ರಾಘವೇಂದ್ರ ।<br>
+        ನಿನ್ನಲ್ಲಿ ಶರಣಾಗಿ ನೀ ನನ್ನ ಉಸಿರಾಗಿ ಬಾಳಿದರೆ ಸಾಕು ರಾಘವೇಂದ್ರ ॥ ೪ ॥
+      </p>
+      <p class="verse-iast">
+        elliddarēnu nā hēgiddarēnu nā rāghavēndra ।<br>
+        ninnalli śaraṇāgi nī nanna usirāgi bāḷidare sāku rāghavēndra ॥ 4 ॥
+      </p>
+      <p class="verse-translation">
+        Wherever I am or in whatever state I exist, O Raghavendra! It is enough if I surrender to you and live with you as my very breath, O Lord Raghavendra!
+      </p>
+    </article>
+
+    <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+      <a href="../index.html" class="btn btn-primary">← Return to Stotra Collection</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p><strong>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha</strong> • Ad-free Devotional Library</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
