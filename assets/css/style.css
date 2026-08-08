@@ -4,8 +4,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif+Kannada:wght@400;500;600;700&display=swap');
 
-/* Default Theme: Midnight Temple (Dark Navy & Gold) */
-:root, [data-theme="midnight"] {
+/* Default Theme Variables */
+:root {
+  --bg-color: #0f172a;
+  --bg-secondary: #1e293b;
+  --card-bg: #1e293b;
+  --card-border: #334155;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  
+  --accent-gold: #fbbf24;
+  --accent-gold-hover: #f59e0b;
+  --accent-saffron: #f97316;
+  
+  --kannada-color: #fbbf24;
+  --iast-color: #38bdf8;
+  --translation-color: #cbd5e1;
+  
+  --verse-font-scale: 1;
+}
+
+/* Theme 1: Midnight Temple (Dark Navy & Gold) */
+html[data-theme="midnight"], body[data-theme="midnight"] {
   --bg-color: #0f172a;
   --bg-secondary: #1e293b;
   --card-bg: #1e293b;
@@ -23,7 +43,7 @@
 }
 
 /* Theme 2: Saffron Divine (Sacred Crimson & Vermillion) */
-[data-theme="saffron"] {
+html[data-theme="saffron"], body[data-theme="saffron"] {
   --bg-color: #180909;
   --bg-secondary: #2a1010;
   --card-bg: #260e0e;
@@ -41,7 +61,7 @@
 }
 
 /* Theme 3: Royal Sandalwood (Chandana & Turmeric) */
-[data-theme="sandalwood"] {
+html[data-theme="sandalwood"], body[data-theme="sandalwood"] {
   --bg-color: #16120e;
   --bg-secondary: #261f18;
   --card-bg: #231c15;
@@ -59,7 +79,7 @@
 }
 
 /* Theme 4: Kailasha Sunset (Mystic Violet & Gold) */
-[data-theme="kailasha"] {
+html[data-theme="kailasha"], body[data-theme="kailasha"] {
   --bg-color: #110e1b;
   --bg-secondary: #1d182e;
   --card-bg: #1a1529;
@@ -77,7 +97,7 @@
 }
 
 /* Theme 5: Sacred Parchment (Soft Light Mode & Royal Maroon) */
-[data-theme="parchment"] {
+html[data-theme="parchment"], body[data-theme="parchment"] {
   --bg-color: #faf8f5;
   --bg-secondary: #f3eee7;
   --card-bg: #ffffff;
@@ -102,8 +122,8 @@
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-main);
+  background-color: var(--bg-color) !important;
+  color: var(--text-main) !important;
   font-family: 'Lora', Georgia, serif;
   line-height: 1.6;
   min-height: 100vh;
@@ -122,8 +142,8 @@ body {
 
 /* Navigation Bar */
 .navbar {
-  background-color: var(--bg-secondary);
-  border-bottom: 1px solid var(--card-border);
+  background-color: var(--bg-secondary) !important;
+  border-bottom: 1px solid var(--card-border) !important;
   padding: 16px 0;
   position: sticky;
   top: 0;
@@ -142,7 +162,7 @@ body {
   align-items: center;
   gap: 12px;
   text-decoration: none;
-  color: var(--accent-gold);
+  color: var(--accent-gold) !important;
 }
 
 .nav-brand .logo-icon {
@@ -163,9 +183,9 @@ body {
 
 /* Theme Select Dropdown */
 .theme-select {
-  background-color: var(--card-bg);
-  border: 1px solid var(--card-border);
-  color: var(--text-main);
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--card-border) !important;
+  color: var(--text-main) !important;
   padding: 8px 12px;
   border-radius: 8px;
   font-size: 0.85rem;
@@ -175,14 +195,14 @@ body {
 }
 
 .theme-select:focus {
-  border-color: var(--accent-gold);
+  border-color: var(--accent-gold) !important;
 }
 
 /* Buttons & Controls */
 .btn {
-  background-color: var(--card-bg);
-  border: 1px solid var(--card-border);
-  color: var(--text-main);
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--card-border) !important;
+  color: var(--text-main) !important;
   padding: 8px 14px;
   border-radius: 8px;
   font-size: 0.9rem;
@@ -195,27 +215,26 @@ body {
 }
 
 .btn:hover {
-  background-color: var(--card-border);
-  border-color: var(--accent-gold);
-  color: var(--accent-gold);
+  background-color: var(--card-border) !important;
+  border-color: var(--accent-gold) !important;
+  color: var(--accent-gold) !important;
 }
 
 .btn-primary {
-  background-color: var(--accent-saffron);
-  color: #ffffff;
-  border: none;
+  background-color: var(--accent-saffron) !important;
+  color: #ffffff !important;
+  border: none !important;
   font-weight: 600;
 }
 
 .btn-primary:hover {
   opacity: 0.9;
-  color: #ffffff;
 }
 
 .btn-active {
-  background-color: var(--accent-gold);
-  color: #0f172a;
-  border-color: var(--accent-gold);
+  background-color: var(--accent-gold) !important;
+  color: #0f172a !important;
+  border-color: var(--accent-gold) !important;
   font-weight: 600;
 }
 
@@ -229,7 +248,7 @@ body {
   font-family: 'Noto Serif Kannada', Georgia, serif;
   font-size: 2.4rem;
   font-weight: 700;
-  color: var(--accent-gold);
+  color: var(--accent-gold) !important;
   margin-bottom: 8px;
   line-height: 1.3;
 }
@@ -237,15 +256,15 @@ body {
 .hero-title-en {
   font-family: 'Cinzel', Georgia, serif;
   font-size: 1.1rem;
-  color: var(--text-muted);
+  color: var(--text-muted) !important;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 /* Toolbar & Filters */
 .toolbar {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
+  background: var(--card-bg) !important;
+  border: 1px solid var(--card-border) !important;
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 30px;
@@ -265,17 +284,17 @@ body {
 .search-input {
   width: 100%;
   padding: 10px 16px 10px 40px;
-  background-color: var(--bg-color);
-  border: 1px solid var(--card-border);
+  background-color: var(--bg-color) !important;
+  border: 1px solid var(--card-border) !important;
   border-radius: 8px;
-  color: var(--text-main);
+  color: var(--text-main) !important;
   font-size: 0.95rem;
   font-family: 'Lora', Georgia, serif;
 }
 
 .search-input:focus {
   outline: none;
-  border-color: var(--accent-gold);
+  border-color: var(--accent-gold) !important;
 }
 
 .search-icon {
@@ -283,7 +302,7 @@ body {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--text-muted);
+  color: var(--text-muted) !important;
 }
 
 .filter-pills {
@@ -295,18 +314,18 @@ body {
 .pill {
   padding: 6px 14px;
   border-radius: 20px;
-  background: var(--bg-color);
-  border: 1px solid var(--card-border);
-  color: var(--text-muted);
+  background: var(--bg-color) !important;
+  border: 1px solid var(--card-border) !important;
+  color: var(--text-muted) !important;
   font-size: 0.85rem;
   cursor: pointer;
   transition: all 0.25s;
 }
 
 .pill:hover, .pill.active {
-  background: var(--accent-gold);
-  color: #0f172a;
-  border-color: var(--accent-gold);
+  background: var(--accent-gold) !important;
+  color: #0f172a !important;
+  border-color: var(--accent-gold) !important;
   font-weight: 600;
 }
 
@@ -319,8 +338,8 @@ body {
 }
 
 .stotra-card {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
+  background: var(--card-bg) !important;
+  border: 1px solid var(--card-border) !important;
   border-radius: 12px;
   padding: 24px;
   text-decoration: none;
@@ -333,7 +352,7 @@ body {
 
 .stotra-card:hover {
   transform: translateY(-4px);
-  border-color: var(--accent-gold);
+  border-color: var(--accent-gold) !important;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -342,8 +361,8 @@ body {
   align-self: flex-start;
   padding: 4px 10px;
   border-radius: 6px;
-  background: rgba(251, 191, 36, 0.15);
-  color: var(--accent-gold);
+  background: rgba(251, 191, 36, 0.15) !important;
+  color: var(--accent-gold) !important;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -355,14 +374,14 @@ body {
   font-family: 'Noto Serif Kannada', Georgia, serif;
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--text-main);
+  color: var(--text-main) !important;
   margin-bottom: 4px;
 }
 
 .card-title-en {
   font-family: 'Cinzel', Georgia, serif;
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: var(--text-muted) !important;
   margin-bottom: 16px;
 }
 
@@ -371,8 +390,8 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 0.8rem;
-  color: var(--text-muted);
-  border-top: 1px solid var(--card-border);
+  color: var(--text-muted) !important;
+  border-top: 1px solid var(--card-border) !important;
   padding-top: 12px;
 }
 
@@ -380,15 +399,15 @@ body {
 .reader-header {
   text-align: center;
   padding: 30px 0 20px;
-  border-bottom: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border) !important;
   margin-bottom: 25px;
 }
 
 .reader-toolbar {
   position: sticky;
   top: 70px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--card-border);
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--card-border) !important;
   border-radius: 12px;
   padding: 12px 18px;
   margin-bottom: 30px;
@@ -409,7 +428,7 @@ body {
 
 .tool-label {
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: var(--text-muted) !important;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-right: 4px;
@@ -417,9 +436,9 @@ body {
 
 /* Verse Card Display */
 .verse-card {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-left: 4px solid var(--accent-gold);
+  background: var(--card-bg) !important;
+  border: 1px solid var(--card-border) !important;
+  border-left: 4px solid var(--accent-gold) !important;
   border-radius: 12px;
   padding: 24px;
   margin-bottom: 24px;
@@ -438,17 +457,17 @@ body {
 .verse-badge {
   font-size: 0.75rem;
   font-weight: 700;
-  color: var(--accent-gold);
-  background: rgba(245, 158, 11, 0.1);
+  color: var(--accent-gold) !important;
+  background: rgba(245, 158, 11, 0.1) !important;
   padding: 3px 10px;
   border-radius: 12px;
-  border: 1px solid rgba(245, 158, 11, 0.2);
+  border: 1px solid rgba(245, 158, 11, 0.2) !important;
 }
 
 .copy-btn {
   background: transparent;
   border: none;
-  color: var(--text-muted);
+  color: var(--text-muted) !important;
   cursor: pointer;
   font-size: 0.9rem;
   padding: 4px 8px;
@@ -456,8 +475,8 @@ body {
 }
 
 .copy-btn:hover {
-  color: var(--accent-gold);
-  background: var(--bg-color);
+  color: var(--accent-gold) !important;
+  background: var(--bg-color) !important;
 }
 
 /* Verse Text Display with Dynamic Scale */
@@ -466,7 +485,7 @@ body {
   font-size: calc(1.4rem * var(--verse-font-scale, 1));
   font-weight: 600;
   line-height: 1.8;
-  color: var(--kannada-color);
+  color: var(--kannada-color) !important;
   margin-bottom: 14px;
 }
 
@@ -475,7 +494,7 @@ body {
   font-style: italic;
   font-size: calc(1.05rem * var(--verse-font-scale, 1));
   line-height: 1.6;
-  color: var(--iast-color);
+  color: var(--iast-color) !important;
   margin-bottom: 14px;
 }
 
@@ -483,27 +502,27 @@ body {
   font-family: 'Lora', Georgia, serif;
   font-size: calc(0.95rem * var(--verse-font-scale, 1));
   line-height: 1.6;
-  color: var(--translation-color);
+  color: var(--translation-color) !important;
 }
 
 /* Script Visibility Toggles */
-body.hide-kannada .verse-kannada { display: none; }
-body.hide-iast .verse-iast { display: none; }
-body.hide-translation .verse-translation { display: none; }
+body.hide-kannada .verse-kannada { display: none !important; }
+body.hide-iast .verse-iast { display: none !important; }
+body.hide-translation .verse-translation { display: none !important; }
 
 /* Footer */
 footer {
   margin-top: auto;
-  background-color: var(--bg-secondary);
-  border-top: 1px solid var(--card-border);
+  background-color: var(--bg-secondary) !important;
+  border-top: 1px solid var(--card-border) !important;
   padding: 30px 0;
   text-align: center;
-  color: var(--text-muted);
+  color: var(--text-muted) !important;
   font-size: 0.85rem;
 }
 
 footer a {
-  color: var(--accent-gold);
+  color: var(--accent-gold) !important;
   text-decoration: none;
 }
 

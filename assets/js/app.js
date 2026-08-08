@@ -18,15 +18,22 @@ function initTheme() {
   const themeSelect = document.getElementById('theme-select');
   const savedTheme = localStorage.getItem('stotra-theme') || 'midnight';
   
-  document.documentElement.setAttribute('data-theme', savedTheme);
+  applyTheme(savedTheme);
+
   if (themeSelect) {
     themeSelect.value = savedTheme;
     themeSelect.addEventListener('change', (e) => {
-      const selectedTheme = e.target.value;
-      document.documentElement.setAttribute('data-theme', selectedTheme);
-      localStorage.setItem('stotra-theme', selectedTheme);
+      applyTheme(e.target.value);
     });
   }
+}
+
+function applyTheme(themeName) {
+  document.documentElement.setAttribute('data-theme', themeName);
+  if (document.body) {
+    document.body.setAttribute('data-theme', themeName);
+  }
+  localStorage.setItem('stotra-theme', themeName);
 }
 
 /* ==========================================================================
