@@ -19,6 +19,17 @@ A clean, fast, ad-free static website for storing, reading, and chanting **Kanna
 
 ---
 
+## 💻 Local Development & Testing
+
+To test your website locally before pushing to GitHub:
+
+* **Windows Batch (Double-Click)**: Double-click `run_local.bat` inside `C:\myLocalData\code\stotra-web\`.
+* **PowerShell**: Run `.\run_local.ps1` or `python -m http.server 8080`.
+
+It will automatically launch your default web browser at **`http://localhost:8080/`** so you can preview all font sizes, stotras, and theme switches instantly!
+
+---
+
 ## 📁 Repository Structure
 
 ```
