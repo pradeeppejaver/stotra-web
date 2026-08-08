@@ -3,6 +3,17 @@
  * Multi-Theme Selector, Dynamic Font Scaling, Screen Wake Lock, Search & Copying
  */
 
+// ==========================================================================
+// Central Site Configuration (Change default behavior here in 1 place!)
+// ==========================================================================
+const CONFIG = {
+  defaultTheme: 'midnight',            // Options: 'midnight', 'saffron', 'sandalwood', 'kailasha', 'parchment'
+  defaultShowKannada: true,            // Show Kannada script by default
+  defaultShowEnglish: true,            // Show English transliteration (IAST) by default
+  defaultShowTranslation: false,        // Show English Meaning/Translation by default (false = OFF)
+  defaultFontScale: 1.0,               // Default font scale (1.0 = 100%)
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initFontScaler();
@@ -12,11 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ==========================================================================
-   1. Multi-Theme Management (Midnight, Saffron, Sandalwood, Kailasha, Parchment)
+   1. Multi-Theme Management
    ========================================================================== */
 function initTheme() {
   const themeSelect = document.getElementById('theme-select');
-  const savedTheme = localStorage.getItem('stotra-theme') || 'midnight';
+  const savedTheme = localStorage.getItem('stotra-theme') || CONFIG.defaultTheme;
   
   applyTheme(savedTheme);
 
@@ -39,7 +50,7 @@ function applyTheme(themeName) {
 /* ==========================================================================
    2. Dynamic Font Scaling
    ========================================================================== */
-let fontScale = parseFloat(localStorage.getItem('stotra-font-scale')) || 1.0;
+let fontScale = parseFloat(localStorage.getItem('stotra-font-scale')) || CONFIG.defaultFontScale;
 
 function initFontScaler() {
   applyFontScale(fontScale);
@@ -59,7 +70,7 @@ function changeFontScale(delta) {
 }
 
 function resetFontScale() {
-  fontScale = 1.0;
+  fontScale = CONFIG.defaultFontScale;
   applyFontScale(fontScale);
 }
 
@@ -161,43 +172,67 @@ function initSearchAndFilter() {
 }
 
 /* ==========================================================================
-   5. Script View Toggles (Reader Page)
+   5. Script View Toggles (Centralized Config Engine)
    ========================================================================== */
 function initScriptToggles() {
   const toggleKn = document.getElementById('toggle-kn');
   const toggleIast = document.getElementById('toggle-iast');
   const toggleTrans = document.getElementById('toggle-trans');
 
-  // Default: Meaning (Translation) is OFF unless user explicitly turned it ON
-  const showTrans = localStorage.getItem('stotra-show-trans') === 'true'; // Default false
-  if (!showTrans) {
-    document.body.classList.add('hide-translation');
-    if (toggleTrans) toggleTrans.classList.remove('btn-active');
-  } else {
-    document.body.classList.remove('hide-translation');
-    if (toggleTrans) toggleTrans.classList.add('btn-active');
-  }
+  // Load user saved settings or fallback to central CONFIG defaults
+  const savedShowKn = localStorage.getItem('stotra-show-kn');
+  const savedShowIast = localStorage.getItem('stotra-show-iast');
+  const savedShowTrans = localStorage.getItem('stotra-show-trans');
+
+  const showKn = savedShowKn !== null ? savedShowKn === 'true' : CONFIG.defaultShowKannada;
+  const showIast = savedShowIast !== null ? savedShowIast === 'true' : CONFIG.defaultShowEnglish;
+  const showTrans = savedShowTrans !== null ? savedShowTrans === 'true' : CONFIG.defaultShowTranslation;
+
+  // Apply initial visibility & button highlight states dynamically
+  setScriptState('kannada', showKn, toggleKn);
+  setScriptState('iast', showIast, toggleIast);
+  setScriptState('translation', showTrans, toggleTrans);
 
   if (toggleKn) {
     toggleKn.addEventListener('click', () => {
-      document.body.classList.toggle('hide-kannada');
-      toggleKn.classList.toggle('btn-active', !document.body.classList.contains('hide-kannada'));
+      const isVisible = !document.body.classList.contains('hide-kannada');
+      setScriptState('kannada', !isVisible, toggleKn);
+      localStorage.setItem('stotra-show-kn', !isVisible);
     });
   }
 
   if (toggleIast) {
     toggleIast.addEventListener('click', () => {
-      document.body.classList.toggle('hide-iast');
-      toggleIast.classList.toggle('btn-active', !document.body.classList.contains('hide-iast'));
+      const isVisible = !document.body.classList.contains('hide-iast');
+      setScriptState('iast', !isVisible, toggleIast);
+      localStorage.setItem('stotra-show-iast', !isVisible);
     });
   }
 
   if (toggleTrans) {
     toggleTrans.addEventListener('click', () => {
-      const isHidden = document.body.classList.toggle('hide-translation');
-      toggleTrans.classList.toggle('btn-active', !isHidden);
-      localStorage.setItem('stotra-show-trans', !isHidden);
+      const isVisible = !document.body.classList.contains('hide-translation');
+      setScriptState('translation', !isVisible, toggleTrans);
+      localStorage.setItem('stotra-show-trans', !isVisible);
     });
+  }
+}
+
+function setScriptState(type, isVisible, buttonEl) {
+  const classMap = {
+    kannada: 'hide-kannada',
+    iast: 'hide-iast',
+    translation: 'hide-translation'
+  };
+  const className = classMap[type];
+  if (!className) return;
+
+  if (isVisible) {
+    document.body.classList.remove(className);
+    if (buttonEl) buttonEl.classList.add('btn-active');
+  } else {
+    document.body.classList.add(className);
+    if (buttonEl) buttonEl.classList.remove('btn-active');
   }
 }
 
