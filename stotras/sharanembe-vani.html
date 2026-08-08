@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="kn" data-theme="midnight">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ಶರಣೆಂಬೆ ವಾಣಿ | Sharanembe Vani - Stotra Sangraha</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <span class="logo-icon">🕉️</span>
+        <span class="brand-text">ಸ್ತೋತ್ರ ಸಂಗ್ರಹ</span>
+      </a>
+      <div class="nav-controls">
+        <a href="../index.html" class="btn">← Back to Catalog</a>
+        <select id="theme-select" class="theme-select" title="Choose Theme Palette">
+          <option value="midnight">🌙 Midnight Temple (Navy & Gold)</option>
+          <option value="saffron">🔥 Saffron Divine (Sacred Vermillion)</option>
+          <option value="sandalwood">🪵 Royal Sandalwood (Turmeric)</option>
+          <option value="kailasha">🌌 Kailasha Sunset (Mystic Violet)</option>
+          <option value="parchment">📜 Sacred Parchment (Light Mode)</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    
+    <!-- Reader Header -->
+    <header class="reader-header">
+      <span class="card-deity-badge" style="background: rgba(236, 72, 153, 0.15); color: #ec4899;">Saraswathi • Devaranama</span>
+      <h1 class="hero-title-kn">ಶರಣೆಂಬೆ ವಾಣಿ</h1>
+      <div class="hero-title-en">Sharanembe Vani Poreye Kalyani</div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Composed by Sri Purandara Dasa (ಶ್ರೀ ಪುರಂದರದಾಸರು — ಅಂಕಿತ: ಪುರಂದರವಿಠಲ)</p>
+    </header>
+
+    <!-- Reading Toolbar Controls -->
+    <div class="reader-toolbar">
+      <div class="tool-group">
+        <span class="tool-label">Font Size:</span>
+        <button id="font-decrease" class="btn">A-</button>
+        <span id="font-size-display" style="font-size: 0.85rem; font-weight: bold; min-width: 40px; text-align: center;">100%</span>
+        <button id="font-increase" class="btn">A+</button>
+        <button id="font-reset" class="btn">Reset</button>
+      </div>
+
+      <div class="tool-group">
+        <button id="wakelock-btn" class="btn">🔒 Keep Screen Awake</button>
+      </div>
+
+      <div class="tool-group">
+        <span class="tool-label">View:</span>
+        <button id="toggle-kn" class="btn btn-active">ಕನ್ನಡ</button>
+        <button id="toggle-iast" class="btn btn-active">English</button>
+        <button id="toggle-trans" class="btn">Meaning</button>
+      </div>
+    </div>
+
+    <!-- Pallavi -->
+    <article class="verse-card" style="border-left-color: #ec4899;">
+      <div class="verse-header">
+        <span class="verse-badge" style="color: #ec4899; border-color: #ec4899; background: rgba(236, 72, 153, 0.1);">ಪಲ್ಲವಿ | Pallavi</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಶರಣೆಂಬೆ ವಾಣಿ ಪೊರೆಯೆ ಕಲ್ಯಾಣಿ ॥ ಪ ॥
+      </p>
+      <p class="verse-iast">
+        śaraṇembe vāṇi poreye kalyāṇi ॥ pa ॥
+      </p>
+      <p class="verse-translation">
+        I bow in surrender to you, O Goddess Vani (Saraswati); protect me, O auspicious Mother!
+      </p>
+    </article>
+
+    <!-- Anupallavi -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಅನುಪಲ್ಲವಿ | Anupallavi</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ವಾಗಭಿಮಾನಿ ವರಬ್ರಹ್ಮಾಣಿ ।<br>
+        ಸುಂದರವೇಣಿ ಸುಚರಿತ್ರಾಣಿ ॥
+      </p>
+      <p class="verse-iast">
+        vāgabhimāni varabrahmāṇi ।<br>
+        sundaravēṇi sucaritrāṇi ॥
+      </p>
+      <p class="verse-translation">
+        Presiding deity of speech and eloquence, divine consort of Brahma, adorned with beautiful hair and possessing holy character!
+      </p>
+    </article>
+
+    <!-- Charanam 1 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೧ | Charanam 1</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಜಗದೊಳು ನಿಮ್ಮ ಪೊಗಳುವೆನಮ್ಮ ।<br>
+        ಹರಿಯ ತೋರಿಸೆಂದು ಪ್ರಾರ್ಥಿಪೆನಮ್ಮ ॥ ೧ ॥
+      </p>
+      <p class="verse-iast">
+        jagadoḷu nimma pogaḷuvenamma ।<br>
+        hariya tōrisendu prārthipenamma ॥ 1 ॥
+      </p>
+      <p class="verse-translation">
+        I praise your glory throughout the world, O Mother; I pray to you to guide me and reveal Lord Hari (Vishnu) to me!
+      </p>
+    </article>
+
+    <!-- Charanam 2 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೨ | Charanam 2</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಪಾಡುವೆ ಶ್ರುತಿಯ ಬೇಡುವೆ ಮತಿಯ ।<br>
+        ಪುರಂದರವಿಠಲನ ಹಿರಿಯ ಸೊಸೆಯ ॥ ೨ ॥
+      </p>
+      <p class="verse-iast">
+        pāḍuve śrutiya bēḍuve matiya ।<br>
+        purandaraviṭhalana hiriya soseya ॥ 2 ॥
+      </p>
+      <p class="verse-translation">
+        I sing the sacred Vedic hymns and seek divine intellect from you, O eldest daughter-in-law of Lord Purandara Vittala (as Brahma's wife Saraswati is the daughter-in-law of Vishnu)!
+      </p>
+    </article>
+
+    <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+      <a href="../index.html" class="btn btn-primary">← Return to Stotra Collection</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p><strong>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha</strong> • Ad-free Devotional Library</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

@@ -147,7 +147,7 @@ function initSearchAndFilter() {
       const textContent = card.innerText.toLowerCase();
 
       const matchesSearch = !query || titleKn.includes(query) || titleEn.toLowerCase().includes(query) || textContent.includes(query);
-      const matchesCategory = activeCategory === 'all' || deity.toLowerCase() === activeCategory.toLowerCase();
+      const matchesCategory = activeCategory === 'all' || deity.toLowerCase().split(' ').includes(activeCategory.toLowerCase());
 
       if (matchesSearch && matchesCategory) {
         card.style.display = 'flex';
