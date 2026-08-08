@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initWakeLock();
   initSearchAndFilter();
   initScriptToggles();
+  initRequestModal();
 });
 
 /* ==========================================================================
@@ -259,3 +260,58 @@ function copyVerse(buttonElement) {
     console.error('Failed to copy verse:', err);
   });
 }
+
+/* ==========================================================================
+   7. Submit / Request Stotra Modal
+   ========================================================================== */
+function initRequestModal() {
+  const openBtn = document.getElementById('request-stotra-btn');
+  const modal = document.getElementById('request-modal');
+  const closeBtn = document.getElementById('modal-close-btn');
+  const copyBtn = document.getElementById('req-copy-btn');
+  const statusMsg = document.getElementById('req-status');
+
+  if (!modal) return;
+
+  if (openBtn) {
+    openBtn.addEventListener('click', () => {
+      modal.classList.add('open');
+    });
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      modal.classList.remove('open');
+    });
+  }
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('open');
+    }
+  });
+
+  if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+      const title = document.getElementById('req-title')?.value || '';
+      const category = document.getElementById('req-category')?.value || '';
+      const text = document.getElementById('req-text')?.value || '';
+
+      if (!title && !text) {
+        alert('Please enter a Stotra title or text before copying.');
+        return;
+      }
+
+      const submission = `NEW STOTRA SUBMISSION\n-----------------------\nTitle: ${title}\nCategory: ${category}\n\nContent:\n${text}`;
+
+      navigator.clipboard.writeText(submission).then(() => {
+        if (statusMsg) {
+          statusMsg.textContent = '✓ Submission copied to clipboard! Share it with the site admin via WhatsApp/Email.';
+          statusMsg.style.display = 'block';
+          setTimeout(() => { statusMsg.style.display = 'none'; }, 4000);
+        }
+      });
+    });
+  }
+}
+
