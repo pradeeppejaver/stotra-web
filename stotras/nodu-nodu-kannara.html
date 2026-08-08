@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="kn" data-theme="midnight">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ನೋಡು ನೋಡು ಕಣ್ಣಾರ | Nodu Nodu Kannara Chamundi - Stotra Sangraha</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <span class="logo-icon">🕉️</span>
+        <span class="brand-text">ಸ್ತೋತ್ರ ಸಂಗ್ರಹ</span>
+      </a>
+      <div class="nav-controls">
+        <a href="../index.html" class="btn">← Back to Catalog</a>
+        <select id="theme-select" class="theme-select" title="Choose Theme Palette">
+          <option value="midnight">🌙 Midnight Temple (Navy & Gold)</option>
+          <option value="saffron">🔥 Saffron Divine (Sacred Vermillion)</option>
+          <option value="sandalwood">🪵 Royal Sandalwood (Turmeric)</option>
+          <option value="kailasha">🌌 Kailasha Sunset (Mystic Violet)</option>
+          <option value="parchment">📜 Sacred Parchment (Light Mode)</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    
+    <!-- Reader Header -->
+    <header class="reader-header">
+      <span class="card-deity-badge" style="background: rgba(236, 72, 153, 0.15); color: #ec4899;">Devi Chamundeshwari</span>
+      <h1 class="hero-title-kn">ನೋಡು ನೋಡು ಕಣ್ಣಾರ ನಿಂತಿಹಳು</h1>
+      <div class="hero-title-en">Nodu Nodu Kannara Nintihalu Chamundi</div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Lyrics by Lokesh Gowda (ಲೋಕೇಶ್ ಗೌಡ) • Music by M. S. Maruthi</p>
+    </header>
+
+    <!-- Reading Toolbar Controls -->
+    <div class="reader-toolbar">
+      <div class="tool-group">
+        <span class="tool-label">Font Size:</span>
+        <button id="font-decrease" class="btn">A-</button>
+        <span id="font-size-display" style="font-size: 0.85rem; font-weight: bold; min-width: 40px; text-align: center;">100%</span>
+        <button id="font-increase" class="btn">A+</button>
+        <button id="font-reset" class="btn">Reset</button>
+      </div>
+
+      <div class="tool-group">
+        <button id="wakelock-btn" class="btn">🔒 Keep Screen Awake</button>
+      </div>
+
+      <div class="tool-group">
+        <span class="tool-label">View:</span>
+        <button id="toggle-kn" class="btn btn-active">ಕನ್ನಡ</button>
+        <button id="toggle-iast" class="btn btn-active">English</button>
+        <button id="toggle-trans" class="btn">Meaning</button>
+      </div>
+    </div>
+
+    <!-- Pallavi -->
+    <article class="verse-card" style="border-left-color: #ec4899;">
+      <div class="verse-header">
+        <span class="verse-badge" style="color: #ec4899; border-color: #ec4899; background: rgba(236, 72, 153, 0.1);">ಪಲ್ಲವಿ | Pallavi</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ನೋಡು ನೋಡು ಕಣ್ಣಾರ ನಿಂತಿಹಳು, ನಗು ನಗುತ ಚಾಮುಂಡಿ ನಿಂತಿಹಳು ।<br>
+        ತಾಯಿ ಹೃದಯ ತಂದಾ ತುಂಬು ಮಮತೆಯಿಂದಾ, ಬಾ ಇಲ್ಲಿ ಓ ಕಂದ ಎನುತಿಹಳು ।<br>
+        ಕೈ ಬೀಸಿ ಬಳಿಗೆ ನಮ್ಮ ಕರೆದಿಹಳು ॥ ಪ ॥
+      </p>
+      <p class="verse-iast">
+        nōḍu nōḍu kaṇṇāra nintihaḷu, nagu naguta cāmuṇḍi nintihaḷu ।<br>
+        tāyi hṛdaya tandā tumbu mamateyindā, bā illi ō kanda enutihaḷu ।<br>
+        kai bīsi baḷige namma karedihaḷu ॥ pa ॥
+      </p>
+      <p class="verse-translation">
+        Look, look with your eyes—she stands there! Mother Chamundeshwari stands with a gentle smile. With a mother's heart full of love, she calls out 'Come here, my child!', waving her hands to invite us near!
+      </p>
+    </article>
+
+    <!-- Charanam 1 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೧ | Charanam 1</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಮೈಸೂರು ನಗರದ ಬೆಟ್ಟದ ಮೇಲೆ, ಮಹಿಷಾಸುರ ಮರ್ಧಿನಿಯ ವೈಭವ ಲೀಲೆ ।<br>
+        ಧನುಜ ಸಂಹಾರಿಣೀ ತ್ರಿಭುವನ ಪೋಷಿಣಿ, ಶಂಕರನ ರಾಣಿಗೀವ ಹೂಗಳ ಮಾಲೆ ॥ ೧ ॥
+      </p>
+      <p class="verse-iast">
+        maisūru nagarada beṭṭada mēlē, mahiṣāsura mardhiniya vaibhava līlē ।<br>
+        dhanuja saṁhāriṇī tribhuvana pōṣiṇi, śaṁkarana rāṇigīva hūgaḷa mālē ॥ 1 ॥
+      </p>
+      <p class="verse-translation">
+        Atop the hill of Mysuru city unfolds the glorious play of Mahishasuramardini! Destroyer of demons, nurturer of all three worlds—let us offer garlands of fresh blossoms to the divine Queen of Lord Shiva!
+      </p>
+    </article>
+
+    <!-- Charanam 2 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೨ | Charanam 2</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ನಂಬಿರುವ ಭಕ್ತರ ರಕ್ಷೆಗಾಗಿ, ನಂಬದಿಹ ದುಷ್ಟರ ಶಿಕ್ಷೆಗಾಗಿ ।<br>
+        ನಿಂತಿಹಳು ನೋಡಲ್ಲಿ ಶೂಲಪಾಣಿಯಾಗಿ, ಕರುನಾಡ ಮಕ್ಕಳ ಹಿರಿ ದೈವವಾಗಿ ॥ ೨ ॥
+      </p>
+      <p class="verse-iast">
+        nambiruva bhaktara rakṣegāgi, nambadiha duṣṭara śikṣegāgi ।<br>
+        nintihaḷu nōḍalli śūlapāṇiyāgi, karunāḍa makkaḷa hiri daivavāgi ॥ 2 ॥
+      </p>
+      <p class="verse-translation">
+        To protect faithful devotees and punish wicked evildoers, look, she stands there wielding her trident (Shula), as the supreme guardian deity of all children of Karunadu!
+      </p>
+    </article>
+
+    <!-- Charanam 3 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೩ | Charanam 3</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಉಕ್ಕಿ ಬಹ ನದಿಯಲ್ಲಿ ಅವಳ ನಗೆ, ಬೀಸಿ ಬಹ ಗಾಳಿಯಲಿ ಅವಳುಸಿರು ।<br>
+        ಹಸಿ ಹಸಿರು ಪೈರುಗಳೇ ಅವಳುಡುಗೆ, ಆ ತಾಯಿ ರೂಪವೋ ಹಲವು ಬಗೆ ॥ ೩ ॥
+      </p>
+      <p class="verse-iast">
+        ukki baha nadiyalli avaḷa nage, bīsi baha gāḷiyali avaḷusiru ।<br>
+        hasi hasiru pairugaḷē avaḷuḍuge, ā tāyi rūpavō halavu bage ॥ 3 ॥
+      </p>
+      <p class="verse-translation">
+        Her gentle smile flows in the overflowing rivers, her breath blows in the cool breeze; the lush green crops are her garments—that divine Mother manifests in countless sacred forms!
+      </p>
+    </article>
+
+    <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+      <a href="../index.html" class="btn btn-primary">← Return to Stotra Collection</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p><strong>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha</strong> • Ad-free Devotional Library</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
