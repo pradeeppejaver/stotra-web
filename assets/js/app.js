@@ -1,6 +1,6 @@
 /**
  * Stotra Sangraha - Application Logic
- * Dynamic Font Scaling, Theme Toggles, Screen Wake Lock, Search & Copying
+ * Multi-Theme Selector, Dynamic Font Scaling, Screen Wake Lock, Search & Copying
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,30 +12,20 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ==========================================================================
-   1. Theme Management (Dark / Light)
+   1. Multi-Theme Management (Midnight, Saffron, Sandalwood, Kailasha, Parchment)
    ========================================================================== */
 function initTheme() {
-  const themeToggleBtn = document.getElementById('theme-toggle-btn');
-  const savedTheme = localStorage.getItem('stotra-theme') || 'dark';
+  const themeSelect = document.getElementById('theme-select');
+  const savedTheme = localStorage.getItem('stotra-theme') || 'midnight';
   
   document.documentElement.setAttribute('data-theme', savedTheme);
-  updateThemeIcon(savedTheme);
-
-  if (themeToggleBtn) {
-    themeToggleBtn.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('stotra-theme', newTheme);
-      updateThemeIcon(newTheme);
+  if (themeSelect) {
+    themeSelect.value = savedTheme;
+    themeSelect.addEventListener('change', (e) => {
+      const selectedTheme = e.target.value;
+      document.documentElement.setAttribute('data-theme', selectedTheme);
+      localStorage.setItem('stotra-theme', selectedTheme);
     });
-  }
-}
-
-function updateThemeIcon(theme) {
-  const icon = document.getElementById('theme-icon');
-  if (icon) {
-    icon.textContent = theme === 'light' ? '🌙' : '☀️';
   }
 }
 
@@ -87,12 +77,10 @@ function initWakeLock() {
   if ('wakeLock' in navigator) {
     wakeLockBtn.addEventListener('click', async () => {
       if (wakeLock !== null) {
-        // Release wake lock
         await wakeLock.release();
         wakeLock = null;
         updateWakeLockUI(false);
       } else {
-        // Request wake lock
         try {
           wakeLock = await navigator.wakeLock.request('screen');
           updateWakeLockUI(true);
