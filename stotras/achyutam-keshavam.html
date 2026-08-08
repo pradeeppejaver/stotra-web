@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="kn" data-theme="midnight">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ಅಚ್ಯುತಂ ಕೇಶವಂ | Achyutam Keshavam - Stotra Sangraha</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <span class="logo-icon">🕉️</span>
+        <span class="brand-text">ಸ್ತೋತ್ರ ಸಂಗ್ರಹ</span>
+      </a>
+      <div class="nav-controls">
+        <a href="../index.html" class="btn">← Back to Catalog</a>
+        <select id="theme-select" class="theme-select" title="Choose Theme Palette">
+          <option value="midnight">🌙 Midnight Temple (Navy & Gold)</option>
+          <option value="saffron">🔥 Saffron Divine (Sacred Vermillion)</option>
+          <option value="sandalwood">🪵 Royal Sandalwood (Turmeric)</option>
+          <option value="kailasha">🌌 Kailasha Sunset (Mystic Violet)</option>
+          <option value="parchment">📜 Sacred Parchment (Light Mode)</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    
+    <!-- Reader Header -->
+    <header class="reader-header">
+      <span class="card-deity-badge" style="background: rgba(56, 189, 248, 0.15); color: var(--accent-blue);">Vishnu • Bhajan</span>
+      <h1 class="hero-title-kn">ಅಚ್ಯುತಂ ಕೇಶವಂ ಕೃಷ್ಣ ದಾಮೋದರಂ</h1>
+      <div class="hero-title-en">Achyutam Keshavam Krishna Damodaram</div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Opening Chant: Sri Adi Shankaracharya • Bhajan: Traditional Devotional</p>
+    </header>
+
+    <!-- Reading Toolbar Controls -->
+    <div class="reader-toolbar">
+      <div class="tool-group">
+        <span class="tool-label">Font Size:</span>
+        <button id="font-decrease" class="btn">A-</button>
+        <span id="font-size-display" style="font-size: 0.85rem; font-weight: bold; min-width: 40px; text-align: center;">100%</span>
+        <button id="font-increase" class="btn">A+</button>
+        <button id="font-reset" class="btn">Reset</button>
+      </div>
+
+      <div class="tool-group">
+        <button id="wakelock-btn" class="btn">🔒 Keep Screen Awake</button>
+      </div>
+
+      <div class="tool-group">
+        <span class="tool-label">View:</span>
+        <button id="toggle-kn" class="btn btn-active">ಕನ್ನಡ</button>
+        <button id="toggle-iast" class="btn btn-active">English</button>
+        <button id="toggle-trans" class="btn">Meaning</button>
+      </div>
+    </div>
+
+    <!-- Opening Chorus -->
+    <article class="verse-card" style="border-left-color: var(--accent-gold);">
+      <div class="verse-header">
+        <span class="verse-badge">ಮಂತ್ರ | Chorus</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಅಚ್ಯುತಂ ಕೇಶವಂ ಕೃಷ್ಣ ದಾಮೋದರಂ ।<br>
+        ರಾಮ ನಾರಾಯಣಂ ಜಾನಕೀ ವಲ್ಲಭಮ್ ॥
+      </p>
+      <p class="verse-iast">
+        acyutaṁ kēśavaṁ kṛṣṇa dāmōdaraṁ ।<br>
+        rāma nārāyaṇaṁ jānakī vallabham ॥
+      </p>
+      <p class="verse-translation">
+        Achyuta (The Infallible), Keshava (Fine-haired), Krishna (All-attractive), Damodara (Tied with rope), Rama, Narayana, the beloved Lord of Janaki (Sita).
+      </p>
+    </article>
+
+    <!-- Verse 1 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಪದ್ಯ ೧ | Verse 1</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಕೌನ ಕಹತಾ ಹೈ ಭಗವಾನ ಆತೇ ನಹೀಂ ।<br>
+        ತುಮ ಭಕ್ತ ಮೀರಾ ಕೇ ಜೈಸೇ ಬುಲಾತೇ ನಹೀಮ್ ॥ ೧ ॥
+      </p>
+      <p class="verse-iast">
+        kauna kahatā hai bhagavāna ātē nahīṁ ।<br>
+        tuma bhakta mīrā kē jaisē bulātē nahīṁ ॥ 1 ॥
+      </p>
+      <p class="verse-translation">
+        Who says God does not come? You simply do not call Him with the pure devotion of Bhakta Meera!
+      </p>
+    </article>
+
+    <!-- Verse 2 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಪದ್ಯ ೨ | Verse 2</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಕೌನ ಕಹತಾ ಹೈ ಭಗವಾನ ಖಾತೇ ನಹೀಂ ।<br>
+        ಬೇರ ಶಬರೀ ಕೇ ಜೈಸೇ ಖಿಲಾತೇ ನಹೀಮ್ ॥ ೨ ॥
+      </p>
+      <p class="verse-iast">
+        kauna kahatā hai bhagavāna khātē nahīṁ ।<br>
+        bēra śabarī kē jaisē khilātē nahīṁ ॥ 2 ॥
+      </p>
+      <p class="verse-translation">
+        Who says God does not eat? You simply do not feed Him sweet berries with the selfless love of Shabari!
+      </p>
+    </article>
+
+    <!-- Verse 3 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಪದ್ಯ ೩ | Verse 3</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಕೌನ ಕಹತಾ ಹೈ ಭಗವಾನ ಸೋತೇ ನಹೀಂ ।<br>
+        ಮಾ ಯಶೋದಾ ಕೇ ಜೈಸೇ ಸುಲಾತೇ ನಹೀಮ್ ॥ ೩ ॥
+      </p>
+      <p class="verse-iast">
+        kauna kahatā hai bhagavāna sōtē nahīṁ ।<br>
+        mā yaśōdā kē jaisē sulātē nahīṁ ॥ 3 ॥
+      </p>
+      <p class="verse-translation">
+        Who says God does not sleep? You simply do not sing Him lullabies with the motherly affection of Yashoda!
+      </p>
+    </article>
+
+    <!-- Verse 4 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಪದ್ಯ ೪ | Verse 4</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಕೌನ ಕಹತಾ ಹೈ ಭಗವಾನ ನಾಚತೇ ನಹೀಂ ।<br>
+        ಗೋಪಿಯೋಂ ಕೀ ತರಹ ತುಮ ನಚಾತೇ ನಹೀಮ್ ॥ ೪ ॥
+      </p>
+      <p class="verse-iast">
+        kauna kahatā hai bhagavāna nācatē nahīṁ ।<br>
+        gōpiyōṁ kī taraha tuma nacātē nahīṁ ॥ 4 ॥
+      </p>
+      <p class="verse-translation">
+        Who says God does not dance? You simply do not make Him dance with the joyful devotion of the Gopis!
+      </p>
+    </article>
+
+    <!-- Verse 5 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಪದ್ಯ ೫ | Verse 5</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ನಾಮ ಜಪತೇ ಚಲೋ ಕಾಮ ಕರತೇ ಚಲೋ ।<br>
+        ಹರ ಸಮಯ ಕೃಷ್ಣ ಕಾ ಧ್ಯಾನ ಕರತೇ ಚಲೋ ॥ ೫ ॥
+      </p>
+      <p class="verse-iast">
+        nāma japatē calō kāma karatē calō ।<br>
+        hara samaya kṛṣṇa kā dhyāna karatē calō ॥ 5 ॥
+      </p>
+      <p class="verse-translation">
+        Keep chanting the divine name while performing your daily work; keep meditating upon Lord Krishna at all times!
+      </p>
+    </article>
+
+    <!-- Verse 6 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಪದ್ಯ ೬ | Verse 6</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಯಾದ ಆಏಗೀ ಉನಕೋ ಕಭೀ ನಾ ಕಭೀ ।<br>
+        ಕೃಷ್ಣ ದರ್ಶನ ತೋ ದೇಂಗೇ ಕಭೀ ನಾ ಕಭೀ ॥ ೬ ॥
+      </p>
+      <p class="verse-iast">
+        yāda āēgī unakō kabhī nā kabhī ।<br>
+        kṛṣṇa darśana tō dēṅgē kabhī nā kabhī ॥ 6 ॥
+      </p>
+      <p class="verse-translation">
+        He will surely remember you sooner or later; Lord Krishna will grant His divine vision (Darshan) to you one day!
+      </p>
+    </article>
+
+    <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+      <a href="../index.html" class="btn btn-primary">← Return to Stotra Collection</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p><strong>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha</strong> • Ad-free Devotional Library</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
