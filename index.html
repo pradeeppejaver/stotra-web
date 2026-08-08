@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="kn" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha - Kannada & English Stotras</title>
+  <meta name="description" content="A clean, ad-free collection of traditional Kannada and English Stotras for daily chanting and pooja.">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="logo-icon">🕉️</span>
+        <span class="brand-text">ಸ್ತೋತ್ರ ಸಂಗ್ರಹ</span>
+      </a>
+      <div class="nav-controls">
+        <button id="theme-toggle-btn" class="btn" title="Toggle Light/Dark Theme">
+          <span id="theme-icon">☀️</span> Theme
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    
+    <!-- Hero Banner -->
+    <header class="hero">
+      <h1 class="hero-title-kn">ಸ್ತೋತ್ರ ಸಂಗ್ರಹ</h1>
+      <div class="hero-title-en">Kannada & English Stotra Treasury</div>
+    </header>
+
+    <!-- Toolbar: Search & Category Filters -->
+    <section class="toolbar">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="stotra-search" class="search-input" placeholder="Search by name in Kannada or English (e.g. Ganesha, ವಿಷ್ಣು)...">
+      </div>
+
+      <div class="filter-pills">
+        <button class="pill active" data-category="all">All</button>
+        <button class="pill" data-category="ganesha">Ganesha</button>
+        <button class="pill" data-category="vishnu">Vishnu</button>
+        <button class="pill" data-category="shiva">Shiva</button>
+        <button class="pill" data-category="devi">Devi</button>
+        <button class="pill" data-category="hanuman">Hanuman</button>
+      </div>
+    </section>
+
+    <!-- Stotra Catalog Grid -->
+    <section class="stotra-grid" id="stotra-grid">
+
+      <!-- Card 2: Vishnu Sahasranama Dhyanam -->
+      <a href="stotras/vishnu-sahasranama-dhyanam.html" class="stotra-card" data-title-kn="ವಿಷ್ಣು ಸಹಸ್ರನಾಮ ಧ್ಯಾನಂ" data-title-en="Vishnu Sahasranama Dhyanam" data-deity="vishnu">
+        <div>
+          <span class="card-deity-badge">Vishnu</span>
+          <h2 class="card-title-kn">ಶ್ರೀ ವಿಷ್ಣು ಸಹಸ್ರನಾಮ ಧ್ಯಾನ ಶ್ಲೋಕಾಃ</h2>
+          <div class="card-title-en">Vishnu Sahasranama Dhyana Shlokas</div>
+        </div>
+        <div class="card-footer">
+          <span>Dhyanam</span>
+          <span>Kannada & English →</span>
+        </div>
+      </a>
+
+      <!-- Card 3: Hanuman Chalisa -->
+      <a href="stotras/hanuman-chalisa.html" class="stotra-card" data-title-kn="ಹನುಮಾನ್ ಚಾಲೀಸಾ" data-title-en="Hanuman Chalisa" data-deity="hanuman">
+        <div>
+          <span class="card-deity-badge">Hanuman</span>
+          <h2 class="card-title-kn">ಶ್ರೀ ಹನುಮಾನ್ ಚಾಲೀಸಾ</h2>
+          <div class="card-title-en">Shri Hanuman Chalisa</div>
+        </div>
+        <div class="card-footer">
+          <span>Dhyanam & Opening Verses</span>
+          <span>Kannada & English →</span>
+        </div>
+      </a>
+
+      <!-- Card 4: Template for Adding New Stotra -->
+      <a href="stotras/template.html" class="stotra-card" style="border-style: dashed;" data-title-kn="ಹೊಸ ಸ್ತೋತ್ರ" data-title-en="Add New Stotra Template" data-deity="all">
+        <div>
+          <span class="card-deity-badge" style="background: rgba(56, 189, 248, 0.15); color: var(--accent-blue);">Template</span>
+          <h2 class="card-title-kn">➕ ಹೊಸ ಸ್ತೋತ್ರ ಸೇರಿಸಿ</h2>
+          <div class="card-title-en">Add New Stotra Starter Template</div>
+        </div>
+        <div class="card-footer">
+          <span>Copy & Edit</span>
+          <span>Template File →</span>
+        </div>
+      </a>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p><strong>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha</strong> • Ad-free Devotional Library</p>
+      <p style="margin-top: 6px;">Hosted on GitHub Pages with Google Fonts (Noto Serif Kannada)</p>
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="kn" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[STOTRA TITLE IN ENGLISH] - Stotra Sangraha</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <span class="logo-icon">🕉️</span>
+        <span class="brand-text">ಸ್ತೋತ್ರ ಸಂಗ್ರಹ</span>
+      </a>
+      <div class="nav-controls">
+        <a href="../index.html" class="btn">← Back to Catalog</a>
+        <button id="theme-toggle-btn" class="btn" title="Toggle Theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    
+    <!-- Reader Header -->
+    <header class="reader-header">
+      <span class="card-deity-badge">[DEITY NAME]</span>
+      <h1 class="hero-title-kn">[ಸ್ತೋತ್ರದ ಶೀರ್ಷಿಕೆ - ಕನ್ನಡದಲ್ಲಿ]</h1>
+      <div class="hero-title-en">[Stotra Title in English Transliteration]</div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">[Composed by Author / Acharya Name]</p>
+    </header>
+
+    <!-- Reading Toolbar Controls -->
+    <div class="reader-toolbar">
+      <div class="tool-group">
+        <span class="tool-label">Font Size:</span>
+        <button id="font-decrease" class="btn">A-</button>
+        <span id="font-size-display" style="font-size: 0.85rem; font-weight: bold; min-width: 40px; text-align: center;">100%</span>
+        <button id="font-increase" class="btn">A+</button>
+        <button id="font-reset" class="btn">Reset</button>
+      </div>
+
+      <div class="tool-group">
+        <button id="wakelock-btn" class="btn">🔒 Keep Screen Awake</button>
+      </div>
+
+      <div class="tool-group">
+        <span class="tool-label">View:</span>
+        <button id="toggle-kn" class="btn btn-active">ಕನ್ನಡ</button>
+        <button id="toggle-iast" class="btn btn-active">English</button>
+        <button id="toggle-trans" class="btn btn-active">Meaning</button>
+      </div>
+    </div>
+
+    <!-- Verse 1 Block Template -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Verse 1</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <!-- Kannada Verse Script -->
+      <p class="verse-kannada">
+        [ಕನ್ನಡ ಶ್ಲೋಕದ ಮೊದಲ ಸಾಲು] ।<br>
+        [ಕನ್ನಡ ಶ್ಲೋಕದ ಎರಡನೇ ಸಾಲು] ॥ ೧ ॥
+      </p>
+      <!-- English Transliteration -->
+      <p class="verse-iast">
+        [English Transliteration First Line] ।<br>
+        [English Transliteration Second Line] ॥ 1 ॥
+      </p>
+      <!-- English Translation / Meaning -->
+      <p class="verse-translation">
+        [English translation of the verse meaning...]
+      </p>
+    </article>
+
+    <!-- Verse 2 Block Template (Duplicate for more verses) -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Verse 2</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        [ಕನ್ನಡ ಶ್ಲೋಕದ ಸಾಲು] ।<br>
+        [ಕನ್ನಡ ಶ್ಲೋಕದ ಸಾಲು] ॥ ೨ ॥
+      </p>
+      <p class="verse-iast">
+        [English Transliteration Line] ।<br>
+        [English Transliteration Line] ॥ 2 ॥
+      </p>
+      <p class="verse-translation">
+        [English translation of the verse meaning...]
+      </p>
+    </article>
+
+    <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+      <a href="../index.html" class="btn btn-primary">← Return to Stotra Collection</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha</strong> • Ad-free Devotional Library</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

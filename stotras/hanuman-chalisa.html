@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="kn" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ಶ್ರೀ ಹನುಮಾನ್ ಚಾಲೀಸಾ | Hanuman Chalisa - Stotra Sangraha</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <span class="logo-icon">🕉️</span>
+        <span class="brand-text">ಸ್ತೋತ್ರ ಸಂಗ್ರಹ</span>
+      </a>
+      <div class="nav-controls">
+        <a href="../index.html" class="btn">← Back to Catalog</a>
+        <button id="theme-toggle-btn" class="btn" title="Toggle Theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    
+    <!-- Header -->
+    <header class="reader-header">
+      <span class="card-deity-badge">Hanuman</span>
+      <h1 class="hero-title-kn">ಶ್ರೀ ಹನುಮಾನ್ ಚಾಲೀಸಾ</h1>
+      <div class="hero-title-en">Shri Hanuman Chalisa</div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Composed by Goswami Tulsidas</p>
+    </header>
+
+    <!-- Reading Toolbar Controls -->
+    <div class="reader-toolbar">
+      <div class="tool-group">
+        <span class="tool-label">Font Size:</span>
+        <button id="font-decrease" class="btn">A-</button>
+        <span id="font-size-display" style="font-size: 0.85rem; font-weight: bold; min-width: 40px; text-align: center;">100%</span>
+        <button id="font-increase" class="btn">A+</button>
+        <button id="font-reset" class="btn">Reset</button>
+      </div>
+
+      <div class="tool-group">
+        <button id="wakelock-btn" class="btn">🔒 Keep Screen Awake</button>
+      </div>
+
+      <div class="tool-group">
+        <span class="tool-label">View:</span>
+        <button id="toggle-kn" class="btn btn-active">ಕನ್ನಡ</button>
+        <button id="toggle-iast" class="btn btn-active">English</button>
+        <button id="toggle-trans" class="btn btn-active">Meaning</button>
+      </div>
+    </div>
+
+    <!-- Opening Dohas -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Opening Doha 1</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಶ್ರೀಗುರು ಚರನ ಸರೋಜ ರಜ ನಿಜ ಮನು ಮುಕುರು ಸುಧಾರಿ ।<br>
+        ಬರನಂ ರಘುಬರ ಬಿಮಲ ಜಸು ಜೊ ದಾಯಕು ಫಲ ಚಾರಿ ॥
+      </p>
+      <p class="verse-iast">
+        śrīguru carana sarōja raja nija manu mukuru sudhāri ।<br>
+        baranaṁ raghubara bimala jasu jo dāyaku phala cāri ॥
+      </p>
+      <p class="verse-translation">
+        Cleansing the mirror of my mind with the dust from the lotus feet of the Divine Guru, I sing the pure glory of Lord Rama, which bestows the four fruits of life (Dharma, Artha, Kama, and Moksha).
+      </p>
+    </article>
+
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Opening Doha 2</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಬುದ್ಧಿಹೀನ ತನು ಜಾನಿಕೇ ಸುಮಿರೆ ಪವನಕುಮಾರ ।<br>
+        ಬಲ ಬುದ್ಧಿ ಬಿಧ್ಯಾ ದೇಹು ಮೋಹಿ ಹರಹು ಕಲೇಸ ಬಿಕಾರ ॥
+      </p>
+      <p class="verse-iast">
+        buddhihīna tanu jānikē sumirē pavanakumāra ।<br>
+        bala buddhi bidhyā dēhu mōhi harahu kalēsa bikāra ॥
+      </p>
+      <p class="verse-translation">
+        Knowing myself to be devoid of wisdom, I remember you, O Son of the Wind God (Pavanakumara). Grant me physical strength, sharp intelligence, and spiritual knowledge, and relieve me of all afflictions and impurities.
+      </p>
+    </article>
+
+    <!-- Chaupai 1 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Chaupai 1</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಜಯ ಹನುಮಾನ ಜ್ಞಾನ ಗುಣ ಸಾಗರ ।<br>
+        ಜಯ ಕಪೀಶ ತಿಹುಂ ಲೋಕ ಉಜಾಗರ ॥ ೧ ॥
+      </p>
+      <p class="verse-iast">
+        jaya hanumāna jñāna guṇa sāgara ।<br>
+        jaya kapīśa tihuṁ lōka ujāgara ॥ 1 ॥
+      </p>
+      <p class="verse-translation">
+        Victory to Hanuman, who is an ocean of wisdom and virtues! Victory to the Lord of Monkeys, who illuminates all the three worlds!
+      </p>
+    </article>
+
+    <!-- Chaupai 2 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Chaupai 2</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ರಾಮದೂತ ಅತುಲಿತ ಬಲ ಧಾಮಾ ।<br>
+        ಅಂಜನಿಪುತ್ರ ಪವನಸುತ ನಾಮಾ ॥ ೨ ॥
+      </p>
+      <p class="verse-iast">
+        rāmadūta atulita bala dhāmā ।<br>
+        añjaniputra pavanasuta nāmā ॥ 2 ॥
+      </p>
+      <p class="verse-translation">
+        You are the messenger of Lord Rama, the abode of incomparable strength, known as Anjaniputra (son of Anjana) and Pavanasuta (son of the Wind).
+      </p>
+    </article>
+
+    <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+      <a href="../index.html" class="btn btn-primary">← Return to Stotra Collection</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha</strong> • Ad-free Devotional Library</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
