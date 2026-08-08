@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="kn" data-theme="midnight">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ಗಜಮುಖನೇ ಗಣಪತಿಯೇ | Gajamukhane Ganapathiye - Stotra Sangraha</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <span class="logo-icon">🕉️</span>
+        <span class="brand-text">ಸ್ತೋತ್ರ ಸಂಗ್ರಹ</span>
+      </a>
+      <div class="nav-controls">
+        <a href="../index.html" class="btn">← Back to Catalog</a>
+        <select id="theme-select" class="theme-select" title="Choose Theme Palette">
+          <option value="midnight">🌙 Midnight Temple (Navy & Gold)</option>
+          <option value="saffron">🔥 Saffron Divine (Sacred Vermillion)</option>
+          <option value="sandalwood">🪵 Royal Sandalwood (Turmeric)</option>
+          <option value="kailasha">🌌 Kailasha Sunset (Mystic Violet)</option>
+          <option value="parchment">📜 Sacred Parchment (Light Mode)</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    
+    <!-- Reader Header -->
+    <header class="reader-header">
+      <span class="card-deity-badge" style="background: rgba(249, 115, 22, 0.15); color: var(--accent-saffron);">Ganesha • Bhakti Geethe</span>
+      <h1 class="hero-title-kn">ಗಜಮುಖನೆ ಗಣಪತಿಯೇ ನಿನಗೆ ವಂದನೆ</h1>
+      <div class="hero-title-en">Gajamukhane Ganapathiye Ninage Vandane</div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Lyrics by Vijaya Narasimha (ವಿಜಯ ನರಸಿಂಹ) • Music by M. Ranga Rao • Rendition by S. Janaki</p>
+    </header>
+
+    <!-- Reading Toolbar Controls -->
+    <div class="reader-toolbar">
+      <div class="tool-group">
+        <span class="tool-label">Font Size:</span>
+        <button id="font-decrease" class="btn">A-</button>
+        <span id="font-size-display" style="font-size: 0.85rem; font-weight: bold; min-width: 40px; text-align: center;">100%</span>
+        <button id="font-increase" class="btn">A+</button>
+        <button id="font-reset" class="btn">Reset</button>
+      </div>
+
+      <div class="tool-group">
+        <button id="wakelock-btn" class="btn">🔒 Keep Screen Awake</button>
+      </div>
+
+      <div class="tool-group">
+        <span class="tool-label">View:</span>
+        <button id="toggle-kn" class="btn btn-active">ಕನ್ನಡ</button>
+        <button id="toggle-iast" class="btn btn-active">English</button>
+        <button id="toggle-trans" class="btn">Meaning</button>
+      </div>
+    </div>
+
+    <!-- Pallavi -->
+    <article class="verse-card" style="border-left-color: var(--accent-saffron);">
+      <div class="verse-header">
+        <span class="verse-badge" style="color: var(--accent-saffron); border-color: var(--accent-saffron); background: rgba(249, 115, 22, 0.1);">ಪಲ್ಲವಿ | Pallavi</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಗಜಮುಖನೆ ಗಣಪತಿಯೇ ನಿನಗೆ ವಂದನೆ ।<br>
+        ನಂಬಿದವರ ಪಾಲಿನ ಕಲ್ಪತರು ನೀನೆ ॥ ಪ ॥
+      </p>
+      <p class="verse-iast">
+        gajamukhane gaṇapatiyē ninage vandane ।<br>
+        nambidavara pālina kalpataru nīne ॥ pa ॥
+      </p>
+      <p class="verse-translation">
+        O Elephant-faced Lord Ganapati, I bow to you! You are the wish-fulfilling tree (Kalpataru) for all who place their faith in you!
+      </p>
+    </article>
+
+    <!-- Charanam 1 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೧ | Charanam 1</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಭಾದ್ರಪದ ಶುಕ್ಲದ ಚೌತಿಯಂದು, ನೀ ಮನೆಮನೆಗೂ ದಯಮಾಡಿ ಹರಸು ಎಂದೂ ।<br>
+        ನಿನ್ನ ಸನ್ನಿಧಾನದಿ ತಲೆಬಾಗಿ ಕೈಯ ಮುಗಿದು, ಬೇಡುವಾ ಭಕ್ತರಿಗೆ ನೀ ದಯಾಸಿಂಧು ॥ ೧ ॥
+      </p>
+      <p class="verse-iast">
+        bhādrapada śuklada cautiyandu, nī manemanēgū dayamāḍi harasu endū ।<br>
+        ninna sannidhānadi talebāgi kaiya mugidu, bēḍuvā bhaktarige nī dayāsindhu ॥ 1 ॥
+      </p>
+      <p class="verse-translation">
+        On the fourth day (Chauthi) of the bright fortnight of Bhadrapada month, visit every home with grace and bless us forever! To the devotees bowing their heads with folded hands before your presence, you are an ocean of mercy!
+      </p>
+    </article>
+
+    <!-- Charanam 2 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೨ | Charanam 2</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಈರೇಳು ಲೋಕದ ಅಣುಅಣುವಿನಾ, ಇಹಪರದಾ ಸಾಧನಕೆ ನೀ ಕಾರಣ ।<br>
+        ನಿನ್ನೊಲುಮೆ ನೋಟದ ಒಂದು ಹೊನ್ನಕಿರಣ, ನೀಡಿದರೆ ಸಾಕಯ್ಯಾ ಜನ್ಮ ಪಾವನ ॥ ೨ ॥
+      </p>
+      <p class="verse-iast">
+        īrēḷu lōkada aṇuaṇuvinā, ihaparadā sādhanake nī kāraṇa ।<br>
+        ninnolume nōṭada ondu honnakiraṇa, nīḍidare sākayyā janma pāvana ॥ 2 ॥
+      </p>
+      <p class="verse-translation">
+        In every single atom of the fourteen worlds, you are the ultimate source of spiritual and worldly achievement! If you bestow but a single golden ray of your affectionate glance, our human life becomes sanctified!
+      </p>
+    </article>
+
+    <!-- Charanam 3 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೩ | Charanam 3</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಪಾರ್ವತೀ ಪರಶಿವನಾ ಪ್ರೇಮ ಪುತ್ರನೇ, ಪಾಲಿಸುವ ಪರದೈವ ಬೇರೆ ಕಾಣೆ ।<br>
+        ಪಾಪದ ಪಂಕದಲಿ ಪದುಮನೆನಿಸು ಎನ್ನ, ಪಾದಸೇವೆ ಒಂದೇ ಧರ್ಮಸಾಧನ ॥ ೩ ॥
+      </p>
+      <p class="verse-iast">
+        pārvatī paraśivanā prēma putranē, pālisuva paradaiva bērē kāṇe ।<br>
+        pāpada paṅkadali padumanenisu enna, pādasēve ondē dharmasādhana ॥ 3 ॥
+      </p>
+      <p class="verse-translation">
+        O beloved son of Goddess Parvati and Lord Shiva, I see no supreme deity protecting us other than you! Make me like a lotus blooming unsullied amidst the mire of sin; serving your holy feet is my sole righteous endeavor!
+      </p>
+    </article>
+
+    <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+      <a href="../index.html" class="btn btn-primary">← Return to Stotra Collection</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p><strong>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha</strong> • Ad-free Devotional Library</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
