@@ -168,6 +168,16 @@ function initScriptToggles() {
   const toggleIast = document.getElementById('toggle-iast');
   const toggleTrans = document.getElementById('toggle-trans');
 
+  // Default: Meaning (Translation) is OFF unless user explicitly turned it ON
+  const showTrans = localStorage.getItem('stotra-show-trans') === 'true'; // Default false
+  if (!showTrans) {
+    document.body.classList.add('hide-translation');
+    if (toggleTrans) toggleTrans.classList.remove('btn-active');
+  } else {
+    document.body.classList.remove('hide-translation');
+    if (toggleTrans) toggleTrans.classList.add('btn-active');
+  }
+
   if (toggleKn) {
     toggleKn.addEventListener('click', () => {
       document.body.classList.toggle('hide-kannada');
@@ -184,8 +194,9 @@ function initScriptToggles() {
 
   if (toggleTrans) {
     toggleTrans.addEventListener('click', () => {
-      document.body.classList.toggle('hide-translation');
-      toggleTrans.classList.toggle('btn-active', !document.body.classList.contains('hide-translation'));
+      const isHidden = document.body.classList.toggle('hide-translation');
+      toggleTrans.classList.toggle('btn-active', !isHidden);
+      localStorage.setItem('stotra-show-trans', !isHidden);
     });
   }
 }
