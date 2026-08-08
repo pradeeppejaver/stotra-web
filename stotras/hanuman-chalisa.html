@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kn" data-theme="dark">
+<html lang="kn" data-theme="midnight">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,11 +31,11 @@
   <!-- Main Content -->
   <main class="container">
     
-    <!-- Header -->
+    <!-- Reader Header -->
     <header class="reader-header">
-      <span class="card-deity-badge">Hanuman</span>
+      <span class="card-deity-badge" style="background: rgba(249, 115, 22, 0.15); color: var(--accent-saffron);">Hanuman • Stotra</span>
       <h1 class="hero-title-kn">ಶ್ರೀ ಹನುಮಾನ್ ಚಾಲೀಸಾ</h1>
-      <div class="hero-title-en">Shri Hanuman Chalisa</div>
+      <div class="hero-title-en">Shri Hanuman Chalisa (Complete 40 Verses)</div>
       <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Composed by Sant Goswami Tulsidas (ಸಂತ ಗೋಸ್ವಾಮಿ ತುಳಸೀದಾಸರು)</p>
     </header>
 
@@ -62,77 +62,920 @@
     </div>
 
     <!-- Opening Dohas -->
-    <article class="verse-card">
+    <article class="verse-card" style="border-left-color: var(--accent-saffron);">
       <div class="verse-header">
-        <span class="verse-badge">Opening Doha 1</span>
+        <span class="verse-badge" style="color: var(--accent-saffron); border-color: var(--accent-saffron); background: rgba(249, 115, 22, 0.1);">ದೋಹಾ ೧ | Opening Doha 1</span>
         <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
       </div>
       <p class="verse-kannada">
-        ಶ್ರೀಗುರು ಚರನ ಸರೋಜ ರಜ ನಿಜ ಮನು ಮುಕುರು ಸುಧಾರಿ ।<br>
-        ಬರನಂ ರಘುಬರ ಬಿಮಲ ಜಸು ಜೊ ದಾಯಕು ಫಲ ಚಾರಿ ॥
+        ಶ್ರೀ ಗುರು ಚರಣ ಸರೋಜ ರಜ ನಿಜಮನ ಮುಕುರ ಸುಧಾರಿ ।<br>
+        ವರಣೌ ರಘುವರ ವಿಮಲಯಶ ಜೋ ದಾಯಕ ಫಲಚಾರಿ ॥
       </p>
       <p class="verse-iast">
-        śrīguru carana sarōja raja nija manu mukuru sudhāri ।<br>
-        baranaṁ raghubara bimala jasu jo dāyaku phala cāri ॥
+        śrī guru caraṇa sarōja raja nijamana mukura sudhāri ।<br>
+        varanau raghuvara vimalayaśa jō dāyaka phalacāri ॥
       </p>
       <p class="verse-translation">
-        Cleansing the mirror of my mind with the dust from the lotus feet of the Divine Guru, I sing the pure glory of Lord Rama, which bestows the four fruits of life (Dharma, Artha, Kama, and Moksha).
+        Cleansing the mirror of my mind with the lotus dust of Sri Guru's feet, I recount the pure glory of Sri Raghuvara, which bestows the four fruits of life (Dharma, Artha, Kama, Moksha).
+      </p>
+    </article>
+
+    <article class="verse-card" style="border-left-color: var(--accent-saffron);">
+      <div class="verse-header">
+        <span class="verse-badge" style="color: var(--accent-saffron); border-color: var(--accent-saffron); background: rgba(249, 115, 22, 0.1);">ದೋಹಾ ೨ | Opening Doha 2</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಬುದ್ಧಿಹೀನ ತನುಜಾನಿಕೈ ಸುಮಿರೌ ಪವನ ಕುಮಾರ ।<br>
+        ಬಲ ಬುದ್ಧಿ ವಿದ್ಯಾ ದೇಹು ಮೋಹಿ ಹರಹು ಕಲೇಶ ವಿಕಾರ ॥
+      </p>
+      <p class="verse-iast">
+        buddhīhīna tanujānikai sumirau pavana kumāra ।<br>
+        bala buddhi vidyā dēhu mōhi harahu kalēśa vikāra ॥
+      </p>
+      <p class="verse-translation">
+        Knowing myself to be devoid of wisdom, I remember you, O Son of the Wind! Grant me strength, wisdom, and knowledge, and relieve me of all afflictions and flaws.
+      </p>
+    </article>
+
+    <!-- Dhyana Shlokas -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಧ್ಯಾನಂ ೧ | Dhyanam 1</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಅತುಲಿತ ಬಲಧಾಮಂ ಸ್ವರ್ಣ ಶೈಲಾಭ ದೇಹಮ್ ।<br>
+        ದನುಜ ವನ ಕೃಶಾನುಂ ಜ್ಞಾನಿನಾ-ಮಗ್ರಗಣ್ಯಮ್ ॥<br>
+        ಸಕಲ ಗುಣ ನಿಧಾನಂ ವಾನರಾಣಾ-ಮಧೀಶಮ್ ।<br>
+        ರಘುಪತಿ ಪ್ರಿಯ ಭಕ್ತಂ ವಾತಜಾತಂ ನಮಾಮಿ ॥
+      </p>
+      <p class="verse-iast">
+        atulita baladhāmaṁ svarṇa śailābha dēham ।<br>
+        danuja vana kṛśānum jñāninā-magragaṇyam ॥<br>
+        sakala guṇa nidhānaṁ vānarāṇā-madhīśam ।<br>
+        raghupati priya bhaktaṁ vātajātaṁ namāmi ॥
+      </p>
+      <p class="verse-translation">
+        Abode of incomparable strength, whose body shines like a golden mountain, a fire to the forest of demons, foremost among the wise, storehouse of all virtues, lord of monkeys, beloved devotee of Lord Rama—I bow to the Son of the Wind.
       </p>
     </article>
 
     <article class="verse-card">
       <div class="verse-header">
-        <span class="verse-badge">Opening Doha 2</span>
+        <span class="verse-badge">ಧ್ಯಾನಂ ೨ | Dhyanam 2</span>
         <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
       </div>
       <p class="verse-kannada">
-        ಬುದ್ಧಿಹೀನ ತನು ಜಾನಿಕೇ ಸುಮಿರೆ ಪವನಕುಮಾರ ।<br>
-        ಬಲ ಬುದ್ಧಿ ಬಿಧ್ಯಾ ದೇಹು ಮೋಹಿ ಹರಹು ಕಲೇಸ ಬಿಕಾರ ॥
+        ಗೋಷ್ಪದೀಕೃತ ವಾರಾಶಿಂ ಮಶಕೀಕೃತ ರಾಕ್ಷಸಮ್ ।<br>
+        ರಾಮಾಯಣ ಮಹಾಮಾಲಾ ರತ್ನಂ ವಂದೇ-(ಅ)ನಿಲಾತ್ಮಜಮ್ ॥
       </p>
       <p class="verse-iast">
-        buddhihīna tanu jānikē sumirē pavanakumāra ।<br>
-        bala buddhi bidhyā dēhu mōhi harahu kalēsa bikāra ॥
+        gōṣpadīkṛta vārāśiṁ maśakīkṛta rākṣasam ।<br>
+        rāmāyaṇa mahāmālā ratnaṁ vandē-'nilātmajam ॥
       </p>
       <p class="verse-translation">
-        Knowing myself to be devoid of wisdom, I remember you, O Son of the Wind God (Pavanakumara). Grant me physical strength, sharp intelligence, and spiritual knowledge, and relieve me of all afflictions and impurities.
+        Who crossed the ocean as easily as stepping over a calf's footprint, and rendered mighty demons as insignificant as mosquitoes; I bow to the Son of the Wind, the luminous jewel in the great garland of Ramayana.
       </p>
     </article>
 
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಧ್ಯಾನಂ ೩ | Dhyanam 3</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಯತ್ರ ಯತ್ರ ರಘುನಾಥ ಕೀರ್ತನಂ ತತ್ರ ತತ್ರ ಕೃತಮಸ್ತಕಾಂಜಲಿಮ್ ।<br>
+        ಭಾಷ್ಪವಾರಿ ಪರಿಪೂರ್ಣ ಲೋಚನಂ ಮಾರುತಿಂ ನಮತ ರಾಕ್ಷಸಾಂತಕಮ್ ॥
+      </p>
+      <p class="verse-iast">
+        yatra yatra raghunātha kīrtanaṁ tatra tatra kṛtamastakāñjalim ।<br>
+        bhāṣpavāri paripūrṇa lōcanaṁ mārutiṁ namata rākṣasāntakam ॥
+      </p>
+      <p class="verse-translation">
+        Wherever the praises of Lord Raghunatha are sung, there Maruti stands with folded hands over his head and eyes filled with tears of devotion—I bow to Maruti, the destroyer of demons.
+      </p>
+    </article>
+
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಧ್ಯಾನಂ ೪ | Dhyanam 4</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಮನೋಜವಂ ಮಾರುತ ತುಲ್ಯವೇಗಮ್ ।<br>
+        ಜಿತೇಂದ್ರಿಯಂ ಬುದ್ಧಿಮತಾಂ ವರಿಷ್ಠಮ್ ॥<br>
+        ವಾತಾತ್ಮಜಂ ವಾನರಯೂಥ ಮುಖ್ಯಮ್ ।<br>
+        ಶ್ರೀ ರಾಮ ದೂತಂ ಶಿರಸಾ ನಮಾಮಿ ॥
+      </p>
+      <p class="verse-iast">
+        manōjavaṁ māruta tulyavēgam ।<br>
+        jitēndriyaṁ buddhimatāṁ variṣtham ॥<br>
+        vātātmajaṁ vānarayūtha mukhyam ।<br>
+        śrī rāma dūtaṁ śirasā namāmi ॥
+      </p>
+      <p class="verse-translation">
+        Swift as the mind and speed of the wind, master of the senses, supreme among the intelligent, son of the Wind God, chief of the monkey army, messenger of Sri Rama—I bow my head to you in reverence.
+      </p>
+    </article>
+
+    <!-- Chaupais 1 to 40 -->
     <!-- Chaupai 1 -->
     <article class="verse-card">
       <div class="verse-header">
-        <span class="verse-badge">Chaupai 1</span>
+        <span class="verse-badge">ಚೌಪಾಈ ೧ | Chaupai 1</span>
         <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
       </div>
       <p class="verse-kannada">
         ಜಯ ಹನುಮಾನ ಜ್ಞಾನ ಗುಣ ಸಾಗರ ।<br>
-        ಜಯ ಕಪೀಶ ತಿಹುಂ ಲೋಕ ಉಜಾಗರ ॥ ೧ ॥
+        ಜಯ ಕಪೀಶ ತಿಹು ಲೋಕ ಉಜಾಗರ ॥ ೧ ॥
       </p>
       <p class="verse-iast">
         jaya hanumāna jñāna guṇa sāgara ।<br>
-        jaya kapīśa tihuṁ lōka ujāgara ॥ 1 ॥
+        jaya kapīśa tihu lōka ujāgara ॥ 1 ॥
       </p>
       <p class="verse-translation">
-        Victory to Hanuman, who is an ocean of wisdom and virtues! Victory to the Lord of Monkeys, who illuminates all the three worlds!
+        Victory to Hanuman, ocean of knowledge and virtue! Victory to the Lord of monkeys, who illuminates all three worlds!
       </p>
     </article>
 
     <!-- Chaupai 2 -->
     <article class="verse-card">
       <div class="verse-header">
-        <span class="verse-badge">Chaupai 2</span>
+        <span class="verse-badge">ಚೌಪಾಈ ೨ | Chaupai 2</span>
         <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
       </div>
       <p class="verse-kannada">
-        ರಾಮದೂತ ಅತುಲಿತ ಬಲ ಧಾಮಾ ।<br>
-        ಅಂಜನಿಪುತ್ರ ಪವನಸುತ ನಾಮಾ ॥ ೨ ॥
+        ರಾಮದೂತ ಅತುಲಿತ ಬಲಧಾಮಾ ।<br>
+        ಅಂಜನಿ ಪುತ್ರ ಪವನಸುತ ನಾಮಾ ॥ ೨ ॥
       </p>
       <p class="verse-iast">
-        rāmadūta atulita bala dhāmā ।<br>
-        añjaniputra pavanasuta nāmā ॥ 2 ॥
+        rāmadūta atulita baladhāmā ।<br>
+        añjani putra pavanasuta nāmā ॥ 2 ॥
       </p>
       <p class="verse-translation">
-        You are the messenger of Lord Rama, the abode of incomparable strength, known as Anjaniputra (son of Anjana) and Pavanasuta (son of the Wind).
+        Messenger of Rama, abode of immeasurable strength, son of Anjani, known by the name of Pavanasuta!
+      </p>
+    </article>
+
+    <!-- Chaupai 3 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೩ | Chaupai 3</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಮಹಾವೀರ ವಿಕ್ರಮ ಬಜರಂಗೀ ।<br>
+        ಕುಮತಿ ನಿವಾರ ಸುಮತಿ ಕೇ ಸಂಗೀ ॥ ೩ ॥
+      </p>
+      <p class="verse-iast">
+        mahāvīra vikrama bajarangī ।<br>
+        kumati nivāra sumati kē sangī ॥ 3 ॥
+      </p>
+      <p class="verse-translation">
+        Great hero, immensely valiant, body strong as thunderbolt; dispeller of evil thoughts and companion of the wise!
+      </p>
+    </article>
+
+    <!-- Chaupai 4 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೪ | Chaupai 4</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಕಂಚನ ವರಣ ವಿರಾಜ ಸುವೇಶಾ ।<br>
+        ಕಾನನ ಕುಂಡಲ ಕುಂಚಿತ ಕೇಶಾ ॥ ೪ ॥
+      </p>
+      <p class="verse-iast">
+        kañcana varaṇa virāja suvēśā ।<br>
+        kānana kuṇḍala kuñcita kēśā ॥ 4 ॥
+      </p>
+      <p class="verse-translation">
+        Golden-complexioned, handsomely attired, wearing ear ornaments and with curly locks of hair!
+      </p>
+    </article>
+
+    <!-- Chaupai 5 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೫ | Chaupai 5</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಹಾಥವಜ್ರ ಔ ಧ್ವಜಾ ವಿರಾಜೈ ।<br>
+        ಕಾಂಧೇ ಮೂಂಜ ಜನೇವೂ ಸಾಜೈ ॥ ೫ ॥
+      </p>
+      <p class="verse-iast">
+        hāthavajra au dhvajā virājai ।<br>
+        kāndhē mūñja janēvū sājai ॥ 5 ॥
+      </p>
+      <p class="verse-translation">
+        Holding thunderbolt and flag in hands, adorned with the sacred thread of Munja grass across shoulders!
+      </p>
+    </article>
+
+    <!-- Chaupai 6 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೬ | Chaupai 6</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಶಂಕರ ಸುವನ ಕೇಸರೀ ನಂದನ ।<br>
+        ತೇಜ ಪ್ರತಾಪ ಮಹಾಜಗ ವಂದನ ॥ ೬ ॥
+      </p>
+      <p class="verse-iast">
+        śaṅkara suvana kēsarī nandana ।<br>
+        tēja pratāpa mahājaga vandana ॥ 6 ॥
+      </p>
+      <p class="verse-translation">
+        Incarnation of Shiva, son of Kesari, whose radiant glory is revered by the entire universe!
+      </p>
+    </article>
+
+    <!-- Chaupai 7 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೭ | Chaupai 7</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ವಿದ್ಯಾವಾನ ಗುಣೀ ಅತಿ ಚಾತುರ ।<br>
+        ರಾಮ ಕಾಜ ಕರಿವೇ ಕೋ ಆತುರ ॥ ೭ ॥
+      </p>
+      <p class="verse-iast">
+        vidyāvāna guṇī ati cātura ।<br>
+        rāma kāja karivē kō ātura ॥ 7 ॥
+      </p>
+      <p class="verse-translation">
+        Highly learned, virtuous, extremely clever, ever eager to carry out Sri Rama's tasks!
+      </p>
+    </article>
+
+    <!-- Chaupai 8 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೮ | Chaupai 8</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಪ್ರಭು ಚರಿತ್ರ ಸುನಿವೇ ಕೋ ರಸಿಯಾ ।<br>
+        ರಾಮಲಖನ ಸೀತಾ ಮನ ಬಸಿಯಾ ॥ ೮ ॥
+      </p>
+      <p class="verse-iast">
+        prabhu caritra sunivē kō nasiyā ।<br>
+        rāmalakhana sītā mana basiyā ॥ 8 ॥
+      </p>
+      <p class="verse-translation">
+        Delighting in listening to the divine deeds of the Lord, abiding forever in the hearts of Rama, Lakshmana, and Sita!
+      </p>
+    </article>
+
+    <!-- Chaupai 9 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೯ | Chaupai 9</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಸೂಕ್ಷ್ಮ ರೂಪಧರಿ ಸಿಯಹಿ ದಿಖಾವಾ ।<br>
+        ವಿಕಟ ರೂಪಧರಿ ಲಂಕ ಜಲಾವಾ ॥ ೯ ॥
+      </p>
+      <p class="verse-iast">
+        sūkṣma rūpadhari siyahi dikhāvā ।<br>
+        vikaṭa rūpadhari laṅka jalāvā ॥ 9 ॥
+      </p>
+      <p class="verse-translation">
+        Assuming a subtle form to appear before Sita, assuming a formidable giant form to burn down Lanka!
+      </p>
+    </article>
+
+    <!-- Chaupai 10 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೧೦ | Chaupai 10</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಭೀಮ ರೂಪಧರಿ ಅಸುರ ಸಂಹಾರೇ ।<br>
+        ರಾಮಚಂದ್ರ ಕೇ ಕಾಜ ಸಂವಾರೇ ॥ ೧೦ ॥
+      </p>
+      <p class="verse-iast">
+        bhīma rūpadhari asura saṁhārē ।<br>
+        rāmacandra kē kāja saṁvārē ॥ 10 ॥
+      </p>
+      <p class="verse-translation">
+        Assuming a colossal form to destroy the demons, fulfilling the divine mission of Lord Ramachandra!
+      </p>
+    </article>
+
+    <!-- Chaupai 11 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೧೧ | Chaupai 11</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಲಾಯ ಸಂಜೀವನ ಲಖನ ಜಿಯಾಯೇ ।<br>
+        ಶ್ರೀ ರಘುವೀರ ಹರಷಿ ಉರಲಾಯೇ ॥ ೧೧ ॥
+      </p>
+      <p class="verse-iast">
+        lāya sañjīvana lakhana jiyāyē ।<br>
+        śrī raghuvīra haraṣi uralāyē ॥ 11 ॥
+      </p>
+      <p class="verse-translation">
+        Bringing the Sanjeevani herb to revive Lakshmana, filling Sri Raghuveera's heart with joy as He embraced you!
+      </p>
+    </article>
+
+    <!-- Chaupai 12 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೧೨ | Chaupai 12</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ರಘುಪತಿ ಕೀನ್ಹೀ ಬಹುತ ಬಡಾಯೀ ।<br>
+        ತುಮ ಮಮ ಪ್ರಿಯ ಭರತ ಸಮ ಭಾಯೀ ॥ ೧೨ ॥
+      </p>
+      <p class="verse-iast">
+        raghupati kīnhī bahuta baḍāyī ।<br>
+        tuma mama priya bharata sama bhāyī ॥ 12 ॥
+      </p>
+      <p class="verse-translation">
+        Lord Raghupati praised you immensely, saying 'You are as dear to Me as My own brother Bharata!'
+      </p>
+    </article>
+
+    <!-- Chaupai 13 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೧೩ | Chaupai 13</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಸಹಸ್ರ ವದನ ತುಮ್ಹರೋ ಯಶಗಾವೈ ।<br>
+        ಅಸ ಕಹಿ ಶ್ರೀಪತಿ ಕಂಠ ಲಗಾವೈ ॥ ೧೩ ॥
+      </p>
+      <p class="verse-iast">
+        sahasra vadana tumharō yaśagāvai ।<br>
+        asa kahi śrīpati kaṇṭha lagāvai ॥ 13 ॥
+      </p>
+      <p class="verse-translation">
+        'The thousand-headed Shesha sings your glory!'—saying this, the Lord of Sri embraced you around His neck.
+      </p>
+    </article>
+
+    <!-- Chaupai 14 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೧೪ | Chaupai 14</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಸನಕಾದಿಕ ಬ್ರಹ್ಮಾದಿ ಮುನೀಶಾ ।<br>
+        ನಾರದ ಶಾರದ ಸಹಿತ ಅಹೀಶಾ ॥ ೧೪ ॥
+      </p>
+      <p class="verse-iast">
+        sanakādika brahmādi munīśā ।<br>
+        nārada śārada sahita ahīśā ॥ 14 ॥
+      </p>
+      <p class="verse-translation">
+        Sanaka and ancient sages, Brahma and gods, Narada, Goddess Saraswati, and the King of Serpents sing your praise!
+      </p>
+    </article>
+
+    <!-- Chaupai 15 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೧೫ | Chaupai 15</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಯಮ ಕುಬೇರ ದಿಗಪಾಲ ಜಹಾಂ ತೇ ।<br>
+        ಕವಿ ಕೋವಿದ ಕಹಿ ಸಕೇ ಕಹಾಂ ತೇ ॥ ೧೫ ॥
+      </p>
+      <p class="verse-iast">
+        yama kubēra digapāla jahāṁ tē ।<br>
+        kavi kōvida kahi sakē kahāṁ tē ॥ 15 ॥
+      </p>
+      <p class="verse-translation">
+        Yama, Kubera, and guardians of directions—how can poets and scholars fully describe your limitless glory?
+      </p>
+    </article>
+
+    <!-- Chaupai 16 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೧೬ | Chaupai 16</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ತುಮ ಉಪಕಾರ ಸುಗ್ರೀವಹಿ ಕೀನ್ಹಾ ।<br>
+        ರಾಮ ಮಿಲಾಯ ರಾಜಪದ ದೀನ್ಹಾ ॥ ೧೬ ॥
+      </p>
+      <p class="verse-iast">
+        tuma upakāra sugrīvahi kīnhā ।<br>
+        rāma milāya rājapada dīnhā ॥ 16 ॥
+      </p>
+      <p class="verse-translation">
+        You rendered immense help to Sugriva by introducing him to Lord Rama and bestowing the royal kingdom upon him!
+      </p>
+    </article>
+
+    <!-- Chaupai 17 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೧೭ | Chaupai 17</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ತುಮ್ಹರೋ ಮಂತ್ರ ವಿಭೀಷಣ ಮಾನಾ ।<br>
+        ಲಂಕೇಶ್ವರ ಭಯೇ ಸಬ ಜಗ ಜಾನಾ ॥ ೧೭ ॥
+      </p>
+      <p class="verse-iast">
+        tumharō mantra vibhīṣaṇa mānā ।<br>
+        laṅkēśvara bhayē saba jaga jānā ॥ 17 ॥
+      </p>
+      <p class="verse-translation">
+        Vibhishana heeded your counsel and became the King of Lanka, as known to the whole world!
+      </p>
+    </article>
+
+    <!-- Chaupai 18 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೧೮ | Chaupai 18</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಯುಗ ಸಹಸ್ರ ಯೋಜನ ಪರ ಭಾನೂ ।<br>
+        ಲೀಲ್ಯೋ ತಾಹಿ ಮಧುರ ಫಲ ಜಾನೂ ॥ ೧೮ ॥
+      </p>
+      <p class="verse-iast">
+        yuga sahasra yōjana para bhānū ।<br>
+        līlyō tāhi madhura phala jānū ॥ 18 ॥
+      </p>
+      <p class="verse-translation">
+        You leaped thousands of Yojanas to swallow the Sun, mistaking it for a sweet fruit!
+      </p>
+    </article>
+
+    <!-- Chaupai 19 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೧೯ | Chaupai 19</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಪ್ರಭು ಮುದ್ರಿಕಾ ಮೇಲಿ ಮುಖ ಮಾಹೀ ।<br>
+        ಜಲಧಿ ಲಾಂಘಿ ಗಯೇ ಅಚರಜ ನಾಹೀ ॥ ೧೯ ॥
+      </p>
+      <p class="verse-iast">
+        prabhu mudrikā mēli mukha māhī ।<br>
+        jaladhi lāṅghi gayē acaraja nāhī ॥ 19 ॥
+      </p>
+      <p class="verse-translation">
+        Holding the Lord's signet ring in your mouth, you leaped across the vast ocean—no wonder for you!
+      </p>
+    </article>
+
+    <!-- Chaupai 20 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೨೦ | Chaupai 20</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ದುರ್ಗಮ ಕಾಜ ಜಗತ ಕೇ ಜೇತೇ ।<br>
+        ಸುಗಮ ಅನುಗ್ರಹ ತುಮ್ಹರೇ ತೇತೇ ॥ ೨೦ ॥
+      </p>
+      <p class="verse-iast">
+        durgama kāja jagata kē jētē ।<br>
+        sugama anugraha tumharē tētē ॥ 20 ॥
+      </p>
+      <p class="verse-translation">
+        Whatever difficult tasks exist in the world become easy through your divine grace!
+      </p>
+    </article>
+
+    <!-- Chaupai 21 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೨೧ | Chaupai 21</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ರಾಮ ದುಆರೇ ತುಮ ರಖವಾರೇ ।<br>
+        ಹೋತ ನ ಆಜ್ಞಾ ಬಿನು ಪೈಸಾರೇ ॥ ೨೧ ॥
+      </p>
+      <p class="verse-iast">
+        rāma duārē tuma rakhavārē ।<br>
+        hōta na ājñā binu paisārē ॥ 21 ॥
+      </p>
+      <p class="verse-translation">
+        You are the guardian at Rama's gateway; no one can enter without your permission!
+      </p>
+    </article>
+
+    <!-- Chaupai 22 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೨೨ | Chaupai 22</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಸಬ ಸುಖ ಲಹೈ ತುಮ್ಹಾರೀ ಶರಣಾ ।<br>
+        ತುಮ ರಕ್ಷಕ ಕಾಹೂ ಕೋ ಡರ ನಾ ॥ ೨೨ ॥
+      </p>
+      <p class="verse-iast">
+        saba sukha lahai tumhārī śaraṇā ।<br>
+        tuma rakṣaka kāhū kō ḍara nā ॥ 22 ॥
+      </p>
+      <p class="verse-translation">
+        All happiness is attained under your refuge; with you as protector, there is no fear!
+      </p>
+    </article>
+
+    <!-- Chaupai 23 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೨೩ | Chaupai 23</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಆಪನ ತೇಜ ಸಮ್ಹಾರೋ ಆಪೈ ।<br>
+        ತೀನೋಂ ಲೋಕ ಹಾಂಕ ತೇ ಕಾಂಪೈ ॥ ೨೩ ॥
+      </p>
+      <p class="verse-iast">
+        āpana tēja samhāro āpai ।<br>
+        tīnōṁ lōka hāṅka tē kāmpai ॥ 23 ॥
+      </p>
+      <p class="verse-translation">
+        You alone can control your immense radiance; all three worlds tremble at your roar!
+      </p>
+    </article>
+
+    <!-- Chaupai 24 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೨೪ | Chaupai 24</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಭೂತ ಪಿಶಾಚ ನಿಕಟ ನಹಿ ಆವೈ ।<br>
+        ಮಹವೀರ ಜಬ ನಾಮ ಸುನಾವೈ ॥ ೨೪ ॥
+      </p>
+      <p class="verse-iast">
+        bhūta piśāca nikaṭa nahi āvai ।<br>
+        mahavīra jaba nāma sunāvai ॥ 24 ॥
+      </p>
+      <p class="verse-translation">
+        Ghosts and evil spirits cannot come near when the name of Mahaveer Hanuman is uttered!
+      </p>
+    </article>
+
+    <!-- Chaupai 25 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೨೫ | Chaupai 25</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ನಾಸೈ ರೋಗ ಹರೈ ಸಬ ಪೀರಾ ।<br>
+        ಜಪತ ನಿರಂತರ ಹನುಮತ ವೀರಾ ॥ ೨೫ ॥
+      </p>
+      <p class="verse-iast">
+        nāsai rōga harai saba pīrā ।<br>
+        japata nirantara hanumata vīrā ॥ 25 ॥
+      </p>
+      <p class="verse-translation">
+        All diseases are cured and all pains destroyed by constantly chanting the name of brave Hanuman!
+      </p>
+    </article>
+
+    <!-- Chaupai 26 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೨೬ | Chaupai 26</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಸಂಕಟ ಸೇ ಹನುಮಾನ ಛುಡಾವೈ ।<br>
+        ಮನ ಕ್ರಮ ವಚನ ಧ್ಯಾನ ಜೋ ಲಾವೈ ॥ ೨೬ ॥
+      </p>
+      <p class="verse-iast">
+        saṅkaṭa sē hanumāna chuḍāvai ।<br>
+        mana krama vacana dhyāna jō lāvai ॥ 26 ॥
+      </p>
+      <p class="verse-translation">
+        Hanuman rescues from all troubles those who meditate upon Him in thought, word, and deed!
+      </p>
+    </article>
+
+    <!-- Chaupai 27 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೨೭ | Chaupai 27</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಸಬ ಪರ ರಾಮ ತಪಸ್ವೀ ರಾಜಾ ।<br>
+        ತಿನಕೇ ಕಾಜ ಸಕಲ ತುಮ ಸಾಜಾ ॥ ೨೭ ॥
+      </p>
+      <p class="verse-iast">
+        saba para rāma tapasvī rājā ।<br>
+        tinakē kāja sakala tuma sājā ॥ 27 ॥
+      </p>
+      <p class="verse-translation">
+        Sri Rama is the supreme ascetic King over all, and you accomplished all His divine endeavors!
+      </p>
+    </article>
+
+    <!-- Chaupai 28 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೨೮ | Chaupai 28</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಔರ ಮನೋರಥ ಜೋ ಕೋಯಿ ಲಾವೈ ।<br>
+        ತಾಸು ಅಮಿತ ಜೀವನ ಫಲ ಪಾವೈ ॥ ೨೮ ॥
+      </p>
+      <p class="verse-iast">
+        aura manōratha jō kōyi lāvai ।<br>
+        tāsu amita jīvana phala pāvai ॥ 28 ॥
+      </p>
+      <p class="verse-translation">
+        Whoever brings any righteous desire to you attains the boundless fruit of human life!
+      </p>
+    </article>
+
+    <!-- Chaupai 29 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೨೯ | Chaupai 29</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಚಾರೋ ಯುಗ ಪ್ರತಾಪ ತುಮ್ಹಾರಾ ।<br>
+        ಹೈ ಪರಸಿದ್ಧ ಜಗತ ಉಜಿಯಾರಾ ॥ ೨೯ ॥
+      </p>
+      <p class="verse-iast">
+        cārō yuga pratāpa tumhārā ।<br>
+        hai parasiddha jagata ujiyārā ॥ 29 ॥
+      </p>
+      <p class="verse-translation">
+        Your glory resounds across all four Yugas, renowned throughout the world as a radiant light!
+      </p>
+    </article>
+
+    <!-- Chaupai 30 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೩೦ | Chaupai 30</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಸಾಧು ಸಂತ ಕೇ ತುಮ ರಖವಾರೇ ।<br>
+        ಅಸುರ ನಿಕಂದನ ರಾಮ ದುಲಾರೇ ॥ ೩೦ ॥
+      </p>
+      <p class="verse-iast">
+        sādhu santa kē tuma rakhavārē ।<br>
+        asura nikandana rāma dulārē ॥ 30 ॥
+      </p>
+      <p class="verse-translation">
+        Protector of saints and sages, destroyer of demons, beloved of Sri Rama!
+      </p>
+    </article>
+
+    <!-- Chaupai 31 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೩೧ | Chaupai 31</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಅಷ್ಟಸಿದ್ಧಿ ನವ ನಿಧಿ ಕೇ ದಾತಾ ।<br>
+        ಅಸ ವರ ದೀನ್ಹ ಜಾನಕೀ ಮಾತಾ ॥ ೩೧ ॥
+      </p>
+      <p class="verse-iast">
+        aṣṭasiddhi nava nidhi kē dātā ।<br>
+        asa vara dīnha jānakī mātā ॥ 31 ॥
+      </p>
+      <p class="verse-translation">
+        Bestower of the eight Siddhis and nine Nidhis—this boon was granted to you by Mother Janaki!
+      </p>
+    </article>
+
+    <!-- Chaupai 32 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೩೨ | Chaupai 32</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ರಾಮ ರಸಾಯನ ತುಮ್ಹಾರೇ ಪಾಸಾ ।<br>
+        ಸದಾ ರಹೋ ರಘುಪತಿ ಕೇ ದಾಸಾ ॥ ೩೨ ॥
+      </p>
+      <p class="verse-iast">
+        rāma rasāyana tumhārē pāsā ।<br>
+        sadā rahō raghupati kē dāsā ॥ 32 ॥
+      </p>
+      <p class="verse-translation">
+        You possess the divine elixir of Rama's devotion; may you ever remain the humble servant of Raghupati!
+      </p>
+    </article>
+
+    <!-- Chaupai 33 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೩೩ | Chaupai 33</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ತುಮ್ಹರೇ ಭಜನ ರಾಮಕೋ ಪಾವೈ ।<br>
+        ಜನ್ಮ ಜನ್ಮ ಕೇ ದುಖ ಬಿಸರಾವೈ ॥ ೩೩ ॥
+      </p>
+      <p class="verse-iast">
+        tumharē bhajana rāmakō pāvai ।<br>
+        janma janma kē dukha bisarāvai ॥ 33 ॥
+      </p>
+      <p class="verse-translation">
+        Chanting your devotion leads to Sri Rama, erasing the sorrows of countless past births!
+      </p>
+    </article>
+
+    <!-- Chaupai 34 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೩೪ | Chaupai 34</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಅಂತ ಕಾಲ ರಘುಪತಿ ಪುರಜಾಯೀ ।<br>
+        ಜಹಾಂ ಜನ್ಮ ಹರಿಭಕ್ತ ಕಹಾಯೀ ॥ ೩೪ ॥
+      </p>
+      <p class="verse-iast">
+        anta kāla raghupati purajāyī ।<br>
+        jahāṁ janma haribhakta kahāyī ॥ 34 ॥
+      </p>
+      <p class="verse-translation">
+        At the end of life, one enters the divine abode of Raghupati and is remembered as a true devotee of Lord Hari!
+      </p>
+    </article>
+
+    <!-- Chaupai 35 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೩೫ | Chaupai 35</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಔರ ದೇವತಾ ಚಿತ್ತ ನ ಧರಯೀ ।<br>
+        ಹನುಮತ ಸೇಯಿ ಸರ್ವ ಸುಖ ಕರಯೀ ॥ ೩೫ ॥
+      </p>
+      <p class="verse-iast">
+        aura dēvatā citta na dharayī ।<br>
+        hanumata sēyi sarva sukha karayī ॥ 35 ॥
+      </p>
+      <p class="verse-translation">
+        Without needing any other deity in mind, serving Hanuman alone bestows all joy and peace!
+      </p>
+    </article>
+
+    <!-- Chaupai 36 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೩೬ | Chaupai 36</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಸಂಕಟ ಕಟೈ ಮಿಟೈ ಸಬ ಪೀರಾ ।<br>
+        ಜೋ ಸುಮಿರೈ ಹನುಮತ ಬಲ ವೀರಾ ॥ ೩೬ ॥
+      </p>
+      <p class="verse-iast">
+        saṅkaṭa kaṭai miṭai saba pīrā ।<br>
+        jō sumirai hanumata bala vīrā ॥ 36 ॥
+      </p>
+      <p class="verse-translation">
+        All troubles vanish and all agony ends for one who remembers the mighty brave Hanuman!
+      </p>
+    </article>
+
+    <!-- Chaupai 37 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೩೭ | Chaupai 37</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಜೈ ಜೈ ಜೈ ಹನುಮಾನ ಗೋಸಾಯೀ ।<br>
+        ಕೃಪಾ ಕರಹು ಗುರುದೇವ ಕೀ ನಾಯೀ ॥ ೩೭ ॥
+      </p>
+      <p class="verse-iast">
+        jai jai jai hanumāna gōsāyī ।<br>
+        kṛpā karahu gurudēva kī nāyī ॥ 37 ॥
+      </p>
+      <p class="verse-translation">
+        Hail, hail, hail to Lord Hanuman! Shower your grace upon us like a divine spiritual Guru!
+      </p>
+    </article>
+
+    <!-- Chaupai 38 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೩೮ | Chaupai 38</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಯಹ ಶತ ವಾರ ಪಾಠ ಕರ ಕೋಯೀ ।<br>
+        ಛೂಟಹಿ ಬಂದಿ ಮಹಾ ಸುಖ ಹೋಯೀ ॥ ೩೮ ॥
+      </p>
+      <p class="verse-iast">
+        yaha śata vāra pāṭha kara kōyī ।<br>
+        chūṭahi bandi mahā sukha hōyī ॥ 38 ॥
+      </p>
+      <p class="verse-translation">
+        Whoever recites this Hanuman Chalisa a hundred times is freed from worldly bondage and attains supreme bliss!
+      </p>
+    </article>
+
+    <!-- Chaupai 39 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೩೯ | Chaupai 39</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಜೋ ಯಹ ಪಡೈ ಹನುಮಾನ ಚಾಲೀಸಾ ।<br>
+        ಹೋಯ ಸಿದ್ಧಿ ಸಾಖೀ ಗೌರೀಶಾ ॥ ೩೯ ॥
+      </p>
+      <p class="verse-iast">
+        jō yaha paḍai hanumāna cālīsā ।<br>
+        hōya siddhi sākhī gaurīśā ॥ 39 ॥
+      </p>
+      <p class="verse-translation">
+        Whoever reads this Hanuman Chalisa attains all perfection—Lord Shiva Himself bears witness to this!
+      </p>
+    </article>
+
+    <!-- Chaupai 40 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚೌಪಾಈ ೪೦ | Chaupai 40</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ತುಲಸೀದಾಸ ಸದಾ ಹರಿ ಚೇರಾ ।<br>
+        ಕೀಜೈ ನಾಥ ಹೃದಯ ಮಹ ಡೇರಾ ॥ ೪೦ ॥
+      </p>
+      <p class="verse-iast">
+        tulasīdāsa sadā hari cērā ।<br>
+        kījai nātha hṛdaya maha ḍērā ॥ 40 ॥
+      </p>
+      <p class="verse-translation">
+        Tulsidas is ever the servant of Lord Hari; O Lord Hanuman, reside forever within my heart!
+      </p>
+    </article>
+
+    <!-- Closing Doha & Chanting -->
+    <article class="verse-card" style="border-left-color: var(--accent-saffron);">
+      <div class="verse-header">
+        <span class="verse-badge" style="color: var(--accent-saffron); border-color: var(--accent-saffron); background: rgba(249, 115, 22, 0.1);">ದೋಹಾ (ಸಮಾಪ್ತಿ) | Closing Doha</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಪವನ ತನಯ ಸಂಕಟ ಹರಣ ಮಂಗಳ ಮೂರತಿ ರೂಪ್ ।<br>
+        ರಾಮ ಲಖನ ಸೀತಾ ಸಹಿತ ಹೃದಯ ಬಸಹು ಸುರಭೂಪ್ ॥
+      </p>
+      <p class="verse-iast">
+        pavana tanaya saṅkaṭa haraṇa maṅgaḷa mūrati rūp ।<br>
+        rāma lakhana sītā sahita hṛdaya basahu surabhūp ॥
+      </p>
+      <p class="verse-translation">
+        O Son of the Wind, remover of afflictions, embodiment of all auspiciousness! Reside in my heart along with Sri Rama, Lakshmana, and Sita, O King of Gods!
+      </p>
+    </article>
+
+    <article class="verse-card" style="border-left-color: var(--accent-gold);">
+      <div class="verse-header">
+        <span class="verse-badge" style="color: var(--accent-gold); border-color: var(--accent-gold); background: rgba(251, 191, 36, 0.1);">ಜಯಘೋಷ | Chanting of Victory</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಸಿಯಾವರ ರಾಮಚಂದ್ರಕೀ ಜಯ ।<br>
+        ಪವನಸುತ ಹನುಮಾನಕೀ ಜಯ ।<br>
+        ಬೋಲೋ ಭಾಯೀ ಸಬ ಸಂತನಕೀ ಜಯ ॥
+      </p>
+      <p class="verse-iast">
+        siyāvara rāmacandrakī jaya ।<br>
+        pavanasuta hanumānakī jaya ।<br>
+        bōlō bhāyī saba santanakī jaya ॥
+      </p>
+      <p class="verse-translation">
+        Victory to Lord Ramachandra, consort of Sita! Victory to Hanuman, Son of the Wind! Hail to all saints and divine devotees!
       </p>
     </article>
 
@@ -142,6 +985,7 @@
 
   </main>
 
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p><strong>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha</strong> • Ad-free Devotional Library</p>
