@@ -164,58 +164,9 @@
         </div>
       </a>
 
-      <!-- Card: Submit / Request New Stotra -->
-      <div class="stotra-card" id="request-stotra-btn" style="border-style: dashed; cursor: pointer;" data-title-kn="ಹೊಸ ಸ್ತೋತ್ರ ಸೇರಿಸಿ" data-title-en="Request Submit New Stotra" data-deity="all">
-        <div>
-          <span class="card-deity-badge" style="background: rgba(249, 115, 22, 0.15); color: var(--accent-saffron);">Add Stotra</span>
-          <h2 class="card-title-kn">➕ ಹೊಸ ಸ್ತೋತ್ರ ಸೇರಿಸಿ</h2>
-          <div class="card-title-en">Request or Submit a New Stotra</div>
-        </div>
-        <div class="card-footer">
-          <span>Easy Submit Form</span>
-          <span>Click to Add →</span>
-        </div>
-      </div>
-
     </section>
 
   </main>
-
-  <!-- Submit / Request Stotra Modal -->
-  <div id="request-modal" class="modal-overlay">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2>➕ Submit / Request a Stotra</h2>
-        <button class="modal-close" id="modal-close-btn">&times;</button>
-      </div>
-      <div class="modal-body">
-        <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 12px;">
-          Paste the Kannada text of your Stotra or Devaranama below. We will format it with transliteration and translation for the website!
-        </p>
-
-        <label class="form-label">Stotra / Song Title (ಶೀರ್ಷಿಕೆ):</label>
-        <input type="text" id="req-title" class="form-input" placeholder="e.g. ಶ್ರೀ ಶಿವ ತಾಂಡವ ಸ್ತೋತ್ರಂ (Shiva Tandava)">
-
-        <label class="form-label">Category / Deity:</label>
-        <select id="req-category" class="form-input">
-          <option value="Devaranama">Devaranama (ದೇವರನಾಮ)</option>
-          <option value="Ganesha">Ganesha (ಗಣೇಶ)</option>
-          <option value="Vishnu">Vishnu (ವಿಷ್ಣು)</option>
-          <option value="Shiva">Shiva (ಶಿವ)</option>
-          <option value="Saraswathi">Saraswathi (ಸರಸ್ವತಿ)</option>
-          <option value="Hanuman">Hanuman (ಹನುಮಾನ್)</option>
-        </select>
-
-        <label class="form-label">Stotra / Song Text in Kannada (ಕನ್ನಡ ಪಠ್ಯ):</label>
-        <textarea id="req-text" class="form-textarea" rows="5" placeholder="Paste Kannada verses here..."></textarea>
-
-        <div style="display: flex; gap: 10px; margin-top: 18px;">
-          <button id="req-copy-btn" class="btn btn-primary" style="flex: 1;">📋 Copy Submission to Clipboard</button>
-        </div>
-        <p id="req-status" style="font-size: 0.85rem; color: #10b981; margin-top: 10px; text-align: center; display: none;"></p>
-      </div>
-    </div>
-  </div>
 
   <!-- Footer -->
   <footer>
