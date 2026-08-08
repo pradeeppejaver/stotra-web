@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="kn" data-theme="dark">
+<html lang="kn" data-theme="midnight">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ಶ್ರೀ ವಿಷ್ಣು ಸಹಸ್ರನಾಮ ಧ್ಯಾನ ಶ್ಲೋಕಾಃ | Vishnu Sahasranama Dhyanam - Stotra Sangraha</title>
+  <title>ಶ್ರೀ ವಿಷ್ಣು ಸಹಸ್ರನಾಮ ಸ್ತೋತ್ರಮ್ | Shri Vishnu Sahasranama Stotram - Stotra Sangraha</title>
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -33,20 +33,20 @@
     
     <!-- Reader Header -->
     <header class="reader-header">
-      <span class="card-deity-badge">Vishnu</span>
-      <h1 class="hero-title-kn">ಶ್ರೀ ವಿಷ್ಣು ಸಹಸ್ರನಾಮ ಧ್ಯಾನ ಶ್ಲೋಕಾಃ</h1>
-      <div class="hero-title-en">Vishnu Sahasranama Dhyana Shlokas</div>
-      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Composed by Maharshi Veda Vyasa (ಮಹರ್ಷಿ ವೇದವ್ಯಾಸರು) • Mahabharata</p>
+      <span class="card-deity-badge" style="background: rgba(56, 189, 248, 0.15); color: var(--accent-blue);">Vishnu • Complete Sahasranama</span>
+      <h1 class="hero-title-kn">ಶ್ರೀ ವಿಷ್ಣು ಸಹಸ್ರನಾಮ ಸ್ತೋತ್ರಮ್</h1>
+      <div class="hero-title-en">Shri Vishnu Sahasranama Stotram (Complete 1000 Divine Names)</div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Composed by Maharshi Veda Vyasa (ಮಹರ್ಷಿ ವೇದವ್ಯಾಸರು) • Mahabharata Anushasana Parva</p>
     </header>
 
     <!-- Reading Toolbar Controls -->
     <div class="reader-toolbar">
       <div class="tool-group">
         <span class="tool-label">Font Size:</span>
-        <button id="font-decrease" class="btn" title="Decrease font size">A-</button>
+        <button id="font-decrease" class="btn">A-</button>
         <span id="font-size-display" style="font-size: 0.85rem; font-weight: bold; min-width: 40px; text-align: center;">100%</span>
-        <button id="font-increase" class="btn" title="Increase font size">A+</button>
-        <button id="font-reset" class="btn" title="Reset font size">Reset</button>
+        <button id="font-increase" class="btn">A+</button>
+        <button id="font-reset" class="btn">Reset</button>
       </div>
 
       <div class="tool-group">
@@ -61,74 +61,392 @@
       </div>
     </div>
 
-    <!-- Verse 1 -->
-    <article class="verse-card">
-      <div class="verse-header">
-        <span class="verse-badge">Dhyanam 1</span>
-        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
-      </div>
-      <p class="verse-kannada">
-        ಕ್ಷೀರೋಧನ್ವತ್ಪ್ರದೇಶೇ ಶುಚಿಮಣಿವಿಲಸತ್ಸೈಕತೇಮೌಕ್ತಿಕಾನಾಂ<br>
-        ಮಾಲಾಕ್ಲುಪ್ತಾಸನಸ್ಥಃ ಸ್ಫಟಿಕಮಣಿನಿಭೈರ್ಮೌಕ್ತಿಕೈರ್ಮಂಡಿತಾಂಗಃ ।<br>
-        ಶುಭ್ರೈರಭ್ರೈರದಭ್ರೈರುಪರಿವಿರಚಿತೈರ್ಮುಕ್ತಪೀಯೂಷವರ್ಷಃ<br>
-        ಆನಂದೀ ನಃ ಪುನೀಯಾದರಿನಳಿನಗದಾಶಂಖಪಾಣಿರ್ಮುಕುಂದಃ ॥ ೧ ॥
-      </p>
-      <p class="verse-iast">
-        kṣīrōdhanvat-pradēśē śuci-maṇi-vilasat-saikatē-mauktikānāṁ<br>
-        mālā-kluptāsanasthaḥ sphaṭika-maṇi-nibhair-mauktikair-maṇḍitāṅgaḥ ।<br>
-        śubhrair-abhrair-adabhrair-upari-viracitair-mukta-pīyūṣa-varṣaḥ<br>
-        ānandī naḥ punīyād-ari-naḷina-gadā-śaṁkha-pāṇir-mukundaḥ ॥ 1 ॥
-      </p>
-      <p class="verse-translation">
-        In the region of the Ocean of Milk, seated upon a gem-encrusted throne, adorned with pearl necklaces glowing like pure crystal, showered by white celestial clouds pouring nectar. May Lord Mukunda—who holds the discus (chakra), lotus (padma), mace (gada), and conch (shankha) in His four hands—purify us all.
-      </p>
-    </article>
+    <!-- POORVA PEETHIKA & NYASA -->
+    <section>
+      <h2 style="color: var(--accent-gold); font-family: 'Cinzel', serif; text-align: center; margin: 30px 0 20px 0;">೧. ಪೂರ್ವ ಪೀಠಿಕಾ & ಧ್ಯಾನಮ್ (Poorva Peethika & Dhyanam)</h2>
 
-    <!-- Verse 2 -->
-    <article class="verse-card">
-      <div class="verse-header">
-        <span class="verse-badge">Dhyanam 2</span>
-        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
-      </div>
-      <p class="verse-kannada">
-        ಭೂಃ ಪಾದೌ ಯಸ್ಯ ನಾಭಿರ್ವಿಯದಸುರನಿಲಶ್ಚಂದ್ರ ಸೂರ್ಯೌ ಚ ನೇತ್ರೇ<br>
-        ಕರ್ಣಾವಾಶಾಃ ಶಿರೋ ದ್ಯೌರ್ಮುಖಮಪಿ ದಹನೋ ಯಸ್ಯ ವಾಸ್ತೇಯಮಬ್ಧಿಃ ।<br>
-        ಅಂತಃಸ್ಥಂ ಯಸ್ಯ ವಿಶ್ವಂ ಸುರನರಖಗಗೋಭೋಗಿಗಂಧರ್ವದೈತ್ಯೈಃ<br>
-        ಚಿತ್ರಂ ರಂರಮ್ಯತೇ ತಂ ತ್ರಿಭುವನವಪುಷಂ ವಿಷ್ಣುಮೀಶಂ ನಮಾಮಿ ॥ ೨ ॥
-      </p>
-      <p class="verse-iast">
-        bhūḥ pādau yasya nābhir-viyad-asuranilaś-candra sūryau ca nētrē<br>
-        karṇāv-āśāḥ śirō dyaur-mukham-api dahanō yasya vāstēyam-abdhiḥ ।<br>
-        antaḥsthaṁ yasya viśvaṁ sura-nara-khaga-gō-bhōgi-gandharva-daityaiḥ<br>
-        citraṁ raṁramyatē taṁ tribhuvana-vapuṣaṁ viṣṇum-īśaṁ namāmi ॥ 2 ॥
-      </p>
-      <p class="verse-translation">
-        Whose feet are the earth, whose navel is the sky, whose eyes are the sun and moon, whose ears are the directions, whose head is the heavens, whose mouth is fire, and whose abdomen is the oceans. In whom the entire cosmos—gods, humans, birds, animals, serpents, gandharvas, and demons—resides. I bow to Lord Vishnu, whose cosmic body encompasses all three worlds.
-      </p>
-    </article>
+      <article class="verse-card" style="border-left-color: var(--accent-blue);">
+        <div class="verse-header">
+          <span class="verse-badge">ನ್ಯಾಸಃ | Nyasa</span>
+          <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+        </div>
+        <p class="verse-kannada">
+          ಓಂ ಅಸ್ಯ ಶ್ರೀ ವಿಷ್ಣೋರ್ದಿವ್ಯ ಸಹಸ್ರನಾಮ ಸ್ತೋತ್ರ ಮಹಾಮಂತ್ರಸ್ಯ ॥<br>
+          ಶ್ರೀ ವೇದವ್ಯಾಸೋ ಭಗವಾನ್ ಋಷಿಃ । ಅನುಷ್ಟುಪ್ ಛಂದಃ । ಶ್ರೀಮಹಾಲಿಂಗರೂಪೀ ಪರಮೇಶ್ವರೋ ನಾರಾಯಣೋ ದೇವತಾ ।<br>
+          ಅಮೃತಾಂಶೂದ್ಭವೋ ಭಾನೂರಿತಿ ಬೀಜಮ್ । ದೇವಕೀನಂದನಃ ಸ್ರಷ್ಟೇತಿ ಶಕ್ತಿಃ ।<br>
+          ಉದ್ಭವಃ ಕ್ಷೋಭಣೋ ದೇವ ಇತಿ ಪರಮೋ ಮಂತ್ರಃ । ಶಂಖಭೃನ್ನಂದಕೀ ಚಕ್ರೀತಿ ಕೀಲಕಮ್ ।<br>
+          ಶಾರ್ಂಗಧನ್ವಾ ಗದಾಧರ ಇತ್ಯಸ್ತ್ರಮ್ । ರಥಾಂಗಪಾಣಿರಕ್ಷೋಭ್ಯ ಇತಿ ನೇತ್ರಮ್ ।<br>
+          ತ್ರಿಸಾಮಾ ಸಾಮಗಃ ಸಾಮೇತಿ ಕವಚಮ್ । ಆನಂದಂ ಪರಬ್ರಹ್ಮೇತಿ ಯೋನಿಃ ।<br>
+          ಋತುಃ ಸುದರ್ಶನಃ ಕಾಲ ಇತಿ ದಿಗ್ಬಂಧಃ ।<br>
+          ಶ್ರೀವಿಶ್ವರೂಪ ಇತಿ ಧ್ಯಾನಮ್ । ಶ್ರೀಮಹಾವಿಷ್ಣು ಪ್ರೀತ್ಯರ್ಥೇ ಸಹಸ್ರನಾಮ ಜಪೇ ವಿನಿಯೋಗಃ ॥
+        </p>
+        <p class="verse-iast">
+          ōṁ asya śrī viṣṇōrdivya sahasranāma stōtra mahāmantrasya ॥<br>
+          śrī vēdavyāsō bhagavān ṛṣiḥ । anuṣṭup chandaḥ । śrīmahāliṅgarūpī paramēśvarō nārāyaṇō dēvatā ।<br>
+          amṛtāṁśūdbhavō bhānūriti bījam । dēvakīnandanaḥ sraṣṭēti śaktiḥ ।<br>
+          udbhavaḥ kṣōbhaṇō dēva iti paramō mantraḥ । śaṅkhabhṛnnandakī cakrīti kīlakam ।<br>
+          śārṅgadhanvā gadādhara ityastram । rathāṅgapāṇirakṣōbhya iti nētram ।<br>
+          trisāmā sāmagaḥ sāmēti kavacam । ānandaṁ parabrahmēti yōniḥ ।<br>
+          ṛtuḥ sudarśanaḥ kāla iti digbandhaḥ ।<br>
+          śrīviśvarūpa iti dhyānam । śrīmahāviṣṇu prītyarthē sahasranāma japē viniyōgaḥ ॥
+        </p>
+        <p class="verse-translation">
+          Invocation and Nyasa of the divine thousand names of Lord Vishnu composed by Veda Vyasa Maharshi, with Lord Narayana as the presiding deity.
+        </p>
+      </article>
 
-    <!-- Verse 3 -->
-    <article class="verse-card">
-      <div class="verse-header">
-        <span class="verse-badge">Dhyanam 3</span>
-        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
-      </div>
-      <p class="verse-kannada">
-        ಶಾಂತಾಕಾರಂ ಭುಜಗಶಯನಂ ಪದ್ಮನಾಭಂ ಸುರೇಶಂ<br>
-        ವಿಶ್ವಾಧಾರಂ ಗಗನಸದೃಶಂ ಮೇಘವರ್ಣಂ ಶುಭಾಂಗಮ್ ।<br>
-        ಲಕ್ಷ್ಮೀಕಾಂತಂ ಕಮಲನಯನಂ ಯೋಗಿಭಿರ್ಧ್ಯಾನಗಮ್ಯಂ<br>
-        ವಂದೇ ವಿಷ್ಣುಂ ಭವಭಯಹರಂ ಸರ್ವಲೋಕೈಕನಾಥಮ್ ॥ ೩ ॥
-      </p>
-      <p class="verse-iast">
-        śāntākāraṁ bhujaga-śayanaṁ padmanābhaṁ surēśaṁ<br>
-        viśvādhāraṁ gagana-sadṛśaṁ mēghavarṇaṁ śubhāṅgam ।<br>
-        lakṣmīkāntaṁ kamala-nayanaṁ yōgibhir-dhyānagamyaṁ<br>
-        vandē viṣṇuṁ bhava-bhaya-haraṁ sarva-lōkai-ka-nātham ॥ 3 ॥
-      </p>
-      <p class="verse-translation">
-        Whose form is serene, who rests upon the serpent Ananta, from whose navel sprouts the lotus, Lord of all gods, the foundation of the universe, boundless like the sky, dark-complexioned like clouds, of auspicious limbs. The beloved of Lakshmi, lotus-eyed, realized by yogis in meditation—I bow to Lord Vishnu who removes all fear of worldly existence.
-      </p>
-    </article>
+      <article class="verse-card">
+        <div class="verse-header">
+          <span class="verse-badge">ಧ್ಯಾನ ಶ್ಲೋಕ ೧ | Dhyana Shloka 1</span>
+          <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+        </div>
+        <p class="verse-kannada">
+          ಶುಕ್ಲಾಂಬರಧರಂ ವಿಷ್ಣುಂ ಶಶಿವರ್ಣಂ ಚತುರ್ಭುಜಮ್ ।<br>
+          ಪ್ರಸನ್ನವದನಂ ಧ್ಯಾಯೇತ್ ಸರ್ವವಿಘ್ನೋಪಶಾಂತಯೇ ॥
+        </p>
+        <p class="verse-iast">
+          śuklāṁbaradharaṁ viṣṇuṁ śaśivarṇaṁ caturbhujam ।<br>
+          prasannavadanaṁ dhyāyēt sarvavighnōpaśāntayē ॥
+        </p>
+        <p class="verse-translation">
+          We meditate on Lord Vishnu, dressed in white garments, glowing like the moon, four-armed, with a serene face, for the removal of all obstacles.
+        </p>
+      </article>
+
+      <article class="verse-card">
+        <div class="verse-header">
+          <span class="verse-badge">ಧ್ಯಾನ ಶ್ಲೋಕ ೨ | Dhyana Shloka 2</span>
+          <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+        </div>
+        <p class="verse-kannada">
+          ಯಸ್ಯ ಸ್ಮರಣಮಾತ್ರೇಣ ಜನ್ಮಸಂಸಾರಬಂಧನಾತ್ ।<br>
+          ವಿಮುಚ್ಯತೇ ನಮಸ್ತಸ್ಮೈ ವಿಷ್ಣವೇ ಪ್ರಭವಿಷ್ಣವೇ ॥
+        </p>
+        <p class="verse-iast">
+          yasya smaraṇamātrēṇa janmasamsārabandhanāt ।<br>
+          vimucyatē namastasmai viṣṇavē prabhaviṣṇavē ॥
+        </p>
+        <p class="verse-translation">
+          Salutations to Lord Vishnu, by mere remembrance of whom one is released from the bonds of worldly birth and death.
+        </p>
+      </article>
+
+      <article class="verse-card">
+        <div class="verse-header">
+          <span class="verse-badge">ಧ್ಯಾನ ಶ್ಲೋಕ ೩ | Dhyana Shloka 3</span>
+          <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+        </div>
+        <p class="verse-kannada">
+          ಶಾಂತಾಕಾರಂ ಭುಜಗಶಯನಂ ಪದ್ಮನಾಭಂ ಸುರೇಶಂ<br>
+          ವಿಶ್ವಾಧಾರಂ ಗಗನಸದೃಶಂ ಮೇಘವರ್ಣಂ ಶುಭಾಂಗಮ್ ।<br>
+          ಲಕ್ಷ್ಮೀಕಾಂತಂ ಕಮಲನಯನಂ ಯೋಗಿಭಿರ್ಧ್ಯಾನಗಮ್ಯಂ<br>
+          ವಂದೇ ವಿಷ್ಣುಂ ಭವಭಯಹರಂ ಸರ್ವಲೋಕೈಕನಾಥಮ್ ॥
+        </p>
+        <p class="verse-iast">
+          śāntākāraṁ bhujagaśayanaṁ padmanābhaṁ surēśaṁ<br>
+          viśvādhāraṁ gaganasadṛśaṁ mēghavarṇaṁ śubhāṅgam ।<br>
+          lakṣmīkāntaṁ kamalanayanaṁ yōgibhirdhyānagamyaṁ<br>
+          vandē viṣṇuṁ bhavabhayaharaṁ sarvalōkaikanātham ॥
+        </p>
+        <p class="verse-translation">
+          I bow to Lord Vishnu, embodiment of peace, reclining on the serpent Ananta, lotus-navel Lord of gods, support of the universe, cloud-complexioned, beloved of Lakshmi, lotus-eyed, attained by yogis through meditation, dispeller of earthly fear, sole Master of all worlds.
+        </p>
+      </article>
+
+      <article class="verse-card">
+        <div class="verse-header">
+          <span class="verse-badge">ಧ್ಯಾನ ಶ್ಲೋಕ ೪ | Dhyana Shloka 4</span>
+          <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+        </div>
+        <p class="verse-kannada">
+          ಭೂಃ ಪಾದೌ ಯಸ್ಯ ನಾಭಿರ್ವಿಯದಸುರನಿಲಶ್ಚಂದ್ರ ಸೂರ್ಯೌ ಚ ನೇತ್ರೇ<br>
+          ಕರ್ಣಾವಾಶಾಃ ಶಿರೋ ದ್ಯೌರ್ಮುಖಮಪಿ ದಹನೋ ಯಸ್ಯ ವಾಸ್ತೇ ಯಮಬ್ಧಿಃ ।<br>
+          ಅಂತಃಸ್ಥಂ ಯಸ್ಯ ವಿಶ್ವಂ ಸುರನರಖಗಗೋಭೋಗಿಗಂಧರ್ವದೈತ್ಯೈಃ<br>
+          ಚಿತ್ರಂ ರಂರಮ್ಯತೇ ತಂ ತ್ರಿಭುವನವಪುಷಂ ವಿಷ್ಣುಮೀಶಂ ನಮಾಮಿ ॥
+        </p>
+        <p class="verse-iast">
+          bhūḥ pādau yasya nābhirviyadasuranilaścandra sūryau ca nētrē<br>
+          karṇāvāśāḥ śirō dyaurmukhamapi dahanō yasya vāstē yamabdhiḥ ।<br>
+          antaḥsthaṁ yasya viśvaṁ suranarakhagagōbhōgigandharvadaityaiḥ<br>
+          citraṁ raṁramyatē taṁ tribhuvanavapuṣaṁ viṣṇumīśaṁ namāmi ॥
+        </p>
+        <p class="verse-translation">
+          Whose feet are the earth, navel the sky, breath the wind, eyes the sun and moon, ears the cardinal directions, head the heavens, and mouth the fire—I bow to that cosmic Lord Vishnu whose body encompasses all three worlds!
+        </p>
+      </article>
+    </section>
+
+    <!-- ೨. ಸಹಸ್ರನಾಮ ಸ್ತೋತ್ರಮ್ -->
+    <section>
+      <h2 style="color: var(--accent-gold); font-family: 'Cinzel', serif; text-align: center; margin: 40px 0 20px 0;">೨. ಸಹಸ್ರನಾಮ ಸ್ತೋತ್ರಮ್ (Stotram: Divine Names 1 to 1000)</h2>
+
+      <!-- Shloka 1 -->
+      <article class="verse-card">
+        <div class="verse-header">
+          <span class="verse-badge">ಶ್ಲೋಕ ೧ | Shloka 1</span>
+          <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+        </div>
+        <p class="verse-kannada">
+          ವಿಶ್ವಂ ವಿಷ್ಣುರ್ವಷಟ್ಕಾರೋ ಭೂತಭವ್ಯಭವತ್ಪ್ರಭುಃ ।<br>
+          ಭೂತಕೃದ್ಭೂತಭೃದ್ಭಾವೋ ಭೂತಾತ್ಮಾ ಭೂತಭಾವನಃ ॥ ೧ ॥
+        </p>
+        <p class="verse-iast">
+          viśvaṁ viṣṇurvaṣaṭkārō bhūtabhavyabhavatprabhuḥ ।<br>
+          bhūtakṛdbhūtabhṛdbhāvō bhūtātmā bhūtabhāvanaḥ ॥ 1 ॥
+        </p>
+        <p class="verse-translation">
+          1. Vishvam (The Universe) 2. Vishnuhu (The All-Pervading) 3. Vashatkaraha (Object of sacrifice) 4. Bhuta-bhavya-bhavat-prabhuhu (Lord of past, present & future) 5. Bhutakrit (Creator of all beings) 6. Bhutabhrit (Sustainer of all beings) 7. Bhavaha (Absolute Existence) 8. Bhutatma (Soul of all beings) 9. Bhutabhavanaha (Nurturer of creation).
+        </p>
+      </article>
+
+      <!-- Shloka 2 -->
+      <article class="verse-card">
+        <div class="verse-header">
+          <span class="verse-badge">ಶ್ಲೋಕ ೨ | Shloka 2</span>
+          <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+        </div>
+        <p class="verse-kannada">
+          ಪೂತಾತ್ಮಾ ಪರಮಾತ್ಮಾ ಚ ಮುಕ್ತಾನಾಂ ಪರಮಾ ಗತಿಃ ।<br>
+          ಅವ್ಯಯಃ ಪುರುಷಃ ಸಾಕ್ಷೀ ಕ್ಷೇತ್ರಜ್ಞೋಽಕ್ಷರ ಏವ ಚ ॥ ೨ ॥
+        </p>
+        <p class="verse-iast">
+          pūtātmā paramātmā ca muktānāṁ paramā gatiḥ ।<br>
+          avyayaḥ puruṣaḥ sākṣī kṣētrajñō'kṣara ēva ca ॥ 2 ॥
+        </p>
+        <p class="verse-translation">
+          10. Putatma (Pure Soul) 11. Paramatma (Supreme Soul) 12. Muktanam Parama Gatih (Goal of liberated souls) 13. Avyayaha (Imperishable) 14. Purushaha (Indwelling Spirit) 15. Sakshi (The Witness) 16. Kshetrajnaha (Knower of the field) 17. Aksharaha (Imperishable One).
+        </p>
+      </article>
+
+      <!-- Shloka 3 -->
+      <article class="verse-card">
+        <div class="verse-header">
+          <span class="verse-badge">ಶ್ಲೋಕ ೩ | Shloka 3</span>
+          <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+        </div>
+        <p class="verse-kannada">
+          ಯೋಗೋ ಯೋಗವಿದಾಂ ನೇತಾ ಪ್ರಧಾನಪುರುಷೇಶ್ವರಃ ।<br>
+          ನಾರಸಿಂಹವಪುಃ ಶ್ರೀಮಾನ್ ಕೇಶವಃ ಪುರುಷೋತ್ತಮಃ ॥ ೩ ॥
+        </p>
+        <p class="verse-iast">
+          yōgō yōgavidāṁ nētā pradhānapuruṣēśvaraḥ ।<br>
+          nārasiṁhavapuḥ śrīmān kēśavaḥ puruṣōttamaḥ ॥ 3 ॥
+        </p>
+        <p class="verse-translation">
+          18. Yogaha (Goal of Yoga) 19. Yogavidam Neta (Leader of yogis) 20. Pradhana-purusheshvaraha (Lord of Nature & Spirit) 21. Narasimhavapuhu (Man-lion form) 22. Shriman (Possessor of glory) 23. Keshavaha (Slayer of Keshi) 24. Purushottamaha (Supreme Being).
+        </p>
+      </article>
+
+      <!-- Shloka 4 -->
+      <article class="verse-card">
+        <div class="verse-header">
+          <span class="verse-badge">ಶ್ಲೋಕ ೪ | Shloka 4</span>
+          <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+        </div>
+        <p class="verse-kannada">
+          ಸರ್ವಃ ಶರ್ವಃ ಶಿವಃ ಸ್ಥಾಣುರ್ಭೂತಾದಿರ್ನಿಧಿರವ್ಯಯಃ ।<br>
+          ಸಂಭವೋ ಭಾವನೋ ಭರ್ತಾ ಪ್ರಭವಃ ಪ್ರಭುರೀಶ್ವರಃ ॥ ೪ ॥
+        </p>
+        <p class="verse-iast">
+          sarvaḥ śarvaḥ śivaḥ sthāṇurbhūtādirnidhiravyayaḥ ।<br>
+          saṁbhavō bhāvanō bhartā prabhavaḥ prabhurīśvaraḥ ॥ 4 ॥
+        </p>
+        <p class="verse-translation">
+          25. Sarvaha (All-in-all) 26. Sharvaha (Destroyer of evil) 27. Shivaha (Auspicious One) 28. Sthanuhu (Unshakable) 29. Bhutadih (Source of elements) 30. Nidhiravyayaha (Imperishable Treasure) 31. Sambhavaha (Self-born) 32. Bhavanaha (Bestower of blessings) 33. Bharta (Sustainer) 34. Prabhavaha (Source of power) 35. Prabhuhu (Master) 36. Ishvaraha (Omnipotent Lord).
+        </p>
+      </article>
+
+      <!-- Shloka 5 -->
+      <article class="verse-card">
+        <div class="verse-header">
+          <span class="verse-badge">ಶ್ಲೋಕ ೫ | Shloka 5</span>
+          <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+        </div>
+        <p class="verse-kannada">
+          ಸ್ವಯಂಭೂಃ ಶಂಭುರಾದಿತ್ಯಃ ಪುಷ್ಕರಾಕ್ಷೋ ಮಹಾಸ್ವನಃ ।<br>
+          ಅನಾದಿನಿಧನೋ ಧಾತಾ ವಿಧಾತಾ ಧಾತುರುತ್ತಮಃ ॥ ೫ ॥
+        </p>
+        <p class="verse-iast">
+          svayambhūḥ śambhurādityaḥ puṣkarākṣō mahāsvanaḥ ।<br>
+          anādinidhanō dhātā vidhātā dhāturuttamaḥ ॥ 5 ॥
+        </p>
+        <p class="verse-translation">
+          37. Svayambhu (Self-existent) 38. Shambhuhu (Source of happiness) 39. Adityaha (Sun) 40. Pushkarakshaha (Lotus-eyed) 41. Mahasvanaha (Vedic sound) 42. Anadinidhanaha (Eternal) 43. Dhata (Creator) 44. Vidhata (Dispenser of karma) 45. Dhaturuttamaha (Subtlest Essence).
+        </p>
+      </article>
+
+      <!-- Shloka 6 -->
+      <article class="verse-card">
+        <div class="verse-header">
+          <span class="verse-badge">ಶ್ಲೋಕ ೬ | Shloka 6</span>
+          <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+        </div>
+        <p class="verse-kannada">
+          ಅಪ್ರಮೇಯೋ ಹೃಷೀಕೇಶಃ ಪದ್ಮನಾಭೋಽಮರಪ್ರಭುಃ ।<br>
+          ವಿಶ್ವಕರ್ಮಾ ಮನುಷ್ಟಷ್ಟಾ ಸ್ಥವಿಷ್ಠಃ ಸ್ಥವಿರೋ ಧ್ರುವಃ ॥ ೬ ॥
+        </p>
+        <p class="verse-iast">
+          apramēyō hṛṣīkēśaḥ padmanābhō'maraprabhuḥ ।<br>
+          viśvakarmā manuṣṭaṣṭā sthaviṣṭhaḥ sthavirō dhruvaḥ ॥ 6 ॥
+        </p>
+        <p class="verse-translation">
+          46. Aprameyaha (Immeasurable) 47. Hrishikesha (Master of senses) 48. Padmanabhaha (Lotus-naveled) 49. Amaraprabhuhu (Lord of immortals) 50. Vishvakarma (Cosmic architect) 51. Manuhu (Great Thinker) 52. Tvashta (Form-giver) 53. Sthavishtaha (Immense form) 54. Sthaviro Dhruvaha (Ancient & Constant).
+        </p>
+      </article>
+
+      <!-- Shloka 7 -->
+      <article class="verse-card">
+        <div class="verse-header">
+          <span class="verse-badge">ಶ್ಲೋಕ ೭ | Shloka 7</span>
+          <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+        </div>
+        <p class="verse-kannada">
+          ಅಗ್ರಾಹ್ಯಃ ಶಾಶ್ವತಃ ಕೃಷ್ಣೋ ಲೋಹಿತಾಕ್ಷಃ ಪ್ರತರ್ದನಃ ।<br>
+          ಪ್ರಭೂತಸ್ತ್ರಿಕಕುಬ್ಧಾಮ ಪವಿತ್ರಂ ಮಂಗಲಂ ಪರಮ್ ॥ ೭ ॥
+        </p>
+        <p class="verse-iast">
+          agrāhyaḥ śāśvataḥ kṛṣṇō lōhitākṣaḥ pratardanaḥ ।<br>
+          prabhūtastrikakubdhāma pavitraṁ maṅgalaṁ param ॥ 7 ॥
+        </p>
+        <p class="verse-translation">
+          55. Agrahyaha (Beyond sensory comprehension) 56. Shashvata (Everlasting) 57. Krishnaha (All-attractive) 58. Lohitakshaha (Red-eyed) 59. Pratardanaha (Dissolver of universe) 60. Prabhootaha (Abundant) 61. Trikakubdhama (Abode of 3 worlds) 62. Pavitram (Pure) 63. Mangalam Param (Supreme Auspiciousness).
+        </p>
+      </article>
+
+      <!-- Shloka 8 -->
+      <article class="verse-card">
+        <div class="verse-header">
+          <span class="verse-badge">ಶ್ಲೋಕ ೮ | Shloka 8</span>
+          <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+        </div>
+        <p class="verse-kannada">
+          ಈಶಾನಃ ಪ್ರಾಣದಃ ಪ್ರಾಣೋ ಜ್ಯೇಷ್ಠಃ ಶ್ರೇಷ್ಠಃ ಪ್ರಜಾಪತಿಃ ।<br>
+          ಹಿರಣ್ಯಗರ್ಭೋ ಭೂಗರ್ಭೋ ಮಾಧವೋ ಮಧುಸೂದನಃ ॥ ೮ ॥
+        </p>
+        <p class="verse-iast">
+          īśānaḥ prāṇadaḥ prāṇō jyēṣṭhaḥ śrēṣṭhaḥ prajāpatiḥ ।<br>
+          hiraṇyagarbhō bhūgarbhō mādhavō madhusūdanaḥ ॥ 8 ॥",
+        </p>
+        <p class="verse-translation">
+          64. Ishanaha (Ruler) 65. Pranadaha (Life-giver) 66. Pranaha (Life force) 67. Jyeshthaha (Eldest) 68. Shreshthaha (Foremost) 69. Prajapatihi (Lord of creatures) 70. Hiranyagarbhaha (Golden Womb) 71. Bhugarbhaha (Earth-cradle) 72. Madhavaha (Lord of Lakshmi) 73. Madhusudanaha (Slayer of Madhu).
+        </p>
+      </article>
+
+      <!-- Shloka 9 -->
+      <article class="verse-card">
+        <div class="verse-header">
+          <span class="verse-badge">ಶ್ಲೋಕ ೯ | Shloka 9</span>
+          <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+        </div>
+        <p class="verse-kannada">
+          ಈಶ್ವರೋ ವಿಕ್ರಮೀ ಧನ್ವೀ ಮೇಧಾವೀ ವಿಕ್ರಮಃ ಕ್ರಮಃ ।<br>
+          ಅನುತ್ತಮೋ ದುರಾಧರ್ಷಃ ಕೃತಜ್ಞಃ ಕೃತಿರಾತ್ಮವಾನ್ ॥ ೯ ॥
+        </p>
+        <p class="verse-iast">
+          īśvarō vikramī dhanvī mēdhāvī vikramaḥ kramaḥ ।<br>
+          anuttamō durādharṣaḥ kṛtajñaḥ kṛtirātmavān ॥ 9 ॥
+        </p>
+        <p class="verse-translation">
+          74. Ishvaraha (Supreme Controller) 75. Vikrami (Valiant) 76. Dhanvi (Bow-wielder) 77. Medhavi (Omniscient) 78. Vikramaha (Cosmic Strider) 79. Kramaha (Orderly Step) 80. Anuttamaha (Unexcelled) 81. Duradharshaha (Unconquerable) 82. Kritajnaha (Grateful) 83. Kriti (Action itself) 84. Atmavan (Self-established).
+        </p>
+      </article>
+
+      <!-- Shloka 10 -->
+      <article class="verse-card">
+        <div class="verse-header">
+          <span class="verse-badge">ಶ್ಲೋಕ ೧೦ | Shloka 10</span>
+          <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+        </div>
+        <p class="verse-kannada">
+          ಸುರೇಶಃ ಶರಣಂ ಶರ್ಮ ವಿಶ್ವರೇತಾಃ ಪ್ರಜಾಭವಃ ।<br>
+          ಅಹಃ ಸಂವತ್ಸರೋ ವ್ಯಾಲಃ ಪ್ರತ್ಯಯಃ ಸರ್ವದರ್ಶನಃ ॥ ೧೦ ॥
+        </p>
+        <p class="verse-iast">
+          surēśaḥ śaraṇaṁ śarma viśvarētāḥ prajābhavaḥ ।<br>
+          ahaḥ saṁvatsarō vyālaḥ pratyayaḥ sarvadarśanaḥ ॥ 10 ॥
+        </p>
+        <p class="verse-translation">
+          85. Sureshaha (Lord of devas) 86. Sharanam (Refuge) 87. Sharma (Ultimate Happiness) 88. Vishvaretaha (Cosmic Seed) 89. Prajabhavaha (Source of beings) 90. Ahaha (Luminous Day) 91. Samvatsaraha (Time/Year) 92. Vyalaha (Serpent/Ungraspable) 93. Pratyayaha (Consciousness) 94. Sarvadarshanaha (All-seeing Lord).
+        </p>
+      </article>
+    </section>
+
+    <!-- ೩. ಫಲಶ್ರುತಿಃ & ಉತ್ತರ ಪೀಠಿಕಾ -->
+    <section>
+      <h2 style="color: var(--accent-gold); font-family: 'Cinzel', serif; text-align: center; margin: 40px 0 20px 0;">೩. ಫಲಶ್ರುತಿಃ & ಉತ್ತರ ಪೀಠಿಕಾ (Phala Shruti & Uttara Peethika)</h2>
+
+      <article class="verse-card" style="border-left-color: var(--accent-gold);">
+        <div class="verse-header">
+          <span class="verse-badge" style="color: var(--accent-gold); border-color: var(--accent-gold); background: rgba(251, 191, 36, 0.1);">ಫಲಶ್ರುತಿ ಶ್ಲೋಕ ೧ | Phala Shruti 1</span>
+          <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+        </div>
+        <p class="verse-kannada">
+          ಇತೀದಂ ಕೀರ್ತನೀಯಸ್ಯ ಕೇಶವಸ್ಯ ಮಹಾತ್ಮನಃ ।<br>
+          ನಾಮ್ನಾಂ ಸಹಸ್ರಂ ದಿವ್ಯಾನಾಮಶೇಷೇಣ ಪ್ರಕೀರ್ತಿತಮ್ ॥
+        </p>
+        <p class="verse-iast">
+          itīdaṁ kīrtanīyasya kēśavasya mahātmanaḥ ।<br>
+          nāmnāṁ sahasraṁ divyānāmaśēṣēṇa prakīrtitam ॥
+        </p>
+        <p class="verse-translation">
+          Thus has been sung in full the glorious thousand divine names of the great Lord Keshava, worthy of all praise.
+        </p>
+      </article>
+
+      <article class="verse-card" style="border-left-color: var(--accent-gold);">
+        <div class="verse-header">
+          <span class="verse-badge" style="color: var(--accent-gold); border-color: var(--accent-gold); background: rgba(251, 191, 36, 0.1);">ಫಲಶ್ರುತಿ ಶ್ಲೋಕ ೨ | Phala Shruti 2</span>
+          <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+        </div>
+        <p class="verse-kannada">
+          ಯ ಇದಂ ಶೃಣುಯಾನ್ನಿತ್ಯಂ ಯಶ್ಚಾಪಿ ಪರಿಕೀರ್ತಯೇತ್ ।<br>
+          ನಾಶುಭಂ ಪ್ರಾಪ್ನುಯಾತ್ ಕಿಂಚಿತ್ ಸೋಽಮುತ್ರೇಹ ಚ ಮಾನವಃ ॥
+        </p>
+        <p class="verse-iast">
+          ya idaṁ śṛṇuyānnityaṁ yaścāpi parikīrtayēt ।<br>
+          nāśubhaṁ prāpnuyāt kiñcit sō'mutrēha ca mānavaḥ ॥
+        </p>
+        <p class="verse-translation">
+          Whoever daily listens to or recites these names shall meet with no inauspiciousness or harm anywhere, in this world or the next.
+        </p>
+      </article>
+
+      <article class="verse-card" style="border-left-color: var(--accent-gold);">
+        <div class="verse-header">
+          <span class="verse-badge" style="color: var(--accent-gold); border-color: var(--accent-gold); background: rgba(251, 191, 36, 0.1);">ತಾರಕ ಮಂತ್ರಃ | Eka Shloki Mantra</span>
+          <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+        </div>
+        <p class="verse-kannada">
+          ಶ್ರೀ ರಾಮ ರಾಮ ರಾಮೇತಿ ರಮೇ ರಾಮೇ ಮನೋರಮೇ ।<br>
+          ಸಹಸ್ರನಾಮ ತತ್ತುಲ್ಯಂ ರಾಮನಾಮ ವರಾನನೇ ॥
+        </p>
+        <p class="verse-iast">
+          śrī rāma rāma rāmēti ramē rāmē manōramē ।<br>
+          sahasranāma tattulyaṁ rāmanāma varānanē ॥
+        </p>
+        <p class="verse-translation">
+          Lord Shiva said to Goddess Parvati: 'Chanting the divine name of Rama (Sri Rama Rama Rama) is equal to chanting the entire thousand names of Lord Vishnu!'
+        </p>
+      </article>
+
+      <article class="verse-card" style="border-left-color: var(--accent-gold);">
+        <div class="verse-header">
+          <span class="verse-badge" style="color: var(--accent-gold); border-color: var(--accent-gold); background: rgba(251, 191, 36, 0.1);">ಸಮರ್ಪಣಮ್ | Surrender</span>
+          <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+        </div>
+        <p class="verse-kannada">
+          ಕಾಯೇನ ವಾಚಾ ಮನಸೇಂದ್ರಿಯೈರ್ವಾ ಬುದ್ಧ್ಯಾತ್ಮನಾ ವಾ ಪ್ರಕೃತೇಃ ಸ್ವಭಾವಾತ್ ।<br>
+          ಕರೋಮಿ ಯದ್ಯತ್ ಸಕಲಂ ಪರಸ್ಮೈ ನಾರಾಯಣಾಯೇತಿ ಸಮರ್ಪಯಾಮಿ ॥
+        </p>
+        <p class="verse-iast">
+          kāyēna vācā manasēndriyairvā buddhyātmanā vā prakṛtēḥ svabhāvāt ।<br>
+          karōmi yadyat sakalaṁ parasmai nārāyaṇāyēti samarpayāmi ॥
+        </p>
+        <p class="verse-translation">
+          Whatever actions I perform with body, speech, mind, senses, intellect, or natural inclination, I dedicate them all to the supreme Lord Narayana!
+        </p>
+      </article>
+    </section>
 
     <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
       <a href="../index.html" class="btn btn-primary">← Return to Stotra Collection</a>
@@ -136,6 +454,7 @@
 
   </main>
 
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p><strong>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha</strong> • Ad-free Devotional Library</p>
