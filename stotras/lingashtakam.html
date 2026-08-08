@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="kn" data-theme="midnight">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ಶ್ರೀ ಲಿಂಗಾಷ್ಟಕಂ | Lingashtakam - Stotra Sangraha</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <span class="logo-icon">🕉️</span>
+        <span class="brand-text">ಸ್ತೋತ್ರ ಸಂಗ್ರಹ</span>
+      </a>
+      <div class="nav-controls">
+        <a href="../index.html" class="btn">← Back to Catalog</a>
+        <select id="theme-select" class="theme-select" title="Choose Theme Palette">
+          <option value="midnight">🌙 Midnight Temple (Navy & Gold)</option>
+          <option value="saffron">🔥 Saffron Divine (Sacred Vermillion)</option>
+          <option value="sandalwood">🪵 Royal Sandalwood (Turmeric)</option>
+          <option value="kailasha">🌌 Kailasha Sunset (Mystic Violet)</option>
+          <option value="parchment">📜 Sacred Parchment (Light Mode)</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    
+    <!-- Reader Header -->
+    <header class="reader-header">
+      <span class="card-deity-badge">Shiva</span>
+      <h1 class="hero-title-kn">ಶ್ರೀ ಲಿಂಗಾಷ್ಟಕಂ</h1>
+      <div class="hero-title-en">Shri Lingashtakam Stotram</div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Composed by Sri Adi Shankaracharya</p>
+    </header>
+
+    <!-- Reading Toolbar Controls -->
+    <div class="reader-toolbar">
+      <div class="tool-group">
+        <span class="tool-label">Font Size:</span>
+        <button id="font-decrease" class="btn">A-</button>
+        <span id="font-size-display" style="font-size: 0.85rem; font-weight: bold; min-width: 40px; text-align: center;">100%</span>
+        <button id="font-increase" class="btn">A+</button>
+        <button id="font-reset" class="btn">Reset</button>
+      </div>
+
+      <div class="tool-group">
+        <button id="wakelock-btn" class="btn">🔒 Keep Screen Awake</button>
+      </div>
+
+      <div class="tool-group">
+        <span class="tool-label">View:</span>
+        <button id="toggle-kn" class="btn btn-active">ಕನ್ನಡ</button>
+        <button id="toggle-iast" class="btn btn-active">English</button>
+        <button id="toggle-trans" class="btn btn-active">Meaning</button>
+      </div>
+    </div>
+
+    <!-- Verse 1 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Verse 1</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಬ್ರಹ್ಮಮುರಾರಿ ಸುರಾರ್ಚಿತ ಲಿಂಗಂ ನಿರ್ಮಲಭಾಸಿತ ಶೋಭಿತ ಲಿಂಗಮ್ ।<br>
+        ಜನ್ಮಜ ದುಃಖ ವಿನಾಶಕ ಲಿಂಗಂ ತತ್ಪ್ರಣಮಾಮಿ ಸದಾಶಿವ ಲಿಂಗಮ್ ॥ ೧ ॥
+      </p>
+      <p class="verse-iast">
+        brahmamurāri surārcita liṅgaṁ nirmalabhāsita śōbhita liṅgam ।<br>
+        janmaja duḥkha vināśaka liṅgaṁ tatpraṇamāmi sadāśiva liṅgam ॥ 1 ॥
+      </p>
+      <p class="verse-translation">
+        I bow before that eternal Lingam of Lord Sadashiva, which is revered by Brahma, Vishnu (Murari), and the devas, pure and resplendently radiant, destroying all sorrows born of worldly births.
+      </p>
+    </article>
+
+    <!-- Verse 2 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Verse 2</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ದೇವಮುನಿ ಪ್ರವರಾರ್ಚಿತ ಲಿಂಗಂ ಕಾಮದಹನ ಕರುಣಾಕರ ಲಿಂಗಮ್ ।<br>
+        ರಾವಣ ದರ್ಪ ವಿನಾಶನ ಲಿಂಗಂ ತತ್ಪ್ರಣಮಾಮಿ ಸದಾಶಿವ ಲಿಂಗಮ್ ॥ ೨ ॥
+      </p>
+      <p class="verse-iast">
+        dēvamuni pravarārcita liṅgaṁ kāmadahana karuṇākara liṅgam ।<br>
+        rāvaṇa darpa vināśana liṅgaṁ tatpraṇamāmi sadāśiva liṅgam ॥ 2 ॥
+      </p>
+      <p class="verse-translation">
+        I bow before that Sadashiva Lingam, worshipped by the noble gods and sages, which consumed Manmatha (desire/Kama), the ocean of compassion, and which crushed the pride of Ravana.
+      </p>
+    </article>
+
+    <!-- Verse 3 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Verse 3</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಸರ್ವ ಸುಗಂಧ ಸುಲೇಪಿತ ಲಿಂಗಂ ಬುದ್ಧಿ ವಿವರ್ಧನ ಕಾರಣ ಲಿಂಗಮ್ ।<br>
+        ಸಿದ್ಧ ಸುರಾಸುರ ವಂದಿತ ಲಿಂಗಂ ತತ್ಪ್ರಣಮಾಮಿ ಸದಾಶಿವ ಲಿಂಗಮ್ ॥ ೩ ॥
+      </p>
+      <p class="verse-iast">
+        sarva sugandha sulēpita liṅgaṁ buddhi vivardhana kāraṇa liṅgam ।<br>
+        siddha surāsura vandita liṅgaṁ tatpraṇamāmi sadāśiva liṅgam ॥ 3 ॥
+      </p>
+      <p class="verse-translation">
+        I bow before that Sadashiva Lingam, anointed with fragrant perfumes, the prime cause for the expansion and sharpening of intellect, venerated by Siddhas, Devas, and Asuras alike.
+      </p>
+    </article>
+
+    <!-- Verse 4 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Verse 4</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಕನಕ ಮಹಾಮಣಿ ಭೂಷಿತ ಲಿಂಗಂ ಫಣಿಪತಿ ವೇಷ್ಟಿತ ಶೋಭಿತ ಲಿಂಗಮ್ ।<br>
+        ದಕ್ಷಸುಯಜ್ಞ ವಿನಾಶನ ಲಿಂಗಂ ತತ್ಪ್ರಣಮಾಮಿ ಸದಾಶಿವ ಲಿಂಗಮ್ ॥ ೪ ॥
+      </p>
+      <p class="verse-iast">
+        kanaka mahāmaṇi bhūṣita liṅgaṁ phaṇipati vēṣṭita śōbhita liṅgam ।<br>
+        dakṣasuyajña vināśana liṅgaṁ tatpraṇamāmi sadāśiva liṅgam ॥ 4 ॥
+      </p>
+      <p class="verse-translation">
+        I bow before that Sadashiva Lingam, adorned with gold and precious jewels, encircled and embellished by Vasuki (the King of Serpents), and which destroyed the sacrifice of Daksha.
+      </p>
+    </article>
+
+    <!-- Verse 5 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Verse 5</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಕುಂಕುಮ ಚಂದನ ಲೇಪಿತ ಲಿಂಗಂ ಪಂಕಜ ಹಾರ ಸುಶೋಭಿತ ಲಿಂಗಮ್ ।<br>
+        ಸಂಚಿತ ಪಾಪ ವಿನಾಶನ ಲಿಂಗಂ ತತ್ಪ್ರಣಮಾಮಿ ಸದಾಶಿವ ಲಿಂಗಮ್ ॥ ೫ ॥
+      </p>
+      <p class="verse-iast">
+        kuṅkuma candana lēpita liṅgaṁ paṅkaja hāra suśōbhita liṅgam ।<br>
+        sañcita pāpa vināśana liṅgaṁ tatpraṇamāmi sadāśiva liṅgam ॥ 5 ॥
+      </p>
+      <p class="verse-translation">
+        I bow before that Sadashiva Lingam, gracefully anointed with Kumkuma and Sandalwood paste, adorned with lotus garlands, and which destroys all accumulated karmic sins.
+      </p>
+    </article>
+
+    <!-- Verse 6 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Verse 6</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ದೇವಗಣಾರ್ಚಿತ ಸೇವಿತ ಲಿಂಗಂ ಭಾವೈ-ರ್ಭಕ್ತಿಭಿರೇವ ಚ ಲಿಂಗಮ್ ।<br>
+        ದಿನಕರ ಕೋಟಿ ಪ್ರಭಾಕರ ಲಿಂಗಂ ತತ್ಪ್ರಣಮಾಮಿ ಸದಾಶಿವ ಲಿಂಗಮ್ ॥ ೬ ॥
+      </p>
+      <p class="verse-iast">
+        dēvagaṇārcita sēvita liṅgaṁ bhāvair-bhaktibhirēva ca liṅgam ।<br>
+        dinakara kōṭi prabhākara liṅgaṁ tatpraṇamāmi sadāśiva liṅgam ॥ 6 ॥
+      </p>
+      <p class="verse-translation">
+        I bow before that Sadashiva Lingam, served by hosts of devas with profound feelings of love and devotion, radiating with the brilliance of ten million suns.
+      </p>
+    </article>
+
+    <!-- Verse 7 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Verse 7</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಅಷ್ಟದಳೋಪರಿವೇಷ್ಟಿತ ಲಿಂಗಂ ಸರ್ವಸಮುದ್ಭವ ಕಾರಣ ಲಿಂಗಮ್ ।<br>
+        ಅಷ್ಟದರಿದ್ರ ವಿನಾಶನ ಲಿಂಗಂ ತತ್ಪ್ರಣಮಾಮಿ ಸದಾಶಿವ ಲಿಂಗಮ್ ॥ ೭ ॥
+      </p>
+      <p class="verse-iast">
+        aṣṭadaḷōparivēṣṭita liṅgaṁ sarvasamudbhava kāraṇa liṅgam ।<br>
+        aṣṭadaridra vināśana liṅgaṁ tatpraṇamāmi sadāśiva liṅgam ॥ 7 ॥
+      </p>
+      <p class="verse-translation">
+        I bow before that Sadashiva Lingam, seated upon an eight-petaled lotus, the prime cause of all creation, and which destroys the eight forms of poverty.
+      </p>
+    </article>
+
+    <!-- Verse 8 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">Verse 8</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಸುರಗುರು ಸುರವರ ಪೂಜಿತ ಲಿಂಗಂ ಸುರಾವನ ಪುಷ್ಪ ಸದಾರ್ಚಿತ ಲಿಂಗಮ್ ।<br>
+        ಪರಾತ್ಪರಂ ಪರಮಾತ್ಮಕ ಲಿಂಗಂ ತತ್ಪ್ರಣಮಾಮಿ ಸದಾಶಿವ ಲಿಂಗಮ್ ॥ ೮ ॥
+      </p>
+      <p class="verse-iast">
+        suraguru suravara pūjita liṅgaṁ surāvana puṣpa sadārcita liṅgam ।<br>
+        parātparaṁ paramātmaka liṅgaṁ tatpraṇamāmi sadāśiva liṅgam ॥ 8 ॥
+      </p>
+      <p class="verse-translation">
+        I bow before that Sadashiva Lingam, worshipped by Brihaspati (guru of gods) and the highest devas, ever offered blossoms from heavenly gardens, the Supreme beyond Supreme, the Supreme Soul.
+      </p>
+    </article>
+
+    <!-- Phala Shruti -->
+    <article class="verse-card" style="border-left-color: var(--accent-saffron);">
+      <div class="verse-header">
+        <span class="verse-badge" style="color: var(--accent-saffron); border-color: var(--accent-saffron); background: rgba(249, 115, 22, 0.1);">ಫಲಶೃತಿಃ | Phala Shruti</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಲಿಂಗಾಷ್ಟಕಮಿದಂ ಪುಣ್ಯಂ ಯಃ ಪಠೇಶ್ಶಿವ ಸನ್ನಿಧೌ ।<br>
+        ಶಿವಲೋಕಮವಾಪ್ನೋತಿ ಶಿವೇನ ಸಹ ಮೋದತೇ ॥
+      </p>
+      <p class="verse-iast">
+        liṅgāṣṭakamidaṁ puṇyaṁ yaḥ paṭhēśśiva sannidhau ।<br>
+        śivalōkamavāpnōti śivēna saha mōdatē ॥
+      </p>
+      <p class="verse-translation">
+        Whoever devoutly recites this sacred Lingashtakam in the holy presence of Lord Shiva attains the celestial abode of Shiva (Shivaloka) and resides in eternal bliss with Lord Shiva.
+      </p>
+    </article>
+
+    <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+      <a href="../index.html" class="btn btn-primary">← Return to Stotra Collection</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p><strong>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha</strong> • Ad-free Devotional Library</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
