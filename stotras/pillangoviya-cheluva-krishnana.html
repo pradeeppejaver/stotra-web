@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="kn" data-theme="midnight">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ಪಿಳ್ಳಂಗೋವಿಯ ಚೆಲುವ ಕೃಷ್ಣನ | Pillangoviya Cheluva Krishnana - Stotra Sangraha</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <span class="logo-icon">🕉️</span>
+        <span class="brand-text">ಸ್ತೋತ್ರ ಸಂಗ್ರಹ</span>
+      </a>
+      <div class="nav-controls">
+        <a href="../index.html" class="btn">← Back to Catalog</a>
+        <select id="theme-select" class="theme-select" title="Choose Theme Palette">
+          <option value="midnight">🌙 Midnight Temple (Navy & Gold)</option>
+          <option value="saffron">🔥 Saffron Divine (Sacred Vermillion)</option>
+          <option value="sandalwood">🪵 Royal Sandalwood (Turmeric)</option>
+          <option value="kailasha">🌌 Kailasha Sunset (Mystic Violet)</option>
+          <option value="parchment">📜 Sacred Parchment (Light Mode)</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Reader Header -->
+    <header class="reader-header">
+      <span class="card-deity-badge"
+        style="background: rgba(56, 189, 248, 0.15); color: var(--accent-blue);">Krishna • Devaranama</span>
+      <h1 class="hero-title-kn">ಪಿಳ್ಳಂಗೋವಿಯ ಚೆಲ್ವ ಕೃಷ್ಣನ</h1>
+      <div class="hero-title-en">Pillangoviya Chelva Krishnana Elli Nodidiri</div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Composed by Sri Purandara Dasa •
+        (ಶ್ರೀ ಪುರಂದರದಾಸರು — ಅಂಕಿತ: ಪುರಂದರವಿಠ್ಠಲ)</p>
+    </header>
+
+    <!-- Reading Toolbar Controls -->
+    <div class="reader-toolbar">
+      <div class="tool-group">
+        <span class="tool-label">Font Size:</span>
+        <button id="font-decrease" class="btn">A-</button>
+        <span id="font-size-display"
+          style="font-size: 0.85rem; font-weight: bold; min-width: 40px; text-align: center;">100%</span>
+        <button id="font-increase" class="btn">A+</button>
+        <button id="font-reset" class="btn">Reset</button>
+      </div>
+
+      <div class="tool-group">
+        <button id="wakelock-btn" class="btn">🔒 Keep Screen Awake</button>
+      </div>
+
+      <div class="tool-group">
+        <span class="tool-label">View:</span>
+        <button id="toggle-kn" class="btn btn-active">ಕನ್ನಡ</button>
+        <button id="toggle-iast" class="btn btn-active">English</button>
+        <button id="toggle-trans" class="btn">Meaning</button>
+      </div>
+    </div>
+
+    <!-- Pallavi -->
+    <article class="verse-card" style="border-left-color: var(--accent-blue);">
+      <div class="verse-header">
+        <span class="verse-badge"
+          style="color: var(--accent-blue); border-color: var(--accent-blue); background: rgba(56, 189, 248, 0.1);">ಪಲ್ಲವಿ
+          | Pallavi</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಪಿಳ್ಳಂಗೋವಿಯ ಚೆಲ್ವ ಕೃಷ್ಣನ ಎಲ್ಲಿ ನೋಡಿದಿರಿ ರಂಗನ ಎಲ್ಲಿ ನೋಡಿದಿರಿ ॥ ಪ ॥
+      </p>
+      <p class="verse-iast">
+        piḷḷaṅgōviya celva kṛṣṇana elli nōḍidiri raṅgana elli nōḍidiri ॥ pa ॥
+      </p>
+      <p class="verse-translation">
+        Where have you seen the handsome flute-playing Lord Krishna? Where have you seen our beloved Lord Ranga?
+      </p>
+    </article>
+
+    <!-- Anupallavi -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಅನುಪಲ್ಲವಿ | Anupallavi</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಎಲ್ಲಿ ನೋಡಿದರಲ್ಲಿ ತಾನಿಲ್ಲದಿಲ್ಲವೆಂದು ಬಲ್ಲ ಜಾಣರೆ ॥ ಅಪ ॥
+      </p>
+      <p class="verse-iast">
+        elli nōḍidaralli tānilladillavendu balla jāṇare ॥ apa ॥
+      </p>
+      <p class="verse-translation">
+        O wise and discerning ones who know that there is no place where He does not exist—tell me, where have you seen Him?
+      </p>
+    </article>
+
+    <!-- Charanam 1 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೧ | Charanam 1</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ನಂದಗೋಪನ ಮಂದಿರಂಗಳ ಸಂದುಗೊಂದಿನಲಿ ।<br>
+        ಚೆಂದಚೆಂದದ ಗೋಪಬಾಲರ ವೃಂದವೃಂದದಲಿ ।<br>
+        ಸುಂದರಾಂಗದ ಸುಂದರಿಯರ ಹಿಂದುಮುಂದಿನಲಿ ।<br>
+        ಅಂದದಾಕಳ-ಕಂದಕರುಗಳ ಮಂದೆಮಂದೆಯಲಿ ॥ ೧ ॥
+      </p>
+      <p class="verse-iast">
+        nandagōpana mandiraṅgaḷa sandugondinali ।<br>
+        cendacendada gōpabālara vṛndavṛndadali ।<br>
+        sundarāṅgada sundariyara hindumundinali ।<br>
+        andadākaḷa-kandakarugaḷa mandemandeyali ॥ 1 ॥
+      </p>
+      <p class="verse-translation">
+        In the lanes and corners of King Nandagopa's mansions, amidst lively groups of lovely cowherd boys, walking ahead and behind charming Gopi maidens, and amidst herds of graceful cows and tender calves—did you see Him there?
+      </p>
+    </article>
+
+    <!-- Charanam 2 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೨ | Charanam 2</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಈ ಚರಾಚರದೊಳಗೆ ಅಜಾಂಡದ ಆಚೆಈಚೆಯಲಿ ।<br>
+        ಖೇಚರೇಂದ್ರನ ಸುತನ ರಥದ ಅಚ್ಛ ಪೀಠದಲಿ ।<br>
+        ನಾಚದೆ ಮಾಧವ ಕೇಶವ ಎಂಬ ವಾಚಕಂಗಳಲಿ ।<br>
+        ವೀಚುಕೊಂಡದ ಪುರಂದರವಿಠ್ಠಲನ ಲೋಚನಾಗ್ರದಲಿ ॥ ೨ ॥
+      </p>
+      <p class="verse-iast">
+        ī carācaradoḷage ajāṇḍada āce-īceyali ।<br>
+        khēcarēndrana sutana rathada accha pīṭhadali ।<br>
+        nācade mādhava kēśava emba vācakaṅgaḷali ।<br>
+        vīcukoṇḍada purandaraviṭhṭhalana lōcanāgradali ॥ 2 ॥
+      </p>
+      <p class="verse-translation">
+        Throughout this entire cosmos, across every realm of the universe (Ajanda), upon the glorious seat of the chariot of Arjuna (son of Indra), on the tongues of devotees chanting 'Madhava! Keshava!' without hesitation, and right before the lovingly gazing eyes of Sri Purandara Vittala—did you see Him there?
+      </p>
+    </article>
+
+    <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+      <a href="../index.html" class="btn btn-primary">← Return to Stotra Collection</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p><strong>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha</strong> • Ad-free Devotional Library</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+
+</html>
