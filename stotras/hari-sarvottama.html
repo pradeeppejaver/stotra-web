@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="kn" data-theme="midnight">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ಹರಿ ಸರ್ವೋತ್ತಮ | Hari Sarvottama - Stotra Sangraha</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <span class="logo-icon">🕉️</span>
+        <span class="brand-text">ಸ್ತೋತ್ರ ಸಂಗ್ರಹ</span>
+      </a>
+      <div class="nav-controls">
+        <a href="../index.html" class="btn">← Back to Catalog</a>
+        <select id="theme-select" class="theme-select" title="Choose Theme Palette">
+          <option value="midnight">🌙 Midnight Temple (Navy & Gold)</option>
+          <option value="saffron">🔥 Saffron Divine (Sacred Vermillion)</option>
+          <option value="sandalwood">🪵 Royal Sandalwood (Turmeric)</option>
+          <option value="kailasha">🌌 Kailasha Sunset (Mystic Violet)</option>
+          <option value="parchment">📜 Sacred Parchment (Light Mode)</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Reader Header -->
+    <header class="reader-header">
+      <span class="card-deity-badge"
+        style="background: rgba(251, 191, 36, 0.15); color: var(--accent-gold);">Guru Raghavendra • Devaranama</span>
+      <h1 class="hero-title-kn">ಹರಿ ಸರ್ವೋತ್ತಮ ವಾಯು ಜೀವೋತ್ತಮ</h1>
+      <div class="hero-title-en">Hari Sarvottama Vayu Jeevottama</div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Composed by Sri Kamalesha Daasaru •
+        (ಶ್ರೀ ಕಮಲೇಶ ದಾಸರು - ಅಂಕಿತ: ಕಮಲೇಶವಿಠಲ)</p>
+    </header>
+
+    <!-- Reading Toolbar Controls -->
+    <div class="reader-toolbar">
+      <div class="tool-group">
+        <span class="tool-label">Font Size:</span>
+        <button id="font-decrease" class="btn">A-</button>
+        <span id="font-size-display"
+          style="font-size: 0.85rem; font-weight: bold; min-width: 40px; text-align: center;">100%</span>
+        <button id="font-increase" class="btn">A+</button>
+        <button id="font-reset" class="btn">Reset</button>
+      </div>
+
+      <div class="tool-group">
+        <button id="wakelock-btn" class="btn">🔒 Keep Screen Awake</button>
+      </div>
+
+      <div class="tool-group">
+        <span class="tool-label">View:</span>
+        <button id="toggle-kn" class="btn btn-active">ಕನ್ನಡ</button>
+        <button id="toggle-iast" class="btn btn-active">English</button>
+        <button id="toggle-trans" class="btn">Meaning</button>
+      </div>
+    </div>
+
+    <!-- Pallavi -->
+    <article class="verse-card" style="border-left-color: var(--accent-gold);">
+      <div class="verse-header">
+        <span class="verse-badge"
+          style="color: var(--accent-gold); border-color: var(--accent-gold); background: rgba(251, 191, 36, 0.1);">ಪಲ್ಲವಿ
+          | Pallavi</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಹರಿ ಸರ್ವೋತ್ತಮ ವಾಯು ಜೀವೋತ್ತಮ ।<br>
+        ಗುರು ರಾಘವೇಂದ್ರರೆಂದೆನು ಮನವೇ ॥ ಪ ॥
+      </p>
+      <p class="verse-iast">
+        hari sarvōttama vāyu jīvōttama ।<br>
+        guru rāghavēndrarendenu manavē ॥ pa ॥
+      </p>
+      <p class="verse-translation">
+        Lord Hari is the Supreme Sovereign (Sarvottama), Lord Vayu is supreme among all souls (Jeevottama); chant the holy name of Guru Raghavendra continuously, O my mind!
+      </p>
+    </article>
+
+    <!-- Charanam 1 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೧ | Charanam 1</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ನಿರತ ನೀ ಗುರುಪದ ಭಜನೆಯ ಮಾಡೆ ।<br>
+        ದುರಿತಗಳೆಲ್ಲವು ಓಡಿ ಹೋಗುವುವು ॥ ೧ ॥
+      </p>
+      <p class="verse-iast">
+        nirata nī gurupada bhajaneya māḍe ।<br>
+        duritagaḷellavu ōḍi pōguvuvu ॥ 1 ॥
+      </p>
+      <p class="verse-translation">
+        If you constantly engage in devotion at the Guru's holy feet, all your sins, sorrows, and troubles will run away and disappear!
+      </p>
+    </article>
+
+    <!-- Charanam 2 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೨ | Charanam 2</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಜಲಜಮಣಿ ಕಮಂಡಲ ದಂಡದಿಂದೊಪ್ಪುವ ।<br>
+        ಕಮಲೇಶಪ್ರಿಯ ರಾಘವೇಂದ್ರರು ॥ ೨ ॥
+      </p>
+      <p class="verse-iast">
+        jalajamaṇi kamaṇḍala daṇḍadindoorpuva ।<br>
+        kamalēśapriya rāghavēndraru ॥ 2 ॥
+      </p>
+      <p class="verse-translation">
+        Adorned resplendently with a lotus-seed rosary, ascetic water pot (Kamandala), and monastic staff (Danda), shines Sri Raghavendra, the beloved of Lord Kamalesha!
+      </p>
+    </article>
+
+    <!-- Charanam 3 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೩ | Charanam 3</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಕಲಿಯುಗದಲ್ಲಿ ಕಾಮಧೇನು ಸುರತರುವಂತೆ ।<br>
+        ಎಲ್ಲರಿಷ್ಟವನೀವ ಗುರುವೆಂದರಿವರಯ್ಯ ॥ ೩ ॥
+      </p>
+      <p class="verse-iast">
+        kaliyugadalli kāmadhēnu surataruvante ।<br>
+        ellariṣṭavanīva guruvendarivarayya ॥ 3 ॥
+      </p>
+      <p class="verse-translation">
+        Like the celestial wish-fulfilling cow (Kamadhenu) and wishing-tree (Surataru) in this Kaliyuga, know that he is the benevolent Guru who fulfills the cherished desires of all!
+      </p>
+    </article>
+
+    <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+      <a href="../index.html" class="btn btn-primary">← Return to Stotra Collection</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p><strong>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha</strong> • Ad-free Devotional Library</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

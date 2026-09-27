@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="kn" data-theme="midnight">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ಮಾಧವ ಬಾರೋ ಬಾರೋ | Madhava Baro Baro - Stotra Sangraha</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <span class="logo-icon">🕉️</span>
+        <span class="brand-text">ಸ್ತೋತ್ರ ಸಂಗ್ರಹ</span>
+      </a>
+      <div class="nav-controls">
+        <a href="../index.html" class="btn">← Back to Catalog</a>
+        <select id="theme-select" class="theme-select" title="Choose Theme Palette">
+          <option value="midnight">🌙 Midnight Temple (Navy & Gold)</option>
+          <option value="saffron">🔥 Saffron Divine (Sacred Vermillion)</option>
+          <option value="sandalwood">🪵 Royal Sandalwood (Turmeric)</option>
+          <option value="kailasha">🌌 Kailasha Sunset (Mystic Violet)</option>
+          <option value="parchment">📜 Sacred Parchment (Light Mode)</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Reader Header -->
+    <header class="reader-header">
+      <span class="card-deity-badge"
+        style="background: rgba(56, 189, 248, 0.15); color: var(--accent-blue);">Krishna • Devaranama</span>
+      <h1 class="hero-title-kn">ಮಾಧವ ಬಾರೋ ಬಾರೋ</h1>
+      <div class="hero-title-en">Madhava Baro Baro Yadava Baro Baro</div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Composed by Arun Rao Aroor •
+        (ಅರುಣ್ ರಾವ್ ಆರೂರ್ - ಅಂಕಿತ: ಆರೂರು ವಿಠಲ)</p>
+    </header>
+
+    <!-- Reading Toolbar Controls -->
+    <div class="reader-toolbar">
+      <div class="tool-group">
+        <span class="tool-label">Font Size:</span>
+        <button id="font-decrease" class="btn">A-</button>
+        <span id="font-size-display"
+          style="font-size: 0.85rem; font-weight: bold; min-width: 40px; text-align: center;">100%</span>
+        <button id="font-increase" class="btn">A+</button>
+        <button id="font-reset" class="btn">Reset</button>
+      </div>
+
+      <div class="tool-group">
+        <button id="wakelock-btn" class="btn">🔒 Keep Screen Awake</button>
+      </div>
+
+      <div class="tool-group">
+        <span class="tool-label">View:</span>
+        <button id="toggle-kn" class="btn btn-active">ಕನ್ನಡ</button>
+        <button id="toggle-iast" class="btn btn-active">English</button>
+        <button id="toggle-trans" class="btn">Meaning</button>
+      </div>
+    </div>
+
+    <!-- Pallavi -->
+    <article class="verse-card" style="border-left-color: var(--accent-blue);">
+      <div class="verse-header">
+        <span class="verse-badge"
+          style="color: var(--accent-blue); border-color: var(--accent-blue); background: rgba(56, 189, 248, 0.1);">ಪಲ್ಲವಿ
+          | Pallavi</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಮಾಧವ ಬಾರೋ ಬಾರೋ ಯಾದವ ಬಾರೋ ಬಾರೋ ।<br>
+        ರಾಧಾ ಮಾಧವ ಕೃಷ್ಣ ಸದಾನಂದ ದೇವ ಬಾರೋ ॥ ಪ ॥
+      </p>
+      <p class="verse-iast">
+        mādhava bārō bārō yādava bārō bārō ।<br>
+        rādhā mādhava kṛṣṇa sadānanda dēva bārō ॥ pa ॥
+      </p>
+      <p class="verse-translation">
+        Come, O Madhava, come! Come, O Yadava, come! O Radha-Madhava Krishna, O Lord of eternal supreme bliss, come!
+      </p>
+    </article>
+
+    <!-- Charanam 1 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೧ | Charanam 1</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ರಣ ಧುರೀಣ ಕೃಷ್ಣ ವೇಣು ಪ್ರವೀಣ ಕೃಷ್ಣ ।<br>
+        ಗಣ್ಯ ನೀಲವರ್ಣ ಕೃಷ್ಣ ಕ್ಷೋಣಿ ಪೋಷಣ ಕೃಷ್ಣ ।<br>
+        ಗುಣ ಪರಿಪೂರ್ಣ ಕೃಷ್ಣ ಜಾಣ ಉಡುಪಿ ಕೃಷ್ಣ ಬಾರೋ ॥ ೧ ॥
+      </p>
+      <p class="verse-iast">
+        raṇa dhurīṇa kṛṣṇa vēṇu pravīṇa kṛṣṇa ।<br>
+        gaṇya nīlavarṇa kṛṣṇa kṣōṇi pōṣaṇa kṛṣṇa ।<br>
+        guṇa paripūrṇa kṛṣṇa jāṇa uḍupi kṛṣṇa bārō ॥ 1 ॥
+      </p>
+      <p class="verse-translation">
+        O Krishna skilled in battle, O Krishna master of the flute! O eminent sapphire-hued Krishna, O nourisher and protector of the earth! O Krishna complete in all divine virtues, O clever child Krishna of Udupi, come!
+      </p>
+    </article>
+
+    <!-- Charanam 2 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೨ | Charanam 2</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ನಂದ ಕಿಶೋರ ಕೃಷ್ಣ ಮಂದಜನಾದಾರ ಕೃಷ್ಣ ।<br>
+        ಇಂದಿರಾವರ ಕೃಷ್ಣ ಮಂದರಧರ ಕೃಷ್ಣ ।<br>
+        ಸುಂದರಾಕಾರ ಕೃಷ್ಣ ಬೃಂದಾವನಚರ ಬಾರೋ ॥ ೨ ॥
+      </p>
+      <p class="verse-iast">
+        nanda kiśōra kṛṣṇa mandajanādhāra kṛṣṇa ।<br>
+        indirāvara kṛṣṇa mandaradhara kṛṣṇa ।<br>
+        sundarākāra kṛṣṇa bṛndāvanacara bārō ॥ 2 ॥
+      </p>
+      <p class="verse-translation">
+        O darling boy of Nanda, O refuge and support of the humble! O beloved Lord of Indira (Lakshmi), O lifter of Mount Mandara! O enchanting handsome Krishna, who roams the groves of Vrindavan, come!
+      </p>
+    </article>
+
+    <!-- Charanam 3 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೩ | Charanam 3</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ದೇವಕೀತನಯ ಕೃಷ್ಣ ಭಾವಜನಯ್ಯ ಕೃಷ್ಣ ।<br>
+        ಪಾವನಕಾಯ ಕೃಷ್ಣ ದೇವವರೇಣ್ಯ ಕೃಷ್ಣ ।<br>
+        ಗೋವಳರಾಯ ಕೃಷ್ಣ ಭವ್ಯ ಆರೂರು ವಿಠಲಯ್ಯಾ ಬಾರೋ ॥ ೩ ॥
+      </p>
+      <p class="verse-iast">
+        dēvakītanaya kṛṣṇa bhāvajanayya kṛṣṇa ।<br>
+        pāvanakāya kṛṣṇa dēvavarēṇya kṛṣṇa ।<br>
+        gōvaḷarāya kṛṣṇa bhavya ārūru viṭhalayyā bārō ॥ 3 ॥
+      </p>
+      <p class="verse-translation">
+        O beloved son of Devaki, O father of Manmatha (Kamadeva)! O embodiment of sacred purity, O foremost among all celestials! O king of cowherds Krishna, O magnificent Lord Arooru Vittala, come!
+      </p>
+    </article>
+
+    <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+      <a href="../index.html" class="btn btn-primary">← Return to Stotra Collection</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p><strong>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha</strong> • Ad-free Devotional Library</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

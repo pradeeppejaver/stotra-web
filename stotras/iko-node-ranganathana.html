@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="kn" data-theme="midnight">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ಇಕೋ ನೋಡೆ ರಂಗನಾಥನ | Iko Node Ranganathana - Stotra Sangraha</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <span class="logo-icon">🕉️</span>
+        <span class="brand-text">ಸ್ತೋತ್ರ ಸಂಗ್ರಹ</span>
+      </a>
+      <div class="nav-controls">
+        <a href="../index.html" class="btn">← Back to Catalog</a>
+        <select id="theme-select" class="theme-select" title="Choose Theme Palette">
+          <option value="midnight">🌙 Midnight Temple (Navy & Gold)</option>
+          <option value="saffron">🔥 Saffron Divine (Sacred Vermillion)</option>
+          <option value="sandalwood">🪵 Royal Sandalwood (Turmeric)</option>
+          <option value="kailasha">🌌 Kailasha Sunset (Mystic Violet)</option>
+          <option value="parchment">📜 Sacred Parchment (Light Mode)</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Reader Header -->
+    <header class="reader-header">
+      <span class="card-deity-badge"
+        style="background: rgba(56, 189, 248, 0.15); color: var(--accent-blue);">Krishna • Devaranama</span>
+      <h1 class="hero-title-kn">ಇಕೋ ನೋಡೆ ರಂಗನಾಥನ</h1>
+      <div class="hero-title-en">Iko Node Ranganathana Putta Padava</div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Composed by Sri Sripadarajaru •
+        (ಶ್ರೀ ಶ್ರೀಪಾದರಾಜರು - ಅಂಕಿತ: ರಂಗವಿಠಲ)</p>
+    </header>
+
+    <!-- Reading Toolbar Controls -->
+    <div class="reader-toolbar">
+      <div class="tool-group">
+        <span class="tool-label">Font Size:</span>
+        <button id="font-decrease" class="btn">A-</button>
+        <span id="font-size-display"
+          style="font-size: 0.85rem; font-weight: bold; min-width: 40px; text-align: center;">100%</span>
+        <button id="font-increase" class="btn">A+</button>
+        <button id="font-reset" class="btn">Reset</button>
+      </div>
+
+      <div class="tool-group">
+        <button id="wakelock-btn" class="btn">🔒 Keep Screen Awake</button>
+      </div>
+
+      <div class="tool-group">
+        <span class="tool-label">View:</span>
+        <button id="toggle-kn" class="btn btn-active">ಕನ್ನಡ</button>
+        <button id="toggle-iast" class="btn btn-active">English</button>
+        <button id="toggle-trans" class="btn">Meaning</button>
+      </div>
+    </div>
+
+    <!-- Pallavi -->
+    <article class="verse-card" style="border-left-color: var(--accent-blue);">
+      <div class="verse-header">
+        <span class="verse-badge"
+          style="color: var(--accent-blue); border-color: var(--accent-blue); background: rgba(56, 189, 248, 0.1);">ಪಲ್ಲವಿ
+          | Pallavi</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಇಕೋ ನೋಡೆ ರಂಗನಾಥನ ಪುಟ್ಟ ಪಾದವ ।<br>
+        ಸಿಕ್ಕಿತೇ ಶ್ರೀಲಕ್ಷ್ಮೀಪತಿಯ ದಿವ್ಯ ಪಾದವ ॥ ಪ ॥
+      </p>
+      <p class="verse-iast">
+        ikō nōḍe raṅganāthana puṭṭa pādava ।<br>
+        sikkitē śrīlakṣmīpatiya divya pādava ॥ pa ॥
+      </p>
+      <p class="verse-translation">
+        Behold the charming tender feet of Lord Ranganatha! We have indeed attained the divine feet of the Lord of Goddess Lakshmi!
+      </p>
+    </article>
+
+    <!-- Charanam 1 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೧ | Charanam 1</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಶಂಖ ಚಕ್ರ ಗದಾಪದ್ಮ ಅಂಕಿತ ಪಾದವ ।<br>
+        ಅಂಕುಶ ಕುಲಿಶ ಧ್ವಜರೇಖಾ ಅಂಕಿತ ಪಾದವ ॥ ೧ ॥
+      </p>
+      <p class="verse-iast">
+        śaṅkha cakra gadāpadma aṅkita pādava ।<br>
+        aṅkuśa kuliśa dhvajarēkhā aṅkita pādava ॥ 1 ॥
+      </p>
+      <p class="verse-translation">
+        The sacred feet adorned with the divine marks of conch, discus, mace, and lotus! The holy feet marked with the auspicious lines of the elephant goad, thunderbolt, and flag!
+      </p>
+    </article>
+
+    <!-- Charanam 2 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೨ | Charanam 2</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಪಂಕಜಾಸನನ ಹೃದಯದಲ್ಲಿ ನಲಿವ ಪಾದವ ।<br>
+        ಸಂಕಟ ಹರಣ ವೆಂಕಟೇಶನ ದಿವ್ಯ ಪಾದವ ॥ ೨ ॥
+      </p>
+      <p class="verse-iast">
+        paṅkajāsanana hṛdayadalli naliva pādava ।<br>
+        saṅkaṭa haraṇa veṅkaṭēśana divya pādava ॥ 2 ॥
+      </p>
+      <p class="verse-translation">
+        The joyful feet that dance merrily within the heart of lotus-seated Lord Brahma! The transcendental feet of Lord Venkatesha, who destroys all grief and affliction!
+      </p>
+    </article>
+
+    <!-- Charanam 3 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೩ | Charanam 3</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಬಂಡೆಯ ಬಾಲೆಯ ಮಾಡಿದ ಉದ್ದಂಡ ಪಾದವ ।<br>
+        ಬಂಡಿಲಿದ್ದ ಶಕಟಾಸುರನ ಒದ್ದ ಪಾದವ ॥ ೩ ॥
+      </p>
+      <p class="verse-iast">
+        baṇḍeya bāleya māḍida uddaṇḍa pādava ।<br>
+        baṇḍilidda śakaṭāsurana odda pādava ॥ 3 ॥
+      </p>
+      <p class="verse-translation">
+        The miraculous feet that brought life to a stone boulder, turning it into a beautiful maiden (Ahalya)! The mighty infant feet that kicked and smashed the demon Shakatasura hidden in the cart!
+      </p>
+    </article>
+
+    <!-- Charanam 4 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೪ | Charanam 4</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಅಂಡಜ ಹನುಮರ ಭುಜದೊಳೊಪ್ಪುವ ದಿವ್ಯ ಪಾದವ ।<br>
+        ಕಂಡೆವು ನಾವು ರಂಗವಿಠಲ ದಿವ್ಯ ಪಾದವ ॥ ೪ ॥
+      </p>
+      <p class="verse-iast">
+        aṇḍaja hanumara bhujadoḷoppuva divya pādava ।<br>
+        kaṇḍevu nāvu raṅgaviṭhala divya pādava ॥ 4 ॥
+      </p>
+      <p class="verse-translation">
+        The resplendent divine feet that rest honorably on the shoulders of Garuda and Hanuman! We have beheld the auspicious transcendental feet of Sri Rangavithala!
+      </p>
+    </article>
+
+    <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+      <a href="../index.html" class="btn btn-primary">← Return to Stotra Collection</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p><strong>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha</strong> • Ad-free Devotional Library</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+
+</html>
