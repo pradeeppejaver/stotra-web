@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="kn" data-theme="midnight">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ಚಂದ್ರಚೂಡ ಶಿವ ಶಂಕರ | Chandrachuda Shiva Shankara - Stotra Sangraha</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <span class="logo-icon">🕉️</span>
+        <span class="brand-text">ಸ್ತೋತ್ರ ಸಂಗ್ರಹ</span>
+      </a>
+      <div class="nav-controls">
+        <a href="../index.html" class="btn">← Back to Catalog</a>
+        <select id="theme-select" class="theme-select" title="Choose Theme Palette">
+          <option value="midnight">🌙 Midnight Temple (Navy & Gold)</option>
+          <option value="saffron">🔥 Saffron Divine (Sacred Vermillion)</option>
+          <option value="sandalwood">🪵 Royal Sandalwood (Turmeric)</option>
+          <option value="kailasha">🌌 Kailasha Sunset (Mystic Violet)</option>
+          <option value="parchment">📜 Sacred Parchment (Light Mode)</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Reader Header -->
+    <header class="reader-header">
+      <span class="card-deity-badge"
+        style="background: rgba(168, 85, 247, 0.15); color: #c084fc;">Shiva • Devaranama</span>
+      <h1 class="hero-title-kn">ಚಂದ್ರಚೂಡ ಶಿವ ಶಂಕರ</h1>
+      <div class="hero-title-en">Chandrachuda Shiva Shankara Parvathi Ramanane</div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Composed by Sri Purandara Dasa •
+        (ಶ್ರೀ ಪುರಂದರದಾಸರು — ಅಂಕಿತ: ಪುರಂದರವಿಠಲ)</p>
+    </header>
+
+    <!-- Reading Toolbar Controls -->
+    <div class="reader-toolbar">
+      <div class="tool-group">
+        <span class="tool-label">Font Size:</span>
+        <button id="font-decrease" class="btn">A-</button>
+        <span id="font-size-display"
+          style="font-size: 0.85rem; font-weight: bold; min-width: 40px; text-align: center;">100%</span>
+        <button id="font-increase" class="btn">A+</button>
+        <button id="font-reset" class="btn">Reset</button>
+      </div>
+
+      <div class="tool-group">
+        <button id="wakelock-btn" class="btn">🔒 Keep Screen Awake</button>
+      </div>
+
+      <div class="tool-group">
+        <span class="tool-label">View:</span>
+        <button id="toggle-kn" class="btn btn-active">ಕನ್ನಡ</button>
+        <button id="toggle-iast" class="btn btn-active">English</button>
+        <button id="toggle-trans" class="btn">Meaning</button>
+      </div>
+    </div>
+
+    <!-- Pallavi -->
+    <article class="verse-card" style="border-left-color: #a855f7;">
+      <div class="verse-header">
+        <span class="verse-badge"
+          style="color: #c084fc; border-color: #a855f7; background: rgba(168, 85, 247, 0.1);">ಪಲ್ಲವಿ
+          | Pallavi</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಚಂದ್ರಚೂಡ ಶಿವ ಶಂಕರ ಪಾರ್ವತಿ ।<br>
+        ರಮಣನೆ ನಿನಗೆ ನಮೋ ನಮೋ ॥ ಪ ॥
+      </p>
+      <p class="verse-iast">
+        candracūḍa śiva śaṅkara pārvati ।<br>
+        ramaṇane ninage namō namō ॥ pa ॥
+      </p>
+      <p class="verse-translation">
+        O Moon-adorned Lord Shiva! O auspicious Shankara! Beloved consort of Goddess Parvati, salutations unto you again and again!
+      </p>
+    </article>
+
+    <!-- Anupallavi -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಅನುಪಲ್ಲವಿ | Anupallavi</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಸುಂದರ ಮೃಗಧರ ಪಿನಾಕಧನುಕರ ।<br>
+        ಗಂಗಾಶಿರ ಗಜಚರ್ಮಾಂಬರಧರ ನಮೋ ನಮೋ ॥ ಅಪ ॥
+      </p>
+      <p class="verse-iast">
+        sundara mṛgadhara pinākadhanukara ।<br>
+        gaṅgāśira gajacarmāmbaradhara namō namō ॥ apa ॥
+      </p>
+      <p class="verse-translation">
+        O handsome Lord holding the deer and the mighty Pinaka bow in hand! Bearing the sacred Ganga upon your crest and robed in elephant hide, salutations unto you!
+      </p>
+    </article>
+
+    <!-- Charanam 1 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೧ | Charanam 1</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ನಂದಿವಾಹನಾನಂದದಿಂದ ಮೂಜಗದಿ ಮೆರೆವವ ನೀನೆ ।<br>
+        ಅಂದು ಅಮೃತಘಟದಿಂದುದಿಸಿದ ವಿಷ ತಂದು ಭುಜಿಸಿದವ ನೀನೆ ।<br>
+        ಕಂದರ್ಪನ ಕ್ರೋಧದಿಂದ ಕಣ್ತೆರೆದು ಕೊಂದ ಉಗ್ರನು ನೀನೆ ।<br>
+        ಇಂದಿರೇಶ ಶ್ರೀ ರಾಮನ ಪಾದವ ಚಂದದಿ ಪೊಗಳುವ ನೀನೆ ॥ ೧ ॥
+      </p>
+      <p class="verse-iast">
+        nandivāhanānandadinda mūjagadi merevava nīne ।<br>
+        andu amṛtaghaṭadindudisida viṣa tandu bhujisidava nīne ।<br>
+        kandarpana krōdhadinda kaṇteredu konda ugranu nīne ।<br>
+        indirēśa śrī rāmana pādava candadi pogaḷuva nīne ॥ 1 ॥
+      </p>
+      <p class="verse-translation">
+        You are the one who gloriously shines across the three worlds, joyfully riding upon the sacred bull Nandi! You are the one who consumed the deadly poison that arose from the churning for the nectar of immortality! You are the fierce one who opened your third eye in fury and burnt Kama (desire) to ashes! And you are the one who delightfully sings the praises of Sri Rama, the Lord of Indira!
+      </p>
+    </article>
+
+    <!-- Charanam 2 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೨ | Charanam 2</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಬಾಲ ಮಾರ್ಕಂಡನ ಕಾಲನು ಎಳೆವಾಗ ಪಾಲಿಸಿದಾತನು ನೀನೆ ।<br>
+        ಕಾಲಕೂಟ ವಿಷವ ಪಾನ ಮಾಡಿದ ನೀಲಕಂಠನು ನೀನೆ ।<br>
+        ವಾಲಯದಿ ಕಪಾಲ ಪಿಡಿದು ಭಿಕ್ಷೆ ಬೇಡೋ ದಿಗಂಬರ ನೀನೆ ।<br>
+        ಜಾಲ ಮಾಡಿದ ಗೋಪಾಲನೆಂಬ ಹೆಣ್ಣಿಗೆ ಮರುಳಾದವ ನೀನೆ ॥ ೨ ॥
+      </p>
+      <p class="verse-iast">
+        bāla mārkaṇḍana kālanu eḷevāga pālisidātanu nīne ।<br>
+        kālakūṭa viṣava pāna māḍida nīlakaṇṭhanu nīne ।<br>
+        vālayadi kapāla piḍidu bhikṣe bēḍō digambara nīne ।<br>
+        jāla māḍida gōpālanemba heṇṇige maruḷādava nīne ॥ 2 ॥
+      </p>
+      <p class="verse-translation">
+        You are the one who protected child Markandeya when the lord of death (Yama) cast his noose! You are the blue-throated Neelakantha who drank the dreadful Kalakuta poison! You are the ascetic Digambara holding the skull-bowl in hand, and you are the one captivated by the divine illusion of Gopalakrishna who appeared as enchanting Mohini!
+      </p>
+    </article>
+
+    <!-- Charanam 3 -->
+    <article class="verse-card">
+      <div class="verse-header">
+        <span class="verse-badge">ಚರಣ ೩ | Charanam 3</span>
+        <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+      </div>
+      <p class="verse-kannada">
+        ಧರೆಗೆ ದಕ್ಷಿಣ ಕಾವೇರಿ ತೀರ ಕುಂಭಪುರವಾಸನು ನೀನೆ ।<br>
+        ಕರದಲಿ ವೀಣೆಯ ಗಾನವ ಮಾಡುವ ನಮ್ಮ ಉರಗಭೂಷಣ ನೀನೆ ।<br>
+        ಕೊರಳಲಿ ಭಸ್ಮ ರುದ್ರಾಕ್ಷಿ ಧರಿಸಿದ ಪರಮ ವೈಷ್ಣವ ನೀನೆ ।<br>
+        ಗರುಡಗಮನ ಶ್ರೀ ಪುರಂದರವಿಠಲಗೆ ಪ್ರಾಣಪ್ರಿಯನು ನೀನೆ ॥ ೩ ॥
+      </p>
+      <p class="verse-iast">
+        dharege dakṣiṇa kāvēri tīra kumbhapuravāsanu nīne ।<br>
+        karadali vīṇeya gānava māḍuva namma uragabhūṣaṇa nīne ।<br>
+        koraḷali bhasma rudrākṣi dharisida parama vaiṣṇava nīne ।<br>
+        garuḍagamana śrī purandaraviṭhalage prāṇapriyanu nīne ॥ 3 ॥
+      </p>
+      <p class="verse-translation">
+        On earth, you are the holy resident of Kumbhapura on the southern banks of the sacred Kaveri river! You are our serpent-adorned Lord playing divine melodies upon the Veena in your hands! Adorned with sacred holy ash and Rudraksha beads around your neck, you are the supreme devotee (Parama Vaishnava), and you are the soul-beloved of Lord Purandara Vittala!
+      </p>
+    </article>
+
+    <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+      <a href="../index.html" class="btn btn-primary">← Return to Stotra Collection</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p><strong>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha</strong> • Ad-free Devotional Library</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+
+</html>
