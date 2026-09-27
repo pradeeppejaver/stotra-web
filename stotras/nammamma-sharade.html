@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="kn" data-theme="midnight">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ನಮ್ಮಮ್ಮಾ ಶಾರದೆ | Nammamma Sharade - Stotra Sangraha</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="nav-brand">
+                <span class="logo-icon">🕉️</span>
+                <span class="brand-text">ಸ್ತೋತ್ರ ಸಂಗ್ರಹ</span>
+            </a>
+            <div class="nav-controls">
+                <a href="../index.html" class="btn">← Back to Catalog</a>
+                <select id="theme-select" class="theme-select" title="Choose Theme Palette">
+                    <option value="midnight">🌙 Midnight Temple (Navy & Gold)</option>
+                    <option value="saffron">🔥 Saffron Divine (Sacred Vermillion)</option>
+                    <option value="sandalwood">🪵 Royal Sandalwood (Turmeric)</option>
+                    <option value="kailasha">🌌 Kailasha Sunset (Mystic Violet)</option>
+                    <option value="parchment">📜 Sacred Parchment (Light Mode)</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Reader Header -->
+        <header class="reader-header">
+            <span class="card-deity-badge"
+                style="background: rgba(249, 115, 22, 0.15); color: var(--accent-saffron);">Ganesha • Devaranama</span>
+            <h1 class="hero-title-kn">ನಮ್ಮಮ್ಮಾ ಶಾರದೆ</h1>
+            <div class="hero-title-en">Nammamma Sharade</div>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Composed by Sri Kanaka Dasa •
+                (ಶ್ರೀ ಕನಕದಾಸರು - ಅಂಕಿತ: ಕಾಗಿನೆಲೆಯಾದಿಕೇಶವ)</p>
+        </header>
+
+        <!-- Reading Toolbar Controls -->
+        <div class="reader-toolbar">
+            <div class="tool-group">
+                <span class="tool-label">Font Size:</span>
+                <button id="font-decrease" class="btn">A-</button>
+                <span id="font-size-display"
+                    style="font-size: 0.85rem; font-weight: bold; min-width: 40px; text-align: center;">100%</span>
+                <button id="font-increase" class="btn">A+</button>
+                <button id="font-reset" class="btn">Reset</button>
+            </div>
+
+            <div class="tool-group">
+                <button id="wakelock-btn" class="btn">🔒 Keep Screen Awake</button>
+            </div>
+
+            <div class="tool-group">
+                <span class="tool-label">View:</span>
+                <button id="toggle-kn" class="btn btn-active">ಕನ್ನಡ</button>
+                <button id="toggle-iast" class="btn btn-active">English</button>
+                <button id="toggle-trans" class="btn">Meaning</button>
+            </div>
+        </div>
+
+        <!-- Pallavi -->
+        <article class="verse-card" style="border-left-color: var(--accent-saffron);">
+            <div class="verse-header">
+                <span class="verse-badge"
+                    style="color: var(--accent-saffron); border-color: var(--accent-saffron); background: rgba(249, 115, 22, 0.1);">ಪಲ್ಲವಿ
+                    | Pallavi</span>
+                <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+            </div>
+            <p class="verse-kannada">
+                ನಮ್ಮಮ್ಮಾ ಶಾರದೆ ಉಮಾ ಮಹೇಶ್ವರಿ ।<br>
+                ನಿಮ್ಮೊಳಗಿಹನಾರಮ್ಮಾ ॥ ಪ ॥
+            </p>
+            <p class="verse-iast">
+                nammammā śārade umā mahēśvari ।<br>
+                nimmoḷagihanārammā ॥ pa ॥
+            </p>
+            <p class="verse-translation">
+                O our Mother Sharada, and Mother Uma Maheshwari! Who is this divine person dwelling in your midst,
+                Mother?
+            </p>
+        </article>
+
+        <!-- Anupallavi -->
+        <article class="verse-card">
+            <div class="verse-header">
+                <span class="verse-badge">ಅನುಪಲ್ಲವಿ | Anupallavi</span>
+                <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+            </div>
+            <p class="verse-kannada">
+                ಕಮ್ಮಗೋಲನ ವೈರಿ ಸುತನಾದ ಸೊಂಡಿಲ ।<br>
+                ಹೆಮ್ಮೆಯ ಗಣನಾಥನೇ ॥ ಅಪ ॥
+            </p>
+            <p class="verse-iast">
+                kammagōlana vairi sutanāda soṇḍila ।<br>
+                hemmeya gaṇanāthanē ॥ apa ॥
+            </p>
+            <p class="verse-translation">
+                He is the glorious Lord Gananatha with the graceful elephant trunk, the beloved son of Lord Shiva (the
+                enemy of Kama)!
+            </p>
+        </article>
+
+        <!-- Charanam 1 -->
+        <article class="verse-card">
+            <div class="verse-header">
+                <span class="verse-badge">ಚರಣ ೧ | Charanam 1</span>
+                <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+            </div>
+            <p class="verse-kannada">
+                ಮೋರೆ ಕಪ್ಪಿನ ಭಾವ ಮೊರದಗಲದ ಕಿವಿ ಕೋರೆದಾಡೆಯನಾರಮ್ಮಾ ।<br>
+                ಮೂರುಕಣ್ಣನ ಸುತ ಮುರಿದಿಟ್ಟ ಚಂದ್ರನ ಧೀರ ತಾ ಗಣನಾಥನೇ ಅಮ್ಮಯ್ಯ ॥ ೧ ॥
+            </p>
+            <p class="verse-iast">
+                mōre kappina bhāva moradagalada kivi kōredāḍeyanārammā ।<br>
+                mūrukaṇṇana suta muridiṭṭa candrana dhīra tā gaṇanāthanē ammayya ॥ 1 ॥
+            </p>
+            <p class="verse-translation">
+                Who is this with a majestic dark face, ears wide like winnowing baskets, and sharp curved tusks? He is
+                the valiant Lord Gananatha, son of three-eyed Shiva, who broke the crescent moon!
+            </p>
+        </article>
+
+        <!-- Charanam 2 -->
+        <article class="verse-card">
+            <div class="verse-header">
+                <span class="verse-badge">ಚರಣ ೨ | Charanam 2</span>
+                <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+            </div>
+            <p class="verse-kannada">
+                ಉಟ್ಟ ಪಚ್ಚೆಯ ಬಿಗಿದುಟ್ಟ ಚೆಲ್ಲಣದ ದಿಟ್ಟ ತಾನಿವನಾರಮ್ಮಾ ।<br>
+                ಪಟ್ಟದ ರಾಣಿ ಪಾರ್ವತಿಯ ಕುಮಾರನು ಹೊಟ್ಟೆಯ ಗಣನಾಥನೇ ಅಮ್ಮಯ್ಯ ॥ ೨ ॥
+            </p>
+            <p class="verse-iast">
+                uṭṭa paccheya bigiduṭṭa cellaṇada diṭṭa tānivanārammā ।<br>
+                paṭṭada rāṇi pārvatiya kumāranu hoṭṭeya gaṇanāthanē ammayya ॥ 2 ॥
+            </p>
+            <p class="verse-translation">
+                Who is this confident one dressed in fine green silk with a snug waist sash? He is the pot-bellied Lord
+                Gananatha, the beloved son of Queen Mother Parvati!
+            </p>
+        </article>
+
+        <!-- Charanam 3 -->
+        <article class="verse-card">
+            <div class="verse-header">
+                <span class="verse-badge">ಚರಣ ೩ | Charanam 3</span>
+                <button class="copy-btn" onclick="copyVerse(this)">📋 Copy Verse</button>
+            </div>
+            <p class="verse-kannada">
+                ರಾಶಿ ವಿದ್ಯೆಯ ಬಲ್ಲ ರಮಣಿ ಹಂಬಲನೊಲ್ಲ ಭಾಷಿಗನಿವನ್ಯಾರಮ್ಮಾ ।<br>
+                ಲೇಸಾಗಿ ಜನರ ಸಲಹುವ ಕಾಗಿನೆಲೆ ಆದಿಕೇಶವ ದಾಸ ಕಣೇ ಅಮ್ಮಯ್ಯ ॥ ೩ ॥
+            </p>
+            <p class="verse-iast">
+                rāśi vidyeya balla ramaṇi hambalanolla bhāṣiganivanyārammā ।<br>
+                lēsāgi janara salahuva kāginele ādikēśava dāsa kaṇē ammayya ॥ 3 ॥
+            </p>
+            <p class="verse-translation">
+                Who is this eloquent orator, master of boundless learning and free from worldly attachment? He is the
+                humble servant of Kaginele Adikeshava, who graciously protects all mankind!
+            </p>
+        </article>
+
+        <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+            <a href="../index.html" class="btn btn-primary">← Return to Stotra Collection</a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p><strong>ಸ್ತೋತ್ರ ಸಂಗ್ರಹ | Stotra Sangraha</strong> • Ad-free Devotional Library</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>
